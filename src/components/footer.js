@@ -17,7 +17,7 @@ const Footer = () => (
         </ul>
         <p className="has-text-centered">
           <StyledLink to="/">
-            © {new Date().getFullYear()}, Felix Ortmann
+            © {new Date().getFullYear()} Felix Ortmann
           </StyledLink>
         </p>
       </div>

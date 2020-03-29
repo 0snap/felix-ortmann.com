@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "./image"
 
 const Cover = () => (
   <section class="hero is-success is-fullheight">
