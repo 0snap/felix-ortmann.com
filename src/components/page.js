@@ -1,7 +1,7 @@
 import React from "react"
 import Footer from "./footer"
 
-import "./layout.css"
+import "./page.sass"
 
 const Layout = ({ children }) => {
   return (

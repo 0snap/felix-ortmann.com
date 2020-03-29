@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Page from "../components/page"
 import TextContent from "../components/textContent"
 import SEO from "../components/seo"
 
 const PrivacyPolicyPage = () => (
-  <Layout>
+  <Page>
   <TextContent>
     <SEO title="Datenschutzerklärung" />
     <h1>Datenschutzerklärung</h1>
@@ -162,7 +162,7 @@ const PrivacyPolicyPage = () => (
     </section>
     <Link to="/">Home</Link>
   </TextContent>
-  </Layout>
+  </Page>
 )
 
 export default PrivacyPolicyPage

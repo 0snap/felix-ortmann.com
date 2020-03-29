@@ -1,17 +1,17 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Page from "../components/page"
 import Cover from "../components/cover"
 import AboutMe from "../components/aboutme"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <>
-  <Layout>
+  <Page>
     <SEO title="Felix Ortmann" />
     <Cover />
     <AboutMe />
-  </Layout>
+  </Page>
   </>
 )
 

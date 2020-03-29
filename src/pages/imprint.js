@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Page from "../components/page"
 import TextContent from "../components/textContent"
 import SEO from "../components/seo"
 
 const ImprintPage = () => (
-  <Layout>
+  <Page>
     <SEO title="Impressum" />
     <TextContent>
     <h1>Impressum</h1>
@@ -79,7 +79,7 @@ const ImprintPage = () => (
     </section>
     <Link to="/">Home</Link>
     </TextContent>
-  </Layout>
+  </Page>
 )
 
 export default ImprintPage
