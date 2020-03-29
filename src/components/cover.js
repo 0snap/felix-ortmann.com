@@ -1,17 +1,15 @@
 import React from "react"
 import Image from "./image"
 
-const Cover = () => {
-  return (
-    <>
-      <section className={'cover'}>
-        <div className={'cover__title'}>
-        <h1 style={{borderBottom: `1px solid white`}}>Felix Ortmann</h1>
-        <h4>I like to code, I love to think.</h4>
+const Cover = () => (
+  <section class="hero is-success is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">Felix Ortmann</h1>
+        <h2 class="subtitle">I like to code, I love to think.</h2>
       </div>
-      </section>
-    </>
-  )
-}
+    </div>
+  </section>
+)
 
 export default Cover

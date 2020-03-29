@@ -2,14 +2,17 @@ import React from "react"
 
 import SEO from "../components/seo"
 import Page from "../components/page"
-import TextContent from "../components/textContent"
 
 const NotFoundPage = () => (
   <Page>
     <SEO title="404: Not found" />
-    <TextContent>
-    <h2>Not found.</h2>
-    </TextContent>
+    <section className="section is-medium">
+      <div className="container">
+        <div className="content has-text-centered">
+          <h3 className="title">Not found.</h3>
+        </div>
+      </div>
+    </section>
   </Page>
 )
 
