@@ -1,4 +1,4 @@
-import { StyledLink } from "./helpers"
+import { Link } from "gatsby"
 import React from "react"
 
 const Footer = () => (
@@ -7,18 +7,20 @@ const Footer = () => (
       <div className="content">
         <ul style={{ "list-style": `none` }}>
           <li>
-            <StyledLink activeStyle={{ textColor: `white` }} to="/imprint/">
+            <Link to="/imprint/" className="footer__link">
               Impressum
-            </StyledLink>
+            </Link>
           </li>
           <li>
-            <StyledLink to="/privacy-policy/">Datenschutzerklärung</StyledLink>
+            <Link to="/privacy-policy/" className="footer__link">
+              Datenschutzerklärung
+            </Link>
           </li>
         </ul>
         <p className="has-text-centered">
-          <StyledLink to="/">
+          <Link to="/" className="footer__link">
             © {new Date().getFullYear()} Felix Ortmann
-          </StyledLink>
+          </Link>
         </p>
       </div>
     </div>

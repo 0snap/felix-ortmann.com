@@ -1,15 +1,31 @@
-@charset "utf-8";
+@charset "utf-8"
 
-$footer-background-color: hsl(0, 0%, 21%);
-$footer-color: white;
-$footer-padding: 3rem 0;
-$link-hover: beige;
 
-@import '../../node_modules/bulma/sass/utilities/_all.sass';
-@import '../../node_modules/bulma/sass/base/_all.sass';
-@import '../../node_modules/bulma/sass/elements/container.sass';
-@import '../../node_modules/bulma/sass/elements/content.sass';
-@import '../../node_modules/bulma/sass/elements/title.sass';
-@import '../../node_modules/bulma/sass/layout/hero.sass';
-@import '../../node_modules/bulma/sass/layout/section.sass';
-@import '../../node_modules/bulma/sass/layout/footer.sass';
+// colors
+$dark: hsl(0, 0%, 21%)
+$green: hsl(141, 53%, 53%)
+$dark-green: hsl(141, 90%, 30%)
+
+// overwrite bulma variables
+$background: whitesmoke
+$footer-background-color: $dark
+$footer-color: whitesmoke
+$footer-padding: 3rem 0
+$link: $green
+$link-hover: $dark-green
+
+// selective import of bulma modules
+@import '../../node_modules/bulma/sass/utilities/_all.sass'
+@import '../../node_modules/bulma/sass/base/_all.sass'
+@import '../../node_modules/bulma/sass/elements/container.sass'
+@import '../../node_modules/bulma/sass/elements/content.sass'
+@import '../../node_modules/bulma/sass/elements/title.sass'
+@import '../../node_modules/bulma/sass/layout/hero.sass'
+@import '../../node_modules/bulma/sass/layout/section.sass'
+@import '../../node_modules/bulma/sass/layout/footer.sass'
+
+// custom styles
+.footer__link
+    color: whitesmoke
+    &:hover
+        color: $success
