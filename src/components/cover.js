@@ -1,11 +1,11 @@
 import React from "react"
 
 const Cover = () => (
-  <section class="hero is-success is-fullheight">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title is-1">Felix Ortmann</h1>
-        <h2 class="subtitle">I like to code, I love to think.</h2>
+  <section className="hero is-success is-fullheight">
+    <div className="hero-body">
+      <div className="container">
+        <h1 className="title is-1">Felix Ortmann</h1>
+        <h2 className="subtitle">I like to code, I love to think.</h2>
       </div>
     </div>
   </section>

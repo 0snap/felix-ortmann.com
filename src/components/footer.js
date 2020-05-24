@@ -5,7 +5,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="container">
       <div className="content">
-        <ul style={{ "list-style": `none` }}>
+        <ul style={{ listStyle: `none` }}>
           <li>
             <Link to="/imprint/" className="footer__link">
               Impressum
