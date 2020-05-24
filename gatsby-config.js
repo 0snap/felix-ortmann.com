@@ -28,5 +28,22 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+        typeName: `Yaml`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-i18n`,
+      options: {
+        langKeyDefault: "de",
+        langKeyForNull: "de",
+        prefixDefault: false,
+        useLangKeyLayout: false,
+      },
+    },
   ],
 }
