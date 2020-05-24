@@ -1,0 +1,15 @@
+contact:
+  name: Felix Christian Ortmann
+  street: Agathenstr. 7
+  postCode: 20357
+  city: Hamburg
+  country: Germany
+  phone: +49 174 83 73 193
+  mail: flx.ortmann@gmail.com
+aboutme:
+  de:
+    profile: Bla bla bla
+meta:
+  title: Felix Ortmann
+  description: My personal web page.
+  author: github.com/0ortmann
