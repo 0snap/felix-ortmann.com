@@ -1,7 +1,7 @@
 contact:
   name: Felix Christian Ortmann
-  street: Agathenstr. 7
-  postCode: 20357
+  street: Fährstr. 67
+  postCode: 21107
   city: Hamburg
   country: Germany
   phone: +49 174 83 73 193
@@ -11,5 +11,5 @@ aboutme:
     profile: Bla bla bla
 meta:
   title: Felix Ortmann
-  description: My personal web page.
-  author: github.com/0ortmann
+  description: Web profile of Felix Ortmann. I like to code, I love to think.
+  author: github.com/0snap
