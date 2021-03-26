@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Felix Ortmann`,
     description: `My personal web page.`,
-    author: `github.com/0ortmann`,
+    author: `github.com/0snap`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-i18n`,
       options: {
-        langKeyDefault: "de",
+        langKeyDefault: "en",
         langKeyForNull: "de",
         prefixDefault: false,
         useLangKeyLayout: false,
