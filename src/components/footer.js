@@ -8,12 +8,12 @@ const Footer = () => (
         <ul style={{ listStyle: `none` }}>
           <li>
             <Link to="/imprint/" className="footer__link">
-              Impressum
+              Imprint
             </Link>
           </li>
           <li>
             <Link to="/privacy-policy/" className="footer__link">
-              Datenschutzerklärung
+              Privacy Policy
             </Link>
           </li>
         </ul>

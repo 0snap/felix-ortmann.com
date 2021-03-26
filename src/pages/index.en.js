@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
     <section className="section is-medium">
       <h4 className="title is-4 has-text-centered">Profile</h4>
       <div className="container">
-        <p>{data.dataYaml.aboutme.de.profile}</p>
+        {data.dataYaml.aboutme.en.profile.map(entry => <div className="content" dangerouslySetInnerHTML={{__html: entry}} />)}
       </div>
     </section>
   </Page>
@@ -23,7 +23,7 @@ export const query = graphql`
   query ProfileQuery {
     dataYaml {
       aboutme {
-        de {
+        en {
           profile
         }
       }
