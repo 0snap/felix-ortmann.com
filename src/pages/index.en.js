@@ -13,7 +13,12 @@ const IndexPage = ({ data }) => (
     <section className="section is-medium">
       <h4 className="title is-4 has-text-centered">Profile</h4>
       <div className="container">
-        {data.dataYaml.aboutme.en.profile.map(entry => <div className="content" dangerouslySetInnerHTML={{__html: entry}} />)}
+        {data.dataYaml.aboutme.en.profile.map(entry => (
+          <div
+            className="content"
+            dangerouslySetInnerHTML={{ __html: entry }}
+          />
+        ))}
       </div>
     </section>
   </Page>
