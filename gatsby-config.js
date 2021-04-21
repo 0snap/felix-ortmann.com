@@ -16,6 +16,10 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-sass`,
+      options: { indentedSyntax: true },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
@@ -27,7 +31,6 @@ module.exports = {
         icon: `src/images/favicon.png`,
       },
     },
-    `gatsby-plugin-sass`,
     `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
