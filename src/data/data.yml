@@ -12,7 +12,11 @@ aboutme:
       - A turquoise GameBoy Color hooked me into tech when I was little. A few years later, I advocated for an advanced computer science course at high school and graduated best-in-class in mathematics.
       - By now, I pack 8 years of professional experience with almost every modern programming language. My passion lies in distributed systems design and process automation in modern cloud environments. I graduated with a summa-cum-laude Master's degree back in 2019 in cooperation with the University of Hamburg, the Fraunhofer Institute Singapore, and the Nanyang Technological University Singapore, where I spent my final year. My current field of interest lies in blue-team cyber security and network defense.
       - Check out my <a href="https://github.com/0snap" target="_blank">profile</a> at GitHub. Over there, I am responsible (core maintainer) for the <a href="https://github.com/tenzir/threatbus" target="_blank">Threat Bus</a> project as part of my current relationship with the awesome folks from <a href="https://tenzir.com" target="_blank">Tenzir</a>. Or find me at <a href="https://app.codesignal.com/profile/fixel" target="_blank">Codesignal</a> where I enjoy solving tough problems with strict runtime requirements and used to rank among the top players in 2018.
-
+cv:
+  en:
+    journey:
+      - foo
+      - bar
 meta:
   title: Felix Ortmann
   description: Web profile of Felix Ortmann. I like to code, I love to think.

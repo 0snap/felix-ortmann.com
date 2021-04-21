@@ -1,26 +1,33 @@
 import React from "react"
 
-import Page from "../components/page"
 import Cover from "../components/cover"
+import CV from "../components/cv"
+import Page from "../components/page"
 import SEO from "../components/seo"
 
 import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => (
-  <Page lang="de">
+  <Page>
     <SEO title="Felix Ortmann" />
     <Cover />
     <section className="section is-medium">
-      <h4 className="title is-4 has-text-centered">Profile</h4>
+      <h4 className="title is-3 has-text-centered">&mdash;My journey&mdash;</h4>
       <div className="container">
-        {data.dataYaml.aboutme.en.profile.map(entry => (
+        <CV journey={data.dataYaml.cv.en.journey} />
+      </div>
+      <h4 className="title is-3 has-text-centered">About me</h4>
+      <div className="container">
+        {data.dataYaml.aboutme.en.profile.map((entry, idx) => (
           <div
+            key={idx}
             className="content"
             dangerouslySetInnerHTML={{ __html: entry }}
           />
         ))}
       </div>
     </section>
+    <CV />
   </Page>
 )
 
@@ -30,6 +37,11 @@ export const query = graphql`
       aboutme {
         en {
           profile
+        }
+      }
+      cv {
+        en {
+          journey
         }
       }
     }
