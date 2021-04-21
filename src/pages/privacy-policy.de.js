@@ -8,7 +8,7 @@ import { graphql } from "gatsby"
 const PrivacyPolicyPage = ({ data }) => {
   const contact = data.dataYaml.contact
   return (
-    <Page lang="de">
+    <Page>
       <SEO title="Datenschutzerklärung" />
       <section className="section is-medium">
         <div className="container">
