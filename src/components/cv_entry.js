@@ -1,16 +1,21 @@
 import React from "react"
 
 const CvEntry = ({ entry }) => (
-  <div className="columns">
+  <div className="columns mb-6">
     <div className="column is-two-fifths">{entry.image}</div>
-    <div className="column is-three-fifths box mb-5">
-      <h3 className="title is-h3">
-        <a href={entry.link}>{entry.company}</a>
-      </h3>
-      <p className="mb-5">{entry.jobTitle}</p>
-      {entry.description.map((paragraph, idx) => (
-        <p key={idx}>{paragraph}</p>
-      ))}
+    <div className="column is-three-fifths content box">
+      <p className="is-size-4 my-3">
+        <a href={entry.link} target="_blank" rel="noopener noreferrer">
+          {entry.company}
+        </a>
+      </p>
+      <p className="is-size-5">{entry.jobTitle}</p>
+      <p dangerouslySetInnerHTML={{ __html: entry.duration }} />
+      <ul className="mb-3">
+        {entry.description.map((paragraph, idx) => (
+          <li key={idx} dangerouslySetInnerHTML={{ __html: paragraph }} />
+        ))}
+      </ul>
     </div>
   </div>
 )

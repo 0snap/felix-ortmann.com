@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => (
     <Seo title="Felix Ortmann" />
     <Cover />
     <section className="section">
-      <h3 className="title is-3 has-text-centered">About me</h3>
+      <p className="is-size-3 has-text-centered mb-6">About me</p>
       <div className="container">
         {data.dataYaml.aboutme.en.profile.map((entry, idx) => (
           <div
@@ -22,6 +22,10 @@ const IndexPage = ({ data }) => (
           />
         ))}
       </div>
+    </section>
+    <section className="section">
+      <p className="is-size-3 has-text-centered mb-6">My journey</p>
+      <Cv journey={data.dataYaml.cv.en.journey} />
     </section>
   </Page>
 )
@@ -42,6 +46,7 @@ export const query = graphql`
             jobTitle
             description
             link
+            duration
           }
         }
       }
