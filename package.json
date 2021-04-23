@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "felix-ortmann-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Personal webpage of Felix Ortmann",
+  "version": "1.0.1",
+  "author": "Felix Ortmann <flx.ortmann@gmail.com>",
   "dependencies": {
     "bulma": "^0.9.2",
     "gatsby": "^3.3.1",
@@ -28,7 +28,9 @@
     "prettier": "^2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "webpage",
+    "react"
   ],
   "license": "MIT",
   "scripts": {
@@ -43,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/0snap/felix-ortmann.com"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

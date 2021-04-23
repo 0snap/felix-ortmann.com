@@ -29,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Felix Ortmann Website`,
+        short_name: `Felix`,
         start_url: `/`,
         background_color: `#48c774`,
         theme_color: `#48c774`,
