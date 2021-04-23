@@ -1,5 +1,6 @@
 import React from "react"
 import Footer from "./footer"
+import "@fontsource/open-sans"
 
 import "./page.sass"
 
