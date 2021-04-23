@@ -12,11 +12,11 @@ const IndexPage = ({ data }) => (
     <SEO title="Felix Ortmann" />
     <Cover />
     <section className="section is-medium">
-      <h4 className="title is-3 has-text-centered">&mdash;My journey&mdash;</h4>
+      <h3 className="title is-3 has-text-centered">My journey</h3>
       <div className="container">
         <CV journey={data.dataYaml.cv.en.journey} />
       </div>
-      <h4 className="title is-3 has-text-centered">About me</h4>
+      <h3 className="title is-3 has-text-centered">About me</h3>
       <div className="container">
         {data.dataYaml.aboutme.en.profile.map((entry, idx) => (
           <div
@@ -27,7 +27,6 @@ const IndexPage = ({ data }) => (
         ))}
       </div>
     </section>
-    <CV />
   </Page>
 )
 
@@ -41,7 +40,13 @@ export const query = graphql`
       }
       cv {
         en {
-          journey
+          journey {
+            image
+            company
+            jobTitle
+            description
+            link
+          }
         }
       }
     }

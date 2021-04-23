@@ -15,8 +15,20 @@ aboutme:
 cv:
   en:
     journey:
-      - foo
-      - bar
+    - image: /asdf
+      link: https://tenzir.com
+      company: Tenzir
+      jobTitle: Blue Team Engineer
+      description:
+        - did x
+        - accomplished y
+    - image: /asdf
+      link: https://www.fraunhofer.sg/
+      company: Fraunhofer Institute Singapore
+      jobTitle: Research Engineer
+      description:
+        - did x
+        - accomplished y
 meta:
   title: Felix Ortmann
   description: Web profile of Felix Ortmann. I like to code, I love to think.
