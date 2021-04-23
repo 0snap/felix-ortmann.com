@@ -11,11 +11,7 @@ const IndexPage = ({ data }) => (
   <Page>
     <Seo title="Felix Ortmann" />
     <Cover />
-    <section className="section is-medium">
-      <h3 className="title is-3 has-text-centered">My journey</h3>
-      <div className="container">
-        <Cv journey={data.dataYaml.cv.en.journey} />
-      </div>
+    <section className="section">
       <h3 className="title is-3 has-text-centered">About me</h3>
       <div className="container">
         {data.dataYaml.aboutme.en.profile.map((entry, idx) => (

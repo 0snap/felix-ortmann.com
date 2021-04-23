@@ -3,7 +3,7 @@ import React from "react"
 const CvEntry = ({ entry }) => (
   <div className="columns">
     <div className="column is-two-fifths">{entry.image}</div>
-    <div className="column is-three-fifths cventry__description mb-5">
+    <div className="column is-three-fifths box mb-5">
       <h3 className="title is-h3">
         <a href={entry.link}>{entry.company}</a>
       </h3>

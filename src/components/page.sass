@@ -10,13 +10,14 @@ $dark-green: hsl(141, 90%, 30%)
 $background: whitesmoke
 $footer-background-color: $dark
 $footer-color: whitesmoke
-$footer-padding: 3rem 0
+$footer-padding: 3rem 1.5rem
 $link: $green
 $link-hover: $dark-green
 
 // selective import of bulma modules
 @import '../../node_modules/bulma/sass/utilities/_all.sass'
 @import '../../node_modules/bulma/sass/base/_all.sass'
+@import '../../node_modules/bulma/sass/elements/box.sass'
 @import '../../node_modules/bulma/sass/elements/container.sass'
 @import '../../node_modules/bulma/sass/elements/content.sass'
 @import '../../node_modules/bulma/sass/elements/title.sass'
@@ -29,8 +30,3 @@ $link-hover: $dark-green
     color: whitesmoke
     &:hover
         color: $success
-
-
-.cventry__description
-    border: 1px solid black
-    border-radius: 12px
