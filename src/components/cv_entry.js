@@ -1,6 +1,6 @@
 import React from "react"
 
-const CVEntry = ({ entry }) => (
+const CvEntry = ({ entry }) => (
   <div className="columns">
     <div className="column is-two-fifths">{entry.image}</div>
     <div className="column is-three-fifths cventry__description mb-5">
@@ -15,4 +15,4 @@ const CVEntry = ({ entry }) => (
   </div>
 )
 
-export default CVEntry
+export default CvEntry

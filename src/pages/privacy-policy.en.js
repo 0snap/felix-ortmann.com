@@ -1,7 +1,7 @@
 import React from "react"
 
 import Page from "../components/page"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import { graphql } from "gatsby"
 
@@ -9,7 +9,7 @@ const PrivacyPolicyPage = ({ data }) => {
   const contact = data.dataYaml.contact
   return (
     <Page>
-      <SEO title="Privacy Policy" />
+      <Seo title="Privacy Policy" />
       <section className="section is-medium">
         <div className="container">
           <div className="content">

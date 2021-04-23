@@ -1,20 +1,20 @@
 import React from "react"
 
 import Cover from "../components/cover"
-import CV from "../components/cv"
+import Cv from "../components/cv"
 import Page from "../components/page"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => (
   <Page>
-    <SEO title="Felix Ortmann" />
+    <Seo title="Felix Ortmann" />
     <Cover />
     <section className="section is-medium">
       <h3 className="title is-3 has-text-centered">My journey</h3>
       <div className="container">
-        <CV journey={data.dataYaml.cv.en.journey} />
+        <Cv journey={data.dataYaml.cv.en.journey} />
       </div>
       <h3 className="title is-3 has-text-centered">About me</h3>
       <div className="container">
