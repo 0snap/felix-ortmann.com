@@ -21,12 +21,16 @@ $link-hover: $dark-green
 @import '../../node_modules/bulma/sass/elements/content.sass'
 @import '../../node_modules/bulma/sass/elements/title.sass'
 @import '../../node_modules/bulma/sass/grid/columns.sass'
-@import '../../node_modules/bulma/sass/layout/hero.sass'
-@import '../../node_modules/bulma/sass/layout/section.sass'
-@import '../../node_modules/bulma/sass/layout/footer.sass'
+@import '../../node_modules/bulma/sass/layout/_all.sass'
+@import '../../node_modules/bulma/sass/helpers/_all.sass'
 
 // custom styles
 .footer__link
     color: whitesmoke
     &:hover
         color: $success
+
+
+.cventry__description
+    border: 1px solid black
+    border-radius: 12px
