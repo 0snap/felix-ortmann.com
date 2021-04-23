@@ -32,4 +32,13 @@ $family-sans-serif: "Open Sans"
 .footer__link
     color: whitesmoke
     &:hover
-        color: $success
+        color: $primary
+
+.has-title-line
+    &:after, &:before
+        display: inline-block
+        content: " "
+        border-top: 0.15rem solid black
+        width: 4rem
+        margin: 0 1.5rem
+        transform: translateY(-0.5rem)
