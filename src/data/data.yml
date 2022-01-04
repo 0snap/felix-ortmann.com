@@ -22,6 +22,7 @@ cv:
       description:
         - did x
         - accomplished y
+      duration: 1 year
     - image: /asdf
       link: https://www.fraunhofer.sg/
       company: Fraunhofer Institute Singapore
@@ -29,6 +30,7 @@ cv:
       description:
         - did x
         - accomplished y
+      duration: 1 year
 meta:
   title: Felix Ortmann
   description: Web profile of Felix Ortmann. I like to code, I love to think.
