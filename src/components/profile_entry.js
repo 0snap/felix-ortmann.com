@@ -21,7 +21,7 @@ const ProfileEntry = ({ idx, entry }) => {
   )
 
   const iconCol = (
-    <div className={`column is-one-fifths ${idx % 2 == 1 && "has-text-right"}`}>
+    <div className={`column is-one-fifths is-hidden-mobile ${idx % 2 == 1 && "has-text-right"}`}>
       <span className="icon is-large">
         <FontAwesomeIcon
           size="4x"
@@ -32,7 +32,7 @@ const ProfileEntry = ({ idx, entry }) => {
       </span>
     </div>
   )
-  const emptyCol = <div className="column is-one-fifths" />
+  const emptyCol = <div className="column is-one-fifths is-hidden-mobile" />
   return (
     <div className="columns mb-4 is-vcentered">
       {idx % 2 == 0 && iconCol}
