@@ -6,7 +6,13 @@
   "author": "Felix Ortmann <flx.ortmann@gmail.com>",
   "dependencies": {
     "@fontsource/open-sans": "^4.5.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "bulma": "^0.9.3",
+    "font-awesome": "^4.7.0",
     "gatsby": "^4.4.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-i18n": "^1.0.1",
