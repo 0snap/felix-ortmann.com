@@ -11,8 +11,8 @@ const IndexPage = ({ data }) => (
   <Page>
     <Seo title="Felix Ortmann" />
     <Cover />
-    <section className="section">
-      <p className="is-size-3 has-text-centered has-title-line mb-6">
+    <section className="section" id="about_me">
+      <p className="is-size-3 has-text-centered has-title-line my-6">
         About me
       </p>
       <div className="container">
