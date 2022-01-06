@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-privacy-policy-en-js","path":"/privacy-policy/","result":{"data":{"dataYaml":{"contact":{"name":"Felix Christian Ortmann","street":"Fährstr. 67","postCode":21107,"city":"Hamburg","country":"Germany","phone":"+49 174 83 73 193","mail":"flx.ortmann@gmail.com"}}},"pageContext":{"slug":"/privacy-policy/","langKey":"en"}},"staticQueryHashes":["63159454"]}
+{
+    "componentChunkName": "component---src-pages-privacy-policy-en-js",
+    "path": "/privacy-policy/",
+    "result": {"data":{"dataYaml":{"contact":{"name":"Felix Christian Ortmann","street":"Fährstr. 67","postCode":21107,"city":"Hamburg","country":"Germany","phone":"+49 174 83 73 193","mail":"flx.ortmann@gmail.com"}}},"pageContext":{"slug":"/privacy-policy/","langKey":"en"}},
+    "staticQueryHashes": ["63159454"]}
