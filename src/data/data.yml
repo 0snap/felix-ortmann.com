@@ -9,11 +9,21 @@ contact:
 aboutme:
   en:
     profile:
-      - A turquoise GameBoy Color hooked me into tech when I was little. A few years later, I advocated for an advanced computer science course at high school and graduated best-in-class in mathematics.
-      - Working half time and studying full time, I graduated with a summa-cum-laude Master's degree on the subject of "Temporal and Spatial Alert Correlation for the Detection of Advanced Persistent Threats" in 2019. I was part of a special cooperation between the University of Hamburg, the Fraunhofer Institute Singapore, and the Nanyang Technological University Singapore, where I spent my final year. My Master's Thesis has won two prizes since then for innovative excellence in the cybersecurity industry.
-      - By now, I pack more than 9 years of professional experience with almost every modern programming language. I have experience working on my own as well as as working with teams of up to 20 engineers. I have worked on providing mobility services across Germany, researched APT-campaign detection in Singapore, and helped improving incident visibility and detection for multiple fortune-500 companies, among others. Please be invited to browse my resume below for details on my professional journey.
-      - Currently, my passion lies in distributed systems design and process automation in modern cloud environments. At the moment, I'm most interested in blue-teaming and automation, as well as site reliability engineering.
-      - Check out my <a href="https://github.com/0snap" target="_blank" rel="noopener noreferrer">profile</a> at GitHub. Over there, I was responsible (core maintainer) for the <a href="https://github.com/tenzir/threatbus" target="_blank" rel="noopener noreferrer">Threat Bus</a> project as part of my previous relationship with the awesome folks from <a href="https://tenzir.com" target="_blank" rel="noopener noreferrer">Tenzir</a>. Or find me at <a href="https://www.linkedin.com/in/felix-ortmann/" target="_blank" rel="noopener noreferrer">LinkedIn</a> in case you wish to work with me.
+      - icon: gamepad
+        color: "#03989E"
+        text: A turquoise GameBoy Color hooked me into tech when I was little. A few years later, I advocated for an advanced computer science course at high school and graduated best-in-class in mathematics.
+      - icon: graduation-cap
+        color: black
+        text: Working half time and studying full time, I graduated with a summa-cum-laude Master's degree on the subject of "Temporal and Spatial Alert Correlation for the Detection of Advanced Persistent Threats" in 2019. I was part of a special cooperation between the University of Hamburg, the Fraunhofer Institute Singapore, and the Nanyang Technological University Singapore, where I spent my final year. My Master's Thesis has won two prizes since then for innovative excellence in the cybersecurity industry.
+      - icon: business-time
+        color: "#6E2C00"
+        text: By now, I pack more than 9 years of professional experience with almost every modern programming language. I have experience working on my own as well as as working with teams of up to 20 engineers. I have worked on providing mobility services across Germany, researched APT-campaign detection in Singapore, and helped improving incident visibility and detection for multiple fortune-500 companies, among others. Please be invited to browse my resume below for details on my professional journey.
+      - icon: robot
+        color: "#607D8B"
+        text: Currently, my passion lies in distributed systems design and process automation in modern cloud environments. At the moment, I'm most interested in blue-teaming and automation, as well as site reliability engineering.
+      - icon: address-card
+        color: "#EE4A22"
+        text: Check out my <a href="https://github.com/0snap" target="_blank" rel="noopener noreferrer">profile</a> at GitHub. Over there, I was responsible (core maintainer) for the <a href="https://github.com/tenzir/threatbus" target="_blank" rel="noopener noreferrer">Threat Bus</a> project as part of my previous relationship with the awesome folks from <a href="https://tenzir.com" target="_blank" rel="noopener noreferrer">Tenzir</a>. Or find me at <a href="https://www.linkedin.com/in/felix-ortmann/" target="_blank" rel="noopener noreferrer">LinkedIn</a> in case you wish to work with me.
     work:
       - Do you want your product to scale as you grow? Would you love to become cloud native and convince customers with high-availability and service stability? Do you need a strong driver for automation and security monitoring in your engineering team?
       - I'm a freelance DevSecOps and backend engineer with experience in cutting-edge microservice architectures and network monitoring. My omnipresent focus on security operations contributes an exceptional mix of engineer and network analyst, which can help bring your apps to life in the cloud and automate your SOC operations.
