@@ -21,7 +21,11 @@ const ProfileEntry = ({ idx, entry }) => {
   )
 
   const iconCol = (
-    <div className={`column is-one-fifths is-hidden-mobile ${idx % 2 == 1 && "has-text-right"}`}>
+    <div
+      className={`column is-one-fifths is-hidden-mobile ${
+        idx % 2 == 1 && "has-text-right"
+      }`}
+    >
       <span className="icon is-large">
         <FontAwesomeIcon
           size="4x"
