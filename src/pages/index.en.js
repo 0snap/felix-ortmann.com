@@ -14,17 +14,11 @@ const IndexPage = ({ data }) => (
 
     <Cover />
 
-    <section className="section" id="about_me">
-      <p className="is-size-3 has-text-centered has-title-line my-6">
-        About me
-      </p>
+    <section className="section bg-one" id="about_me">
       <AboutMe profile={data.dataYaml.aboutme.en.profile} />
     </section>
 
-    <section className="section">
-      <p className="is-size-3 has-text-centered has-title-line mb-6">
-        My journey
-      </p>
+    <section className="section bg-two">
       <Cv journey={data.dataYaml.cv.en.journey} />
     </section>
   </Page>

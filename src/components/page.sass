@@ -29,8 +29,21 @@ $family-sans-serif: "Open Sans"
 @import '~bulma/sass/layout/_all.sass'
 @import '~bulma/sass/helpers/_all.sass'
 
+// see https://codepen.io/enbee81/pen/yLyrmyg for the diagonal layout
+:root
+    --width: 100vw
+
+    @media (min-width: 42em)
+        --width: 42rem
+
+    // --magic-number: 0.1455 is calculated by this formula: abs( tan(6°) / 2 ) (and we use 6° as y-skew)
+    --magic-number: 0.1455
+    --skew-padding: calc(var(--width) * var(--magic-number))
+
 html
     scroll-behavior: smooth
+    //background-image: linear-gradient(45deg, #bfaad0, #936faf)
+    background-image: linear-gradient(180deg, #d44326, #f1c071)
 
 // custom styles
 .footer__link
@@ -55,6 +68,7 @@ html
     -o-background-size: cover
     background-size: cover
 
+// blurred background box for the headline
 .header-box
     background-color: rgba(255, 255, 255, 0.3)
     border-radius: 5px
@@ -70,6 +84,43 @@ html
     left: 50%
     bottom: 25%
     display: inline-block
+
+// extend Bulma's section class to add horizontal outlines on top and bot
+.section
+    @extend .section
+    position: relative
+    padding: var(--skew-padding) 0
+    margin-top: 6rem
+
+    // this pseudo element brings the scewed box
+    &:before
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        transform: skewy(-6deg)
+        transform-origin: 50% 0
+        outline: 1px solid transparent
+        backface-visibility: hidden
+        z-index: -1
+
+// extend Bulma's container class to add horizontal outlines on top and bot
+.container
+    @extend .container
+    position: relative
+    max-width: var(--width)
+
+.bg-one
+    &:before
+        background-color: $white-ter
+
+.bg-two
+    &:before
+        background-image: linear-gradient(45deg, #b33be2, #eaafc8)
+        //background-image: linear-gradient(-135deg, #007, #003)
+        //background-image: linear-gradient(-135deg, #ff0084, #33001b)
 
 .circle
     position: absolute
