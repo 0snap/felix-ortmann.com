@@ -3,8 +3,8 @@ import React from "react"
 const Cover = () => (
   <section className="hero is-fullheight background-hero">
     <div className="hero-body">
-      <div className="container has-text-centered">
-        <h1 className="intro is-size-3-mobile	is-size-1-desktop">
+      <div className="header-box has-text-centered">
+        <h1 className="header-text is-size-3-mobile	is-size-1-desktop">
           Beautiful clouds, huh? <br />
           I'm a cloud engineer.
         </h1>

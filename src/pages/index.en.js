@@ -20,6 +20,13 @@ const IndexPage = ({ data }) => (
       </p>
       <AboutMe profile={data.dataYaml.aboutme.en.profile} />
     </section>
+
+    <section className="section">
+      <p className="is-size-3 has-text-centered has-title-line mb-6">
+        My journey
+      </p>
+      <Cv journey={data.dataYaml.cv.en.journey} />
+    </section>
   </Page>
 )
 
