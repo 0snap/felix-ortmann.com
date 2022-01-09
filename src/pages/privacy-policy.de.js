@@ -10,7 +10,7 @@ const PrivacyPolicyPage = ({ data }) => {
   return (
     <Page>
       <Seo title="Datenschutzerklärung" />
-      <section className="section is-medium">
+      <section className="section is-medium bg-one">
         <div className="container">
           <div className="content">
             <header>

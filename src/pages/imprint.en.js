@@ -10,7 +10,7 @@ const ImprintPage = ({ data }) => {
   return (
     <Page>
       <Seo title="Legal Disclosure" />
-      <section className="section is-medium">
+      <section className="section is-medium bg-one">
         <div className="container">
           <div className="content">
             <header>
