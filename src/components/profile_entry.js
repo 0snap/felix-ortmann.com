@@ -22,13 +22,13 @@ const ProfileEntry = ({ idx, entry }) => {
 
   const iconCol = (
     <div
-      className={`column is-one-fifths is-hidden-mobile ${
+      className={`column is-one-fifths is-hidden-mobile icon ${
         idx % 2 == 1 && "has-text-right"
       }`}
     >
-      <span className="icon is-large">
+      <span className="icon is-medium">
         <FontAwesomeIcon
-          size="4x"
+          size="3x"
           icon={["fa", entry.icon]}
           transform={{ rotate: -20 * (-idx % 2 || 1) }}
           color={entry.color}
@@ -42,7 +42,7 @@ const ProfileEntry = ({ idx, entry }) => {
       {idx % 2 == 0 && iconCol}
       {idx % 2 == 1 && emptyCol}
       <div
-        className="column is-three-fifths content mb-0 has-text-justified"
+        className="column is-three-fifths content mb-1 has-text-justified"
         key={idx}
         dangerouslySetInnerHTML={{ __html: entry.text }}
       />
