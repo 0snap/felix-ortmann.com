@@ -5,6 +5,7 @@
 $dark: hsl(0, 0%, 21%)
 $primary: #ee4a22
 $light-primary: #ee6745
+$blurred-background: rgba(255, 255, 255, 0.3)
 $circle-size: 1rem
 
 // overwrite bulma variables
@@ -40,6 +41,10 @@ $family-sans-serif: "Open Sans"
     --magic-number: 0.1455
     --skew-padding: calc(var(--width) * var(--magic-number))
 
+    // pulsing down arrow
+    --arrow-size: 4rem
+    --arrow-border: 0.2rem
+
 html
     scroll-behavior: smooth
     //background-image: linear-gradient(45deg, #bfaad0, #936faf)
@@ -62,20 +67,16 @@ html
 
 // background component (hero)
 .background-hero
-    background: url('/clouds.jpg') no-repeat center center fixed
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
+    background: url('/clouds.jpg') no-repeat center center
     background-size: cover
 
 // blurred background box for the headline
 .header-box
-    background-color: rgba(255, 255, 255, 0.3)
+    background-color: $blurred-background
     border-radius: 5px
-    -webkit-backdrop-filter: blur(1px)
     backdrop-filter: blur(1px)
     min-width: 40%
-    margin: 0 auto 30rem auto
+    margin: 0 auto 30rem
     padding: 20px 40px
 
 // arrow down on front hero page
@@ -101,7 +102,6 @@ html
         right: 0
         bottom: 0
         transform: skewy(-6deg)
-        transform-origin: 50% 0
         outline: 1px solid transparent
         backface-visibility: hidden
         z-index: -1
@@ -122,68 +122,65 @@ html
         //background-image: linear-gradient(-135deg, #007, #003)
         //background-image: linear-gradient(-135deg, #ff0084, #33001b)
 
-.circle
-    position: absolute
-    height: $circle-size
-    width: $circle-size
-    border-radius: $circle-size
-    animation: glow-arrow ease-in-out 2s infinite
-
-.circle:nth-child(1)
-    // tip of the arrow
-    animation-delay: 0.4s
-
-.circle:nth-child(2)
-    animation-delay: 0.35s
-    transform: translate(15px,-18px)
-
-.circle:nth-child(3)
-    animation-delay: 0.35s
-    transform: translate(-15px,-18px)
-
-.circle:nth-child(4)
-    animation-delay: 0.3s
-    transform: translate(30px, -36px)
-
-.circle:nth-child(5)
-    animation-delay: 0.3s
-    transform: translate(-30px,-36px)
-
-.circle:nth-child(6)
-    animation-delay: 0.3s
-    transform: translate(0,-36px)
-
-.circle:nth-child(7)
-    animation-delay: 0.25s
-    transform: translate(0,-58px)
-
-.circle:nth-child(8)
-    animation-delay: 0.2s
-    transform: translate(0,-80px)
-
-.circle:nth-child(9)
-    animation-delay: 0.15s
-    transform: translate(0,-102px)
-
-.circle:nth-child(10)
-    animation-delay: 0.1s
-    transform: translate(0,-124px)
-
-.circle:nth-child(11)
-    // this is not part of the arrow, but an invisible, large dot that only exists to make the empty area between the other dots clickable
-    transform: translate($circle-size * -5,-124px)
-    height: $circle-size * 10
-    width: $circle-size * 10
-    border-radius: $circle-size * 10
-    opacity: 0
-    background-color: white
-    animation: none
-
-@keyframes glow-arrow
-  0%, 50%
-    background-color: $dark
-  100%
-    background-color: transparent
-
 .icon
     opacity: 0.6
+
+
+.arrow-down2
+    &:hover
+        opacity: 1
+    position: absolute
+    bottom: 27%
+    left: calc(50% - calc(var(--arrow-size) / 2))
+    color: $dark
+    backdrop-filter: blur(1px)
+    //mix-blend-mode: difference
+
+    span
+        // the placeholder element, provides the placing of the round border
+        position: absolute
+        width: var(--arrow-size)
+        height: var(--arrow-size)
+        border: var(--arrow-border) solid $dark
+        border-radius: 100%
+        box-sizing: border-box
+
+        &::before
+            // the downwards arrow shape made of two border rotated by 45 degrees
+            position: absolute
+            top: calc(50% - 0.75rem)
+            left: calc(50% - 0.5rem)
+            width: 1rem
+            height: 1rem
+            margin: 0
+            padding: 0
+            content: ''
+            border-left: var(--arrow-border) solid $dark
+            border-bottom: var(--arrow-border) solid $dark
+            transform: rotate(-45deg)
+            box-sizing: border-box
+
+
+        &::after
+            // the pulsing shadow that aligns exactly with the border of the span
+            position: absolute
+            top: calc(-1 * var(--arrow-border))
+            left: calc(-1 * var(--arrow-border))
+            z-index: -1
+            content: ''
+            width: var(--arrow-size)
+            height: var(--arrow-size)
+            box-shadow: 0 0 0 0 rgba(255,255,255,.1)
+            border-radius: 100%
+            animation: shadow-pulse 2.5s infinite
+            box-sizing: border-box
+            //box-shadow: 0 0 0 var(--arrow-size) $blurred-background
+
+@keyframes shadow-pulse
+    30%
+        opacity: 1
+    60%
+        box-shadow: 0 0 0 var(--arrow-size) $blurred-background
+        opacity: 0
+    100%
+        opacity: 0

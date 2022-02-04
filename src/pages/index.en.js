@@ -17,10 +17,10 @@ const IndexPage = ({ data }) => (
     <section className="section bg-one" id="about_me">
       <AboutMe profile={data.dataYaml.aboutme.en.profile} />
     </section>
-
     <section className="section bg-two">
       <Cv journey={data.dataYaml.cv.en.journey} />
     </section>
+
   </Page>
 )
 
