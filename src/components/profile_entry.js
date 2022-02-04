@@ -23,7 +23,7 @@ const ProfileEntry = ({ idx, entry }) => {
   const iconCol = (
     <div
       className={`column is-one-fifths is-hidden-mobile icon ${
-        idx % 2 == 1 && "has-text-right"
+        idx % 2 === 1 && "has-text-right"
       }`}
     >
       <span className="icon is-medium">
@@ -39,15 +39,15 @@ const ProfileEntry = ({ idx, entry }) => {
   const emptyCol = <div className="column is-one-fifths is-hidden-mobile" />
   return (
     <div className="columns mb-4 is-vcentered">
-      {idx % 2 == 0 && iconCol}
-      {idx % 2 == 1 && emptyCol}
+      {idx % 2 === 0 && iconCol}
+      {idx % 2 === 1 && emptyCol}
       <div
         className="column is-three-fifths content mb-1 has-text-justified"
         key={idx}
         dangerouslySetInnerHTML={{ __html: entry.text }}
       />
-      {idx % 2 == 1 && iconCol}
-      {idx % 2 == 0 && emptyCol}
+      {idx % 2 === 1 && iconCol}
+      {idx % 2 === 0 && emptyCol}
     </div>
   )
 }
