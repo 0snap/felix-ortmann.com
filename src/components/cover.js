@@ -10,7 +10,11 @@ const Cover = () => (
         </h1>
       </div>
     </div>
-    <div className="arrow-down2"><a href="#about_me"><span></span></a></div>
+    <div className="arrow-down">
+      <a href="#about_me">
+        <span></span>
+      </a>
+    </div>
   </section>
 )
 

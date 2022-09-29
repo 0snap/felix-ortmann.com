@@ -17,10 +17,9 @@ const IndexPage = ({ data }) => (
     <section className="section bg-one" id="about_me">
       <AboutMe profile={data.dataYaml.aboutme.en.profile} />
     </section>
-    <section className="section bg-two">
+    <section className="section bg-two" id="cv">
       <Cv journey={data.dataYaml.cv.en.journey} />
     </section>
-
   </Page>
 )
 
@@ -39,8 +38,8 @@ export const query = graphql`
       cv {
         en {
           journey {
-            image
             company
+            icons
             jobTitle
             description
             link

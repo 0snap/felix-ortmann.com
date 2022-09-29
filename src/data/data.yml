@@ -1,11 +1,12 @@
 contact:
   name: Felix Christian Ortmann
-  street: Fährstr. 67
+  street: Vogelhüttendeich 23
   postCode: 21107
   city: Hamburg
   country: Germany
   phone: +49 174 83 73 193
   mail: flx.ortmann@gmail.com
+  ustid: "VAT-ID / USt-ID: DE352385495"
 aboutme:
   en:
     profile:
@@ -17,7 +18,7 @@ aboutme:
         text: Working half time and studying full time, I graduated with a summa-cum-laude Master's degree on the subject of "Temporal and Spatial Alert Correlation for the Detection of Advanced Persistent Threats" in 2019. I was part of a special cooperation between the University of Hamburg, the Fraunhofer Institute Singapore, and the Nanyang Technological University Singapore, where I spent my final year. My Master's Thesis has won two prizes since then for innovative excellence in the cybersecurity industry.
       - icon: business-time
         color: "#6E2C00"
-        text: By now, I pack more than 9 years of professional experience with almost every modern programming language. I have experience working on my own as well as as working with teams of up to 20 engineers. I have worked on providing mobility services across Germany, researched APT-campaign detection in Singapore, and helped improving incident visibility and detection for multiple fortune-500 companies, among others. Please be invited to browse my resume below for details on my professional journey.
+        text: By now, I pack more than 9 years of professional experience with almost every modern programming language. I have experience working on my own as well as as working with teams of up to 20 engineers. I have worked on providing mobility services across Germany, researched APT-campaign detection in Singapore, and helped improving incident visibility and detection for multiple fortune-500 companies, among others. Please be invited to browse my <a href="#cv" "rel=noopener norefferrer">resume</a> below for details on my professional journey.
       - icon: robot
         color: "#607D8B"
         text: Currently, my passion lies in distributed systems design and process automation in modern cloud environments. At the moment, I'm most interested in blue-teaming and automation, as well as site reliability engineering.
@@ -28,23 +29,39 @@ aboutme:
       - Do you want your product to scale as you grow? Would you love to become cloud native and convince customers with high-availability and service stability? Do you need a strong driver for automation and security monitoring in your engineering team?
       - I'm a freelance DevSecOps and backend engineer with experience in cutting-edge microservice architectures and network monitoring. My omnipresent focus on security operations contributes an exceptional mix of engineer and network analyst, which can help bring your apps to life in the cloud and automate your SOC operations.
       - During our partnership, I will consult with you to fully understand the aim of the project, design the service architecture with you and your team, and work out strategies for automated deployments and security operations.
-      - I have experience working on my own as well as as working with teams of up to 20 engineers. I have worked on providing mobility services across Germany, researched APT-campaign detection in Singapore, and helped improving incident visibility and detection for multiple fortune-500 companies, among others. Please be invited to browse my resume for details on my professional journey.
+      - I have experience working on my own as well as as working with teams of up to 20 engineers. I have worked on providing mobility services across Germany, researched APT-campaign detection in Singapore, and helped improving incident visibility and detection for multiple fortune-500 companies, among others. Please be invited to browse my <a href="#cv" "rel=noopener norefferrer">resume</a> for details on my professional journey.
       - If this resonates, send me an email at flx.ortmann@gmail.com.
 cv:
   en:
     journey:
-    - image: /asdf
+    - company: Bundesdruckerei
+      icons:
+      - openshift
+      - helm
+      - linux
+      - kubernetes
+      - nginx
+      - docker
+      - gitlab-ci
       link: https://www.bundesdruckerei.de/en
-      company: Bundesdruckerei
       jobTitle: Site Reliability Engineer
-      duration: Fall 2021 &mdash; Present
+      duration: Fall 2021 &mdash; Summer 2022
       description:
         - Ensured SLOs and SLAs are met for critical German government infrastructure services.
         - Assessed projects for their maturity level to facilitate go-live.
         - Provided CI/CD and streamlined deployment processes with GitLab pipelines.
-    - image: /asdf
+        - Facilitated cross-service deployment strategies with Helm libraries.
+    - company: Tenzir
+      icons:
+      - python
+      - docker
+      - linux
+      - kubernetes
+      - github-ci
+      - nginx
+      - elastic
+      - gcp
       link: https://tenzir.com
-      company: Tenzir
       jobTitle: Blue Team Engineer
       duration: Fall 2019 &mdash; Summer 2021
       description:
@@ -53,9 +70,16 @@ cv:
         - Managed the operation and security monitoring of all computer infrastructures both in-house and on-site.
         - Acted as threat hunter in customer networks and filed bi-weekly security reports.
         - Enabled the entire internal cloud infrastructure on Kubernetes and provided CI/CD via GitHub actions.
-    - image: /asdf
+    - company: Fraunhofer Institute Singapore
+      icons:
+      - python
+      - go
+      - react
+      - linux
+      - docker
+      - kubernetes
+      - elastic
       link: https://www.fraunhofer.sg/
-      company: Fraunhofer Institute Singapore
       jobTitle: Research Engineer
       duration: Fall 2018 &mdash; Fall 2019
       description:
@@ -67,34 +91,56 @@ cv:
             <li> IDS alert correlation and Blue Team automation.
           </ol>
         - Won two prizes for innovative excellence in the cybersecurity industry.
-    - image: /asdf
+    - company: Moovel Group
+      icons:
+      - aws
+      - docker
+      - java
+      - kotlin
+      - nodejs
+      - typescript
+      - elastic
+      - teamcity
       link: https://moovel.com/
-      company: Moovel Group
       jobTitle: Backend & DevOps Engineer
       duration: Winter 2017 &mdash; Fall 2018
       description:
         - Provided and maintained infrastructure as code on AWS to enable urban mobility services in multiple German cities.
         - Delivered CI/CD via TeamCity for an entire engineering squad.
         - Architected and implemented backend microservices using <i>TypeScript</i> and <i>express.js</i>.
-    - image: /asdf
+    - company: Joblift
+      icons:
+      - java
+      - docker
+      - kubernetes
+      - nginx
+      - react
+      - nodejs
+      - gcp
       link: https://joblift.com/
-      company: Joblift
       jobTitle: Fullstack Engineer
       duration: Summer 2015 &mdash; Summer 2016
       description:
         - Introduced Kubernetes to the team and handled the adoption when it was first released on GCP.
         - Provided and maintained infrastructure as code on GCP and provided CI/CD via Jenkins.
-        - Planned, implemented, and maintained microservices (<i>Java</i> backend, <i>Javascript</i> \& <i>React</i> frontend).
-    - image: /asdf
+        - Planned, implemented, and maintained microservices (<i>Java</i> backend, <i>Javascript</i> &amp; <i>React</i> frontend).
+    - company: SinnerSchrader
+      icons:
+      - java
+      - nodejs
+      - coffeescript
       link: https://sinnerschrader.com/
-      company: SinnerSchrader
       jobTitle: Backend Engineer
       duration: Spring 2014 &mdash; Spring 2015
       description:
         - Web shops, Java, Hybris framework
-    - image: /asdf
+    - company: catworkx
+      icons:
+      - java
+      - atlassian
+      - linux
+      - php
       link: https://www.catworkx.com/
-      company: catworkx
       jobTitle: Software Engineer
       duration: Winter 2013 &mdash; Spring 2014
       description:
