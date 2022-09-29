@@ -31,6 +31,8 @@ const PrivacyPolicyPage = ({ data }) => {
               {contact.phone}
               <br />
               <a href={"mailto:" + contact.mail}>{contact.mail}</a>
+              <br />
+              {contact.ustid}
             </p>
           </div>
           <div className="content">
@@ -190,6 +192,7 @@ export const query = graphql`
         country
         phone
         mail
+        ustid
       }
     }
   }

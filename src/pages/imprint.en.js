@@ -34,6 +34,8 @@ const ImprintPage = ({ data }) => {
               {contact.phone}
               <br />
               <a href={"mailto:" + contact.mail}>{contact.mail}</a>
+              <br />
+              {contact.ustid}
             </p>
           </div>
 
@@ -95,6 +97,7 @@ export const query = graphql`
         country
         phone
         mail
+        ustid
       }
     }
   }
