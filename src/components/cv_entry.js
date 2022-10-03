@@ -15,6 +15,7 @@ import {
   SiRedhatopenshift,
   SiTeamcity,
   SiTypescript,
+  SiWireguard,
 } from "react-icons/si"
 import { FaAws, FaDocker, FaNodeJs, FaPhp, FaReact } from "react-icons/fa"
 import { DiAtlassian, DiGo, DiPython } from "react-icons/di"
@@ -47,6 +48,7 @@ const lookup = {
   react: <FaReact title="ReactJS" />,
   teamcity: <SiTeamcity title="Teamcity" />,
   typescript: <SiTypescript title="Typescript" />,
+  wireguard: <SiWireguard title="Wireguard" />,
 }
 
 const CvEntry = ({ entry }) => {

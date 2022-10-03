@@ -62,6 +62,7 @@ cv:
       - github-ci
       - nginx
       - elastic
+      - wireguard
       - gcp
       link: https://tenzir.com
       jobTitle: Blue Team Engineer
@@ -69,9 +70,10 @@ cv:
       description:
         - Ideated, authored, and maintain(ed) <a href="https://github.com/tenzir/threatbus" target="_blank" rel="noopener noreferrer">Threat Bus</a>, an open-source threat intelligence dissemination layer.
         - Accomplished a joint project with a partner company to enable multiple fortune-500 companies to use our products for retrospective intelligence matching.
-        - Managed the operation and security monitoring of all computer infrastructures both in-house and on-site.
+        - Architected and implemented the network setup for an appliance remote access strategy.
+        - Managed the operation and security monitoring of all computer infrastructures both in-house and on-site (Kubernetes, VPN).
         - Acted as threat hunter in customer networks and filed bi-weekly security reports.
-        - Enabled the entire internal cloud infrastructure on Kubernetes and provided CI/CD via GitHub actions.
+        - Provided CI/CD via GitHub actions.
     - company: Fraunhofer Institute Singapore
       icons:
       - python
@@ -108,8 +110,9 @@ cv:
       duration: Winter 2017 &mdash; Fall 2018
       description:
         - Provided and maintained infrastructure as code on AWS to enable urban mobility services in multiple German cities.
+        - Helped architecting the AWS cloud landscape.
         - Delivered CI/CD via TeamCity for an entire engineering squad.
-        - Architected and implemented backend microservices using <i>TypeScript</i> and <i>express.js</i>.
+        - Architected, implemented and maintained backend microservices.
     - company: Joblift
       icons:
       - java
@@ -125,7 +128,8 @@ cv:
       description:
         - Introduced Kubernetes to the team and handled the adoption when it was first released on GCP.
         - Provided and maintained infrastructure as code on GCP and provided CI/CD via Jenkins.
-        - Planned, implemented, and maintained microservices (<i>Java</i> backend, <i>Javascript</i> &amp; <i>React</i> frontend).
+        - Greately contributed in architecting the GCP cloud landscape.
+        - Planned, implemented, and maintained both backend- and frontend-serving microservices.
     - company: SinnerSchrader
       icons:
       - java
@@ -135,7 +139,8 @@ cv:
       jobTitle: Backend Engineer
       duration: Spring 2014 &mdash; Spring 2015
       description:
-        - Web shops, Java, Hybris framework
+        - Worked cross-stack on a new concept-brand-shop for an international Swiss retail company.
+        - Implemented web shop components with the Hybris framework. 
     - company: catworkx
       icons:
       - java
@@ -146,7 +151,8 @@ cv:
       jobTitle: Software Engineer
       duration: Winter 2013 &mdash; Spring 2014
       description:
-        - Plugin development for Atlassian Jira and Confluence
+        - Developed plugins for Atlassian Jira and Confluence.
+        - Integrated LDAP / AD contact export with Atlassian products.
 meta:
   title: Felix Ortmann
   description: Web profile of Felix Ortmann. I like to code, I love to think.
