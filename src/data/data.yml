@@ -68,7 +68,7 @@ cv:
       jobTitle: Blue Team Engineer
       duration: Fall 2019 &mdash; Summer 2021
       description:
-        - Ideated, authored, and maintain(ed) <a href="https://github.com/tenzir/threatbus" target="_blank" rel="noopener noreferrer">Threat Bus</a>, an open-source threat intelligence dissemination layer.
+        - Ideated, authored, and maintained <a href="https://github.com/tenzir/threatbus" target="_blank" rel="noopener noreferrer">Threat Bus</a>, an open-source threat intelligence dissemination layer.
         - Accomplished a joint project with a partner company to enable multiple fortune-500 companies to use our products for retrospective intelligence matching.
         - Architected and implemented the network setup for an appliance remote access strategy.
         - Managed the operation and security monitoring of all computer infrastructures both in-house and on-site (Kubernetes, VPN).
@@ -112,7 +112,8 @@ cv:
         - Provided and maintained infrastructure as code on AWS to enable urban mobility services in multiple German cities.
         - Helped architecting the AWS cloud landscape.
         - Delivered CI/CD via TeamCity for an entire engineering squad.
-        - Architected, implemented and maintained backend microservices.
+        - Conceptualized, implemented and maintained backend microservices.
+        - Built an auto-suggest search for geo-coordinates and location data.
     - company: Joblift
       icons:
       - java
