@@ -7,6 +7,7 @@ import {
   SiGithubactions,
   SiGitlab,
   SiGooglecloud,
+  SiGrafana,
   SiHelm,
   SiJava,
   SiKubernetes,
@@ -26,6 +27,7 @@ const lookup = {
   atlassian: <DiAtlassian title="Atlassian" />,
   coffeescript: <SiCoffeescript title="Coffeescript" />,
   elastic: <SiElastic title="Elastic" />,
+  grafana: <SiGrafana title="Grafana" />,
   "github-ci": <SiGithubactions title="GitHub Actions" />,
   "gitlab-ci": <SiGitlab title="Gitlab Pipelines" />,
   gcp: <SiGooglecloud title="GCP" />,
@@ -49,29 +51,42 @@ const lookup = {
 
 const CvEntry = ({ entry }) => {
   const icons = entry.icons.sort()
-  return (
-    <div className="columns mb-6">
-      <div className="column is-one-fifths has-text-centered is-hidden-mobile">
-        <p className="is-size-5 mb-4">Most important technologies</p>
+  const iconCol = (
+    <div className="cv-icon-column column is-one-fifths">
+      <div className="cv-icon-box box">
+        <p className="is-size-6 my-4 is-hidden-tablet-only is-hidden-mobile is-hidden-desktop-only">
+          Primary tech stack
+        </p>
         {icons.map((icon) => (
-          <IconContext.Provider title={icon} value={{ className: "cv-icon" }}>
-            {lookup[icon]}
-          </IconContext.Provider>
+          <div className="cv-icon-container">
+            <IconContext.Provider title={icon} value={{ className: "cv-icon" }}>
+              {lookup[icon]}
+            </IconContext.Provider>
+            <p className="is-hidden-tablet">{lookup[icon].props.title}</p>
+          </div>
         ))}
       </div>
-      <div className="column is-four-fifths content box cv-entry">
-        <p className="is-size-4 my-3">
-          <a href={entry.link} target="_blank" rel="noopener noreferrer">
-            {entry.company}
-          </a>
-        </p>
-        <p className="is-size-5">{entry.jobTitle}</p>
-        <p dangerouslySetInnerHTML={{ __html: entry.duration }} />
-        <ul className="mb-3">
-          {entry.description.map((paragraph, idx) => (
-            <li key={idx} dangerouslySetInnerHTML={{ __html: paragraph }} />
-          ))}
-        </ul>
+    </div>
+  )
+
+  return (
+    <div className="columns is-variable is-0-mobile">
+      {iconCol}
+      <div className="column is-four-fifths ">
+        <div className="content box cv-entry">
+          <p className="is-size-4 my-3">
+            <a href={entry.link} target="_blank" rel="noopener noreferrer">
+              {entry.company}
+            </a>
+          </p>
+          <p className="is-size-5">{entry.jobTitle}</p>
+          <p dangerouslySetInnerHTML={{ __html: entry.duration }} />
+          <ul className="mb-4">
+            {entry.description.map((paragraph, idx) => (
+              <li key={idx} dangerouslySetInnerHTML={{ __html: paragraph }} />
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   )

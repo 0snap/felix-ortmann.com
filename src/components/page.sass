@@ -15,6 +15,9 @@ $footer-color: whitesmoke
 $footer-padding: 3rem 1.5rem
 $link: $primary
 $link-hover: $light-primary
+$icon-background-color: hsl(0deg, 0%, 100%)
+
+$variable-columns: true
 
 // the font is installed from https://github.com/fontsource/fontsource and is imported in page.js
 $family-sans-serif: "Open Sans"
@@ -84,7 +87,8 @@ html
     @extend .section
     position: relative
     padding: var(--skew-padding) 1.5rem
-    margin-top: 6rem
+    margin-top: 4rem
+    margin-bottom: 0px
 
     // this pseudo element brings the scewed box
     &:before
@@ -96,7 +100,7 @@ html
         bottom: 0
         transform: skewy(-6deg)
         outline: 1px solid transparent
-        backface-visibility: hidden
+        //backface-visibility: hidden
         z-index: -1
 
 // extend Bulma's container class to add horizontal outlines on top and bot
@@ -180,6 +184,10 @@ html
     100%
         opacity: 0
 
+.profile-entry
+    transition-delay: 300ms
+    transition: opacity 1s
+    opacity: 1
 
 .cv-entry
     transition: transform 180ms
@@ -187,11 +195,35 @@ html
         transform: translateX(10px)
         transition: transform 450ms // go back quicker
 
+.cv-icon-column
+    @include mobile
+        padding-bottom: 0rem 
+        transform: translateY(0.5rem)
+    @include until-widescreen
+        font-size: 0.5rem
+
+.cv-icon-box
+    text-align: center
+    @include mobile
+        padding: 0.5rem
+.cv-icon-container
+    display: inline-block
+    margin: 0.4rem 1rem
+    @include until-widescreen
+        margin: 0.5rem 0.8rem
+    @include mobile
+        margin: 0.4rem 0.5rem
+    
 .cv-icon
     color: $dark
     font-size: 2rem
-    margin: 0.4rem 1rem
     transition: all 300ms
     &:hover
         color: $light-primary
         transform: scale(1.5)
+    @include until-widescreen
+        font-size: 1.5rem
+        margin: 0px
+    @include mobile
+        font-size: 1rem
+        margin: 0px

@@ -38,7 +38,7 @@ const ProfileEntry = ({ idx, entry }) => {
   )
   const emptyCol = <div className="column is-one-fifths is-hidden-mobile" />
   return (
-    <div className="columns mb-4 is-vcentered">
+    <div className="columns mb-4 is-vcentered profile-entry">
       {idx % 2 === 0 && iconCol}
       {idx % 2 === 1 && emptyCol}
       <div

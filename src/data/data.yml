@@ -18,7 +18,7 @@ aboutme:
         text: Working half time and studying full time, I graduated with a summa-cum-laude Master's degree on the subject of "Temporal and Spatial Alert Correlation for the Detection of Advanced Persistent Threats" in 2019. I was part of a special cooperation between the University of Hamburg, the Fraunhofer Institute Singapore, and the Nanyang Technological University Singapore, where I spent my final year. My Master's Thesis has won two prizes since then for innovative excellence in the cybersecurity industry.
       - icon: business-time
         color: "#6E2C00"
-        text: By now, I pack more than 9 years of professional experience with almost every modern programming language. I have experience working on my own as well as as working with teams of up to 20 engineers. I have worked on providing mobility services across Germany, researched APT-campaign detection in Singapore, and helped improving incident visibility and detection for multiple fortune-500 companies, among others. Please be invited to browse my <a href="#cv" "rel=noopener norefferrer">resume</a> below for details on my professional journey.
+        text: By now, I pack about 10 years of professional experience with almost every modern programming language. I have experience working on my own as well as as working with teams of up to 20 engineers. I have worked on providing mobility services across Germany, researched APT-campaign detection in Singapore, and helped improving incident visibility and detection for multiple fortune-500 companies, among others. Please be invited to browse my <a href="#cv" "rel=noopener norefferrer">resume</a> below for details on my professional journey.
       - icon: robot
         color: "#607D8B"
         text: Currently, my passion lies in distributed systems design and process automation in modern cloud environments. At the moment, I'm most interested in blue-teaming and automation, as well as site reliability engineering.
@@ -40,6 +40,7 @@ cv:
       - helm
       - linux
       - kubernetes
+      - grafana
       - nginx
       - docker
       - gitlab-ci
@@ -56,6 +57,7 @@ cv:
       - python
       - docker
       - linux
+      - grafana
       - kubernetes
       - github-ci
       - nginx
