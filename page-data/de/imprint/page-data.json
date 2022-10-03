@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-imprint-de-js",
-    "path": "/de/imprint/",
-    "result": {"data":{"dataYaml":{"contact":{"name":"Felix Christian Ortmann","street":"Fährstr. 67","postCode":21107,"city":"Hamburg","country":"Germany","phone":"+49 174 83 73 193","mail":"flx.ortmann@gmail.com"}}},"pageContext":{"slug":"/de/imprint/","langKey":"de"}},
-    "staticQueryHashes": ["63159454"]}
+{"componentChunkName":"component---src-pages-imprint-de-js","path":"/de/imprint/","result":{"data":{"dataYaml":{"contact":{"name":"Felix Christian Ortmann","street":"Vogelhüttendeich 23","postCode":21107,"city":"Hamburg","country":"Germany","phone":"+49 174 83 73 193","mail":"flx.ortmann@gmail.com","ustid":"VAT-ID / USt-ID: DE352385495"}}},"pageContext":{"slug":"/de/imprint/","langKey":"de"}},"staticQueryHashes":["63159454"]}
