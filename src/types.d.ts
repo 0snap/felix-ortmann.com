@@ -10,3 +10,13 @@ export interface ProfileEntryData {
     color: string;
     text: string;
 }
+
+
+export interface CvEntryData {
+    company: catworkx;
+    icons: string[];
+    link: string;
+    jobTitle: string
+    duration: string;
+    description: string[];
+}

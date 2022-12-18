@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 
 // import a bunch of icons (languages & tools I've worked with) and put them in a lookup table by name
 import {
@@ -23,37 +23,42 @@ import { DiAtlassian, DiGo, DiPython } from "react-icons/di"
 import { TbBrandKotlin } from "react-icons/tb"
 import { VscTerminalLinux } from "react-icons/vsc"
 import { IconContext } from "react-icons" // icon styling
+import { CvEntryData } from "../types"
 
 // these keys are used in the data.yaml
-const lookup = {
-  atlassian: <DiAtlassian title="Atlassian" />,
-  coffeescript: <SiCoffeescript title="Coffeescript" />,
-  elastic: <SiElastic title="Elastic" />,
-  grafana: <SiGrafana title="Grafana" />,
-  "github-ci": <SiGithubactions title="GitHub Actions" />,
-  "gitlab-ci": <SiGitlab title="Gitlab Pipelines" />,
-  gcp: <SiGooglecloud title="GCP" />,
-  go: <DiGo title="Go" />,
-  helm: <SiHelm title="Helm" />,
-  java: <SiJava title="Java" />,
-  kotlin: <TbBrandKotlin title="Kotlin" />,
-  kubernetes: <SiKubernetes title="Kubernetes" />,
-  linux: <VscTerminalLinux title="Linux &amp; Shell" />,
-  nginx: <SiNginx title="Nginx" />,
-  openshift: <SiRedhatopenshift title="Openshift" />,
-  python: <DiPython title="Python" />,
-  aws: <FaAws title="AWS" />,
-  docker: <FaDocker title="Docker" />,
-  nodejs: <FaNodeJs title="NodeJS" />,
-  php: <FaPhp title="Php" />,
-  rabbitmq: <SiRabbitmq title="Rabbit MQ" />,
-  react: <FaReact title="ReactJS" />,
-  teamcity: <SiTeamcity title="Teamcity" />,
-  typescript: <SiTypescript title="Typescript" />,
-  wireguard: <SiWireguard title="Wireguard" />,
+const lookup = new Map<string, JSX.Element>([
+  ["atlassian", <DiAtlassian title="Atlassian" />],
+  ["coffeescript", <SiCoffeescript title="Coffeescript" />],
+  ["elastic", <SiElastic title="Elastic" />],
+  ["grafana", <SiGrafana title="Grafana" />],
+  ["github-ci", <SiGithubactions title="GitHub Actions" />],
+  ["gitlab-ci", <SiGitlab title="Gitlab Pipelines" />],
+  ["gcp", <SiGooglecloud title="GCP" />],
+  ["go", <DiGo title="Go" />],
+  ["helm", <SiHelm title="Helm" />],
+  ["java", <SiJava title="Java" />],
+  ["kotlin", <TbBrandKotlin title="Kotlin" />],
+  ["kubernetes", <SiKubernetes title="Kubernetes" />],
+  ["linux", <VscTerminalLinux title="Linux &amp; Shell" />],
+  ["nginx", <SiNginx title="Nginx" />],
+  ["openshift", <SiRedhatopenshift title="Openshift" />],
+  ["python", <DiPython title="Python" />],
+  ["aws", <FaAws title="AWS" />],
+  ["docker", <FaDocker title="Docker" />],
+  ["nodejs", <FaNodeJs title="NodeJS" />],
+  ["php", <FaPhp title="Php" />],
+  ["rabbitmq", <SiRabbitmq title="Rabbit MQ" />],
+  ["react", <FaReact title="ReactJS" />],
+  ["teamcity", <SiTeamcity title="Teamcity" />],
+  ["typescript", <SiTypescript title="Typescript" />],
+  ["wireguard", <SiWireguard title="Wireguard" />],
+]);
+
+interface CvEntryProps {
+  entry: CvEntryData;
 }
 
-const CvEntry = ({ entry }) => {
+const CvEntry = ({ entry }: CvEntryProps) => {
   const icons = entry.icons.sort()
   const iconCol = (
     <div className="cv-icon-column column is-one-fifths">
@@ -63,10 +68,10 @@ const CvEntry = ({ entry }) => {
         </p>
         {icons.map((icon) => (
           <div className="cv-icon-container">
-            <IconContext.Provider title={icon} value={{ className: "cv-icon" }}>
-              {lookup[icon]}
+            <IconContext.Provider value={{ className: "cv-icon" }}>
+              {lookup.get(icon)}
             </IconContext.Provider>
-            <p className="is-hidden-tablet">{lookup[icon].props.title}</p>
+            <p className="is-hidden-tablet">{lookup.get(icon)!.props.title}</p>
           </div>
         ))}
       </div>

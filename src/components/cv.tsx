@@ -1,8 +1,13 @@
-import React from "react"
+import * as React from "react"
+import { CvEntryData } from "../types"
 
 import CvEntry from "./cv_entry"
 
-const Cv = ({ journey }) => (
+interface CvProps {
+  journey: CvEntryData[];
+}
+
+const Cv = ({ journey }: CvProps) => (
   <div className="container">
     <p className="is-size-3 has-text-centered has-title-line mb-6">
       My journey
