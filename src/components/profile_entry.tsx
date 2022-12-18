@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faGamepad,
@@ -8,9 +8,15 @@ import {
   faAddressCard,
   faRobot,
 } from "@fortawesome/free-solid-svg-icons"
-import { library } from "@fortawesome/fontawesome-svg-core"
+import { IconPrefix, library } from "@fortawesome/fontawesome-svg-core"
+import { ProfileEntryData } from "../types";
 
-const ProfileEntry = ({ idx, entry }) => {
+interface ProfileEntryProps {
+  idx: number;
+  entry: ProfileEntryData;
+}
+
+const ProfileEntry = ({ idx, entry }: ProfileEntryProps) => {
   library.add(
     faGamepad,
     faGraduationCap,
@@ -29,7 +35,7 @@ const ProfileEntry = ({ idx, entry }) => {
       <span className="icon is-medium">
         <FontAwesomeIcon
           size="3x"
-          icon={["fa", entry.icon]}
+          icon={["fa" as IconPrefix, entry.icon]}
           transform={{ rotate: -20 * (-idx % 2 || 1) }}
           color={entry.color}
         />

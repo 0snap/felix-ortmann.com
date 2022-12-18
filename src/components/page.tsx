@@ -1,10 +1,14 @@
-import React from "react"
+import * as React from "react"
 import Footer from "./footer"
 import "@fontsource/open-sans"
 
 import "./page.sass"
 
-const Layout = ({ children }) => (
+interface PageProps {
+  children?: React.ReactNode
+}
+
+const Layout = ({ children }: PageProps) => (
   <>
     <main>{children}</main>
     <Footer />

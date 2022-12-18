@@ -1,7 +1,13 @@
-import React from "react"
+import * as React from "react"
 import ProfileEntry from "./profile_entry"
 
-const AboutMe = ({ profile }) => {
+import {ProfileEntryData} from "../types"
+
+interface ProfileProps {
+  profile: ProfileEntryData[]
+}
+
+const AboutMe = ({ profile }: ProfileProps) => {
   return (
     <div className="container">
       <p className="is-size-3 has-text-centered has-title-line my-6">
