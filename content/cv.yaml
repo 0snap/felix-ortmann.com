@@ -1,0 +1,122 @@
+journey:
+  - company: Bundesdruckerei
+    icons:
+    - openshift
+    - helm
+    - linux
+    - kubernetes
+    - grafana
+    - nginx
+    - docker
+    - gitlab-ci
+    link: https://www.bundesdruckerei.de/en
+    jobTitle: Site Reliability Engineer
+    duration: Fall 2021 &mdash; Summer 2022
+    description:
+      - Ensured SLOs and SLAs are met for critical German government infrastructure services.
+      - Assessed projects for their maturity level to facilitate go-live.
+      - Provided CI/CD and streamlined deployment processes with GitLab pipelines.
+      - Facilitated cross-service deployment strategies with Helm libraries.
+  - company: Tenzir
+    icons:
+    - python
+    - docker
+    - linux
+    - grafana
+    - kubernetes
+    - github-ci
+    - nginx
+    - elastic
+    - wireguard
+    - gcp
+    link: https://tenzir.com
+    jobTitle: Blue Team Engineer
+    duration: Fall 2019 &mdash; Summer 2021
+    description:
+      - Ideated, authored, and maintained <a href="https://github.com/tenzir/threatbus" target="_blank" rel="noopener noreferrer">Threat Bus</a>, an open-source threat intelligence dissemination layer.
+      - Accomplished a joint project with a partner company to enable multiple fortune-500 companies to use our products for retrospective intelligence matching.
+      - Architected and implemented the network setup for an appliance remote access strategy.
+      - Managed the operation and security monitoring of all computer infrastructures both in-house and on-site (Kubernetes, VPN).
+      - Acted as threat hunter in customer networks and filed bi-weekly security reports.
+      - Provided CI/CD via GitHub actions.
+  - company: Fraunhofer Institute Singapore
+    icons:
+    - python
+    - go
+    - react
+    - linux
+    - docker
+    - kubernetes
+    - elastic
+    link: https://www.fraunhofer.sg/
+    jobTitle: Research Engineer
+    duration: Fall 2018 &mdash; Fall 2019
+    description:
+      - Conducted scientific research at the cybersecurity department of the Fraunhofer Institute Singapore.
+      - |
+        Generated novel ideas and algorithms and implemented prototypes for:
+        <ol>
+          <li> Detection of Advanced Persistent Threats in corporate networks.
+          <li> IDS alert correlation and Blue Team automation.
+        </ol>
+      - Won two prizes for innovative excellence in the cybersecurity industry.
+  - company: Moovel Group
+    icons:
+    - aws
+    - docker
+    - java
+    - kotlin
+    - nodejs
+    - typescript
+    - elastic
+    - teamcity
+    link: https://moovel.com/
+    jobTitle: Backend & DevOps Engineer
+    duration: Winter 2017 &mdash; Fall 2018
+    description:
+      - Provided and maintained infrastructure as code on AWS to enable urban mobility services in multiple German cities.
+      - Helped architecting the AWS cloud landscape.
+      - Delivered CI/CD via TeamCity for an entire engineering squad.
+      - Conceptualized, implemented and maintained backend microservices.
+      - Built an auto-suggest search for geo-coordinates and location data.
+  - company: Joblift
+    icons:
+    - java
+    - docker
+    - kubernetes
+    - nginx
+    - react
+    - nodejs
+    - gcp
+    - rabbitmq
+    link: https://joblift.com/
+    jobTitle: Fullstack Engineer
+    duration: Summer 2015 &mdash; Summer 2016
+    description:
+      - Introduced Kubernetes to the team and handled the adoption when it was first released on GCP.
+      - Provided and maintained infrastructure as code on GCP and provided CI/CD via Jenkins.
+      - Greately contributed in architecting the GCP cloud landscape.
+      - Planned, implemented, and maintained both backend- and frontend-serving microservices.
+  - company: SinnerSchrader
+    icons:
+    - java
+    - nodejs
+    - coffeescript
+    link: https://sinnerschrader.com/
+    jobTitle: Backend Engineer
+    duration: Spring 2014 &mdash; Spring 2015
+    description:
+      - Worked cross-stack on a new concept-brand-shop for an international Swiss retail company.
+      - Implemented web shop components with the Hybris framework.
+  - company: catworkx
+    icons:
+    - java
+    - atlassian
+    - linux
+    - php
+    link: https://www.catworkx.com/
+    jobTitle: Software Engineer
+    duration: Winter 2013 &mdash; Spring 2014
+    description:
+      - Developed plugins for Atlassian Jira and Confluence.
+      - Integrated LDAP / AD contact export with Atlassian products.

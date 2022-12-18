@@ -3,10 +3,9 @@ import React from "react"
 import Page from "../components/page"
 import Seo from "../components/seo"
 
-import { graphql } from "gatsby"
+import contact from "../../content/contact.yaml"
 
-const ImprintPage = ({ data }) => {
-  const contact = data.dataYaml.contact
+const ImprintPage = () => {
   return (
     <Page>
       <Seo title="Legal Disclosure" />
@@ -85,22 +84,5 @@ const ImprintPage = ({ data }) => {
     </Page>
   )
 }
-
-export const query = graphql`
-  query {
-    dataYaml {
-      contact {
-        name
-        street
-        postCode
-        city
-        country
-        phone
-        mail
-        ustid
-      }
-    }
-  }
-`
 
 export default ImprintPage
