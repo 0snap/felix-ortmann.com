@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 
 import Page from "../components/page"
 import Seo from "../components/seo"
@@ -21,7 +21,7 @@ const ImprintPage = () => {
 
           <ContactBlock title={imprint.contact_headline} />
 
-          {imprint.paragraphs.map((p, idx) => {
+          {imprint.paragraphs.map((p: Paragraph, idx) => {
             return (<div key={idx} className="content">
               <h3 className="title">{p.title}</h3>
               <p>{p.text}</p>

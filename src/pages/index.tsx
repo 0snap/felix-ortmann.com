@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 
 import Cover from "../components/cover"
 import Cv from "../components/cv"
@@ -25,6 +25,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-
-
-// export const Head: HeadFC = () => <title>Home Page</title>

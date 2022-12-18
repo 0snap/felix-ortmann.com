@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 
 import Page from "../components/page"
 import Seo from "../components/seo"
@@ -19,14 +19,14 @@ const PrivacyPolicyPage = () => {
             </header>
           </div>
           <div className="content">
-            {pp.disclaimer.map((d, idx) => {
+            {pp.disclaimer.map((d: string, idx: number) => {
               return <p key={idx} dangerouslySetInnerHTML={{ __html: d }}/>
             })}
           </div>
 
           <ContactBlock title="Website Operator" />
 
-          {pp.paragraphs.map((p, idx) => {
+          {pp.paragraphs.map((p: Paragraph, idx: number) => {
             return (
               <div key={idx} className="content">
                 <h3 className="title">{p.title}</h3>
