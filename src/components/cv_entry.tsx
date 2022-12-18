@@ -71,7 +71,7 @@ const CvEntry = ({ entry }: CvEntryProps) => {
             <IconContext.Provider value={{ className: "cv-icon" }}>
               {lookup.get(icon)}
             </IconContext.Provider>
-            <p className="is-hidden-tablet">{lookup.get(icon)!.props.title}</p>
+            <p className="is-hidden-tablet">{lookup.get(icon)?.props.title}</p>
           </div>
         ))}
       </div>

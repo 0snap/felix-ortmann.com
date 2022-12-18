@@ -9,8 +9,8 @@ interface SEOProps {
   title: string
 }
 
-function Seo({ description='', lang='en', meta=[], title }: SEOProps) {
-  const { site }: any = useStaticQuery(
+function Seo({ description='', title }: SEOProps) {
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {
