@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 
 const Cover = () => (
   <section className="hero is-fullheight background-hero">
