@@ -10,7 +10,6 @@ import imprint from "../../content/imprint.yaml"
 const ImprintPage = () => {
   return (
     <Page>
-      <Seo title={imprint.headline} />
       <section className="section is-medium bg-one">
         <div className="container">
           <div className="content">
@@ -32,5 +31,7 @@ const ImprintPage = () => {
     </Page>
   )
 }
+
+export const Head = () => <Seo title={imprint.headline} />
 
 export default ImprintPage

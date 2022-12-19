@@ -2,15 +2,14 @@ import * as React from "react"
 
 import Page from "../components/page"
 import Seo from "../components/seo"
-
 import ContactBlock from "../components/contact_block"
+import { Paragraph } from "../types"
 
 import pp from "../../content/privacy-policy.yaml"
 
 const PrivacyPolicyPage = () => {
   return (
     <Page>
-      <Seo title={pp.headline}/>
       <section className="section is-medium bg-one">
         <div className="container">
           <div className="content">
@@ -38,5 +37,7 @@ const PrivacyPolicyPage = () => {
     </Page>
   )
 }
+
+export const Head = () => <Seo title={pp.headline} />
 
 export default PrivacyPolicyPage

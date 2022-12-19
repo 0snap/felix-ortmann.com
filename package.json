@@ -12,7 +12,9 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "predeploy": "yarn clean && yarn build",
-    "deploy": "echo felix-ortmann.com > public/CNAME && gh-pages -d public"
+    "deploy": "echo felix-ortmann.com > public/CNAME && gh-pages -d public",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix ."
   },
   "license": "MIT",
   "dependencies": {
@@ -26,7 +28,6 @@
     "font-awesome": "^4.7.0",
     "gatsby": "^5.3.2",
     "gatsby-plugin-image": "^3.3.2",
-    "gatsby-plugin-react-helmet": "^6.3.0",
     "gatsby-plugin-sass": "^6.3.1",
     "gatsby-plugin-sharp": "^5.3.2",
     "gatsby-source-filesystem": "^5.3.1",
@@ -35,7 +36,6 @@
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1"
   },
   "devDependencies": {

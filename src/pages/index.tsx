@@ -11,8 +11,6 @@ import cv from "../../content/cv.yaml"
 
 const IndexPage = () => (
   <Page>
-    <Seo title="Felix Ortmann" />
-
     <Cover />
 
     <section className="section bg-one" id="about_me">
@@ -23,5 +21,7 @@ const IndexPage = () => (
     </section>
   </Page>
 )
+
+export const Head = () => <Seo />
 
 export default IndexPage

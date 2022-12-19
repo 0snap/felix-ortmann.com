@@ -11,7 +11,7 @@ const Cover = () => (
       </div>
     </div>
     <div className="arrow-down">
-      <a href="#about_me">
+      <a aria-label="Read more about Felix Ortmann" href="#about_me">
         <span></span>
       </a>
     </div>

@@ -1,15 +1,12 @@
 import * as React from "react"
-import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 interface SEOProps {
+  title?: string
   description?: string,
-  lang?: string,
-  meta?: Array<{name: string, content: string}>,
-  title: string
 }
 
-function Seo({ description='', title }: SEOProps) {
+function Seo({ description, title }: SEOProps) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -24,19 +21,20 @@ function Seo({ description='', title }: SEOProps) {
     `
   )
   const metaDescription: string = description || site.siteMetadata.description
+  const metaTitle: string = title || site.siteMetadata.title
 
   return (
-    <Helmet>
-      <title>{title}</title>
+    <>
+      <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={metaDescription} />
+      <meta name="robots" content="index, follow" />
+      <meta property="og:title" content={metaTitle} />
       <meta property="og:type" content="website" />
+      <meta property="og:description" content={metaDescription} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={site.siteMetadata.author} />
       <meta name="twitter:description" content={metaDescription} />
-
-    </Helmet>
+    </>
   )
 }
 

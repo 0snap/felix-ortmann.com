@@ -20,7 +20,7 @@ const ContentBlock = ({title}: ContentBlockProps) => (
         <br />
         {contact.phone}
         <br />
-        <a href={"mailto:" + contact.mail}>{contact.mail}</a>
+        <a aria-label="EMail contact" href={"mailto:" + contact.mail}>{contact.mail}</a>
         <br />
         {contact.ustid}
     </p>
