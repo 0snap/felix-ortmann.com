@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkfelix_ortmann_website=self.webpackChunkfelix_ortmann_website||[]).push([[883],{429:function(e,t,n){n.r(t);var a=n(7294),c=n(262),l=n(8992);t.default=function(){return a.createElement(l.Z,null,a.createElement(c.Z,{title:"404: Not found"}),a.createElement("section",{className:"section is-medium"},a.createElement("div",{className:"container"},a.createElement("div",{className:"content has-text-centered"},a.createElement("h3",{className:"title"},"Not found.")))))}}}]);
-//# sourceMappingURL=component---src-pages-404-js-84bdcc6a3c707b6d41b3.js.map
