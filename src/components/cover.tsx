@@ -16,6 +16,9 @@ const Cover = () => (
           fit: "cover",
           cropFocus: "attention",
         }}
+        blurredOptions={{
+          width: 192
+        }}
       />
       <div className="hero-body hero-content" style={{
           // Stack content and Gatsby image by using the same grid area for both
