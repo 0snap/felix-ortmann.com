@@ -1,7 +1,14 @@
 module.exports = {
-    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
-    parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint'],
+    extends: ['google', 'react-app'],
     root: true,
     ignorePatterns: ["public/**", ".eslintrc.js"],
+    rules: {
+      "react-hooks/exhaustive-deps": [
+        "error"
+      ],
+      "max-len": [
+        "warn",
+        120
+      ],
+    },
   };

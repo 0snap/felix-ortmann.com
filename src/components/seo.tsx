@@ -1,14 +1,14 @@
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from 'react';
+import {useStaticQuery, graphql} from 'gatsby';
 
 interface SEOProps {
   title?: string
   description?: string,
 }
 
-function Seo({ description, title }: SEOProps) {
-  const { site } = useStaticQuery(
-    graphql`
+const Seo = ({description, title}: SEOProps) => {
+  const {site} = useStaticQuery(
+      graphql`
       query {
         site {
           siteMetadata {
@@ -18,10 +18,10 @@ function Seo({ description, title }: SEOProps) {
           }
         }
       }
-    `
-  )
-  const metaDescription: string = description || site.siteMetadata.description
-  const metaTitle: string = title || site.siteMetadata.title
+    `,
+  );
+  const metaDescription: string = description || site.siteMetadata.description;
+  const metaTitle: string = title || site.siteMetadata.title;
 
   return (
     <>
@@ -35,7 +35,7 @@ function Seo({ description, title }: SEOProps) {
       <meta name="twitter:creator" content={site.siteMetadata.author} />
       <meta name="twitter:description" content={metaDescription} />
     </>
-  )
-}
+  );
+};
 
-export default Seo
+export default Seo;

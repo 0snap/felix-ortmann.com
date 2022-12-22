@@ -1,7 +1,7 @@
-import * as React from "react"
+import * as React from 'react';
 
-import Seo from "../components/seo"
-import Page from "../components/page"
+import Seo from '../components/seo';
+import Page from '../components/page';
 
 const NotFoundPage = () => (
   <Page>
@@ -13,8 +13,8 @@ const NotFoundPage = () => (
       </div>
     </section>
   </Page>
-)
+);
 
-export const Head = () => <Seo title="404 Not found" />
+export const Head = () => <Seo title="404 Not found" />;
 
-export default NotFoundPage
+export default NotFoundPage;

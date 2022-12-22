@@ -1,13 +1,13 @@
-import * as React from "react"
+import * as React from 'react';
 
-import Cover from "../components/cover"
-import Cv from "../components/cv"
-import AboutMe from "../components/profile"
-import Page from "../components/page"
-import Seo from "../components/seo"
+import Cover from '../components/cover';
+import Cv from '../components/cv';
+import AboutMe from '../components/profile';
+import Page from '../components/page';
+import Seo from '../components/seo';
 
-import aboutme from "../../content/about-me.yaml"
-import cv from "../../content/cv.yaml"
+import aboutme from '../../content/about-me.yaml';
+import cv from '../../content/cv.yaml';
 
 const IndexPage = () => (
   <Page>
@@ -20,8 +20,8 @@ const IndexPage = () => (
       <Cv journey={cv.journey} />
     </section>
   </Page>
-)
+);
 
-export const Head = () => <Seo />
+export const Head = () => <Seo />;
 
-export default IndexPage
+export default IndexPage;

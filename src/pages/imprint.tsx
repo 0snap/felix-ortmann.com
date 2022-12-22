@@ -1,11 +1,11 @@
-import * as React from "react"
+import * as React from 'react';
 
-import Page from "../components/page"
-import Seo from "../components/seo"
+import Page from '../components/page';
+import Seo from '../components/seo';
 
-import ContactBlock from "../components/contact_block"
+import ContactBlock from '../components/contact_block';
 
-import imprint from "../../content/imprint.yaml"
+import imprint from '../../content/imprint.yaml';
 
 const ImprintPage = () => {
   return (
@@ -24,14 +24,14 @@ const ImprintPage = () => {
             return (<div key={idx} className="content">
               <h3 className="title">{p.title}</h3>
               <p>{p.text}</p>
-            </div>)
+            </div>);
           })}
         </div>
       </section>
     </Page>
-  )
-}
+  );
+};
 
-export const Head = () => <Seo title={imprint.headline} />
+export const Head = () => <Seo title={imprint.headline} />;
 
-export default ImprintPage
+export default ImprintPage;

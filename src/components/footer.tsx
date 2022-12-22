@@ -1,10 +1,10 @@
-import { Link } from "gatsby"
-import * as React from "react"
+import {Link} from 'gatsby';
+import * as React from 'react';
 
 const Footer = () => (
   <footer className="footer">
     <div className="container">
-      <ul style={{ listStyle: `none` }}>
+      <ul style={{listStyle: `none`}}>
         <li>
           <Link to="/imprint/" className="footer__link">
             Imprint
@@ -23,6 +23,6 @@ const Footer = () => (
       </p>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

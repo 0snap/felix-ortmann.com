@@ -1,11 +1,11 @@
-import * as React from "react"
+import * as React from 'react';
 
-import Page from "../components/page"
-import Seo from "../components/seo"
-import ContactBlock from "../components/contact_block"
-import { Paragraph } from "../types"
+import Page from '../components/page';
+import Seo from '../components/seo';
+import ContactBlock from '../components/contact_block';
+import {Paragraph} from '../types';
 
-import pp from "../../content/privacy-policy.yaml"
+import pp from '../../content/privacy-policy.yaml';
 
 const PrivacyPolicyPage = () => {
   return (
@@ -19,7 +19,7 @@ const PrivacyPolicyPage = () => {
           </div>
           <div className="content">
             {pp.disclaimer.map((d: string, idx: number) => {
-              return <p key={idx} dangerouslySetInnerHTML={{ __html: d }}/>
+              return <p key={idx} dangerouslySetInnerHTML={{__html: d}}/>;
             })}
           </div>
 
@@ -29,15 +29,15 @@ const PrivacyPolicyPage = () => {
             return (
               <div key={idx} className="content">
                 <h3 className="title">{p.title}</h3>
-                <p dangerouslySetInnerHTML={{ __html: p.text }}/>
+                <p dangerouslySetInnerHTML={{__html: p.text}}/>
               </div>);
           })}
         </div>
       </section>
     </Page>
-  )
-}
+  );
+};
 
-export const Head = () => <Seo title={pp.headline} />
+export const Head = () => <Seo title={pp.headline} />;
 
-export default PrivacyPolicyPage
+export default PrivacyPolicyPage;
