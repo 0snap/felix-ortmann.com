@@ -1,6 +1,6 @@
 import * as React from 'react';
-
 import {StaticImage} from 'gatsby-plugin-image';
+import {TypeAnimation} from 'react-type-animation';
 
 const Cover = () => (
   <section className="hero is-fullheight" style={{display: 'grid'}}>
@@ -30,8 +30,21 @@ const Cover = () => (
     }}>
       <div className="header-box has-text-centered is-size-3-touch is-size-1-desktop">
         <h1 className="header-text">
-            Beautiful clouds, huh? <br />
-            I'm a cloud engineer.
+          <TypeAnimation
+            sequence={[
+              'Hello! I\'m Felix',
+              2000,
+              'Hello! I\'m a Cloud Engineer',
+              2000,
+              'Hello! I love systems design',
+              2000,
+            ]}
+            cursor={true}
+            speed={30} // 1-99, default 40
+            deletionSpeed={20} // 1-99, default 40
+            wrapper="span" // Animation will be rendered as a <span>
+            repeat={Infinity} // Repeat this Animation Sequence infinitely
+          />
         </h1>
       </div>
     </div>
