@@ -2,6 +2,7 @@ import * as React from 'react';
 
 // import a bunch of icons (languages & tools I've worked with) and put them in a lookup table by name
 import {
+  SiApachekafka,
   SiCoffeescript,
   SiElastic,
   SiGithubactions,
@@ -15,6 +16,7 @@ import {
   SiRabbitmq,
   SiRedhatopenshift,
   SiTeamcity,
+  SiTerraform,
   SiTypescript,
   SiWireguard,
 } from 'react-icons/si';
@@ -28,6 +30,7 @@ import {CvEntryData} from '../types';
 // these keys are used in the data.yaml
 const lookup = new Map<string, JSX.Element>([
   ['atlassian', <DiAtlassian title="Atlassian" />],
+  ['kafka', <SiApachekafka title="Kafka" />],
   ['coffeescript', <SiCoffeescript title="Coffeescript" />],
   ['elastic', <SiElastic title="Elastic" />],
   ['grafana', <SiGrafana title="Grafana" />],
@@ -50,6 +53,7 @@ const lookup = new Map<string, JSX.Element>([
   ['rabbitmq', <SiRabbitmq title="Rabbit MQ" />],
   ['react', <FaReact title="ReactJS" />],
   ['teamcity', <SiTeamcity title="Teamcity" />],
+  ['terraform', <SiTerraform title="Terraform" />],
   ['typescript', <SiTypescript title="Typescript" />],
   ['wireguard', <SiWireguard title="Wireguard" />],
 ]);
@@ -66,8 +70,8 @@ const CvEntry = ({entry}: CvEntryProps) => {
         <p className="is-size-6 my-4 is-hidden-tablet-only is-hidden-mobile is-hidden-desktop-only">
           Primary tech stack
         </p>
-        {icons.map((icon) => (
-          <div className="cv-icon-container">
+        {icons.map((icon: string, idx: number) => (
+          <div key={idx} className="cv-icon-container">
             <IconContext.Provider value={{className: 'cv-icon'}}>
               {lookup.get(icon)}
             </IconContext.Provider>
@@ -91,7 +95,7 @@ const CvEntry = ({entry}: CvEntryProps) => {
           <p className="is-size-5">{entry.jobTitle}</p>
           <p dangerouslySetInnerHTML={{__html: entry.duration}} />
           <ul className="mb-4">
-            {entry.description.map((paragraph, idx) => (
+            {entry.description.map((paragraph: string, idx: number) => (
               <li key={idx} dangerouslySetInnerHTML={{__html: paragraph}} />
             ))}
           </ul>

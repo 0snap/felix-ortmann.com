@@ -1,4 +1,24 @@
 journey:
+  - company: Stackstream
+    icons:
+    - aws
+    - docker
+    - kubernetes
+    - gcp
+    - gitlab-ci
+    - go
+    - react
+    - terraform
+    - kafka
+    - python
+    link: https://stack-stream.com/
+    jobTitle: Full Stack Go Developer
+    duration: Fall 2022 &mdash; Winter 2022
+    description:
+      - Operated multi-cloud (GCP & AWS) environments using Terraform and ArgoCD.
+      - Developed and maintained microservices using Golang in a Kafka-based architecture.
+      - Implemented user-facing features in modern React.
+      - Maintained a monolithic legacy Python project.
   - company: Bundesdruckerei
     icons:
     - openshift
