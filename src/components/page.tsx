@@ -4,7 +4,7 @@ import '@fontsource/open-sans';
 
 import './page.sass';
 
-interface PageProps {
+type PageProps = {
   children?: React.ReactNode
 }
 

@@ -1,0 +1,14 @@
+opener: What do you want to achieve?
+tiers:
+  - icon: kubernetes
+    catcher: You're frustrated with managing in-house infrastructure?
+    header: On-Premise to Cloud Migrations
+    text: From planning to execution - move your on-premise infrastructure to the cloud today. Cleanup your server rooms and make your admin team happy!
+  - icon: rocket
+    catcher: You need a fast coder right now?
+    header: Fullstack Coding & DevOps
+    text: From node.js and Go to modern React and CI/CD masterance. I'm super productive with many languages and tools and I hit the ground running to burst your productivity from day one!
+  - icon: insights
+    catcher: You're done with plain logshipping?
+    header: Monitoring & Insights
+    text: When did the app start behaving slow? How many users are affected? Which services misbehave and how? Boost your customer happyness by answering the relevant questions!

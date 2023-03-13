@@ -1,22 +1,29 @@
 import {IconName} from '@fortawesome/fontawesome-svg-core';
 
-export interface Paragraph {
+export type Paragraph = {
     title: string;
     text: string;
 }
 
-export interface ProfileEntryData {
+export type ProfileEntryData = {
     icon: IconName;
     color: string;
     text: string;
 }
 
 
-export interface CvEntryData {
+export type CvEntryData = {
     company: catworkx;
     icons: string[];
     link: string;
     jobTitle: string
     duration: string;
     description: string[];
+}
+
+export type BizTierData = {
+    icon: IconName;
+    catcher: string;
+    header: string;
+    text: string;
 }

@@ -36,7 +36,7 @@ const Cover = () => (
       </div>
     </div>
     <div className="arrow-down">
-      <a aria-label="Read more about Felix Ortmann" href="#about_me">
+      <a aria-label="Read more about Felix Ortmann" href="#landing">
         <span></span>
       </a>
     </div>
