@@ -11,7 +11,7 @@ import {
 import {IconPrefix, library} from '@fortawesome/fontawesome-svg-core';
 import {ProfileEntryData} from '../types';
 
-interface ProfileEntryProps {
+type ProfileEntryProps = {
   idx: number;
   entry: ProfileEntryData;
 }

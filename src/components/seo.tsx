@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 
-interface SEOProps {
+type SEOProps = {
   title?: string
   description?: string,
 }

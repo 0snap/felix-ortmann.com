@@ -10,7 +10,6 @@ import {
   SiGooglecloud,
   SiGrafana,
   SiHelm,
-  SiJava,
   SiKubernetes,
   SiNginx,
   SiRabbitmq,
@@ -21,7 +20,7 @@ import {
   SiWireguard,
 } from 'react-icons/si';
 import {FaAws, FaDocker, FaNodeJs, FaPhp, FaReact} from 'react-icons/fa';
-import {DiAtlassian, DiGo, DiPython} from 'react-icons/di';
+import {DiAtlassian, DiGo, DiJava, DiPython} from 'react-icons/di';
 import {TbBrandKotlin} from 'react-icons/tb';
 import {VscTerminalLinux} from 'react-icons/vsc';
 import {IconContext} from 'react-icons'; // icon styling
@@ -39,7 +38,7 @@ const lookup = new Map<string, JSX.Element>([
   ['gcp', <SiGooglecloud title="GCP" />],
   ['go', <DiGo title="Go" />],
   ['helm', <SiHelm title="Helm" />],
-  ['java', <SiJava title="Java" />],
+  ['java', <DiJava title="Java" />],
   ['kotlin', <TbBrandKotlin title="Kotlin" />],
   ['kubernetes', <SiKubernetes title="Kubernetes" />],
   ['linux', <VscTerminalLinux title="Linux &amp; Shell" />],
@@ -58,7 +57,7 @@ const lookup = new Map<string, JSX.Element>([
   ['wireguard', <SiWireguard title="Wireguard" />],
 ]);
 
-interface CvEntryProps {
+type CvEntryProps = {
   entry: CvEntryData;
 }
 

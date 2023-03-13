@@ -4,7 +4,7 @@ import * as React from 'react';
 const Footer = () => (
   <footer className="footer">
     <div className="container">
-      <ul style={{listStyle: `none`}}>
+      <ul style={{listStyle: 'none'}}>
         <li>
           <Link to="/imprint/" className="footer__link">
             Imprint

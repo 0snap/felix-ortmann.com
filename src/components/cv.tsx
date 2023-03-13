@@ -3,7 +3,7 @@ import {CvEntryData} from '../types';
 
 import CvEntry from './cv_entry';
 
-interface CvProps {
+type CvProps = {
   journey: CvEntryData[];
 }
 

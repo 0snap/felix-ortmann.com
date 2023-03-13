@@ -13,8 +13,8 @@
     "typecheck": "tsc --noEmit",
     "predeploy": "yarn clean && yarn build",
     "deploy": "echo felix-ortmann.com > public/CNAME && gh-pages -d public",
-    "lint": "eslint .",
-    "lint-fix": "eslint --fix ."
+    "lint": "eslint --ext .ts,.tsx .",
+    "lint-fix": "eslint --ext .ts,.tsx --fix ."
   },
   "license": "MIT",
   "dependencies": {
@@ -25,8 +25,6 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "bulma": "^0.9.4",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-react-app": "^7.0.1",
     "font-awesome": "^4.7.0",
     "gatsby": "^5.3.2",
     "gatsby-plugin-image": "^3.3.2",
@@ -38,7 +36,7 @@
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1"
+    "react-icons": "^4.8.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.10",
@@ -48,6 +46,8 @@
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
     "eslint": "^8.30.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-react-app": "^7.0.1",
     "prettier": "^2.8.1",
     "sass": "^1.57.0",
     "typescript": "^4.9.4"

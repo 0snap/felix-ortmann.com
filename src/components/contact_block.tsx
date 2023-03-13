@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import contact from '../../content/contact.yaml';
 
-interface ContentBlockProps {
+type ContentBlockProps = {
     title: string;
 }
 
