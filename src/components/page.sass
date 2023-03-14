@@ -110,6 +110,16 @@ html
     position: relative
     max-width: var(--width)
 
+.page
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+main
+    flex: 1 0 auto
+.footer
+    @extend .footer
+    flex-shrink: 0
+
 .bg
     @include desktop
         min-height: 100vh

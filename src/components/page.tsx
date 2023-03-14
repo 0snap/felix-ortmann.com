@@ -9,10 +9,10 @@ type PageProps = {
 }
 
 const Layout = ({children}: PageProps) => (
-  <>
+  <div className='page'>
     <main>{children}</main>
     <Footer />
-  </>
+  </div>
 );
 
 export default Layout;
