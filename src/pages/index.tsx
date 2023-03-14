@@ -15,13 +15,13 @@ const IndexPage = () => (
   <Page>
     <Cover />
 
-    <section className="section bg-one" id="landing">
+    <section className="section bg" id="landing">
       <Biz tiers={biz.tiers} opener={biz.opener}/>
     </section>
-    <section className="section bg-one" id="about_me">
+    <section className="section bg" id="about_me">
       <AboutMe profile={aboutme.profile} />
     </section>
-    <section className="section bg-two" id="cv">
+    <section className="section bg" id="cv">
       <Cv journey={cv.journey} />
     </section>
   </Page>

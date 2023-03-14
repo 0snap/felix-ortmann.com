@@ -10,7 +10,7 @@ import pp from '../../content/privacy-policy.yaml';
 const PrivacyPolicyPage = () => {
   return (
     <Page>
-      <section className="section is-medium bg-one">
+      <section className="section is-medium bg">
         <div className="container">
           <div className="content">
             <header>

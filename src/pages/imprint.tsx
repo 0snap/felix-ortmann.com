@@ -10,7 +10,7 @@ import imprint from '../../content/imprint.yaml';
 const ImprintPage = () => {
   return (
     <Page>
-      <section className="section is-medium bg-one">
+      <section className="section is-medium bg">
         <div className="container">
           <div className="content">
             <header>
