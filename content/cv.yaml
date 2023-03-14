@@ -7,6 +7,7 @@ journey:
     - gcp
     - gitlab-ci
     - go
+    - nodejs
     - react
     - terraform
     - kafka
@@ -19,6 +20,17 @@ journey:
       - Developed and maintained microservices using Golang in a Kafka-based architecture.
       - Implemented user-facing features in modern React.
       - Maintained a monolithic legacy Python project.
+  - company: Walnut.io
+    icons:
+    - aws
+    - github-ci
+    - nodejs
+    link: https://www.walnut.io/
+    jobTitle: Consultant Infrastructure Improvements
+    duration: Spring 2022 &mdash; Spring 2022
+    description:
+      - Conducted AWS infrastructure reviews and filed reports for potential improvements.
+      - Re-worked GitHub CI/CD for a 50% speed up shipping an Elixir code base.
   - company: Bundesdruckerei
     icons:
     - openshift
