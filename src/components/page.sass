@@ -250,8 +250,6 @@ main
 
 .biz-icon
     font-size: 4rem
-    @include desktop
-        color: $dark
     color: $primary
 
 .biz-tier
@@ -266,17 +264,6 @@ main
         &:hover
             transform: scale(1.5)
             z-index: 2
-            & .biz-icon
-                color: $primary
-            & .biz-tier-hover-info
-                color: $primary
-                display: block
-
-.biz-tier-hover-info
-    @include desktop
-        display: none
-        color: $dark
-    color: $primary
 // call to action button on profile tab
 .cta
     color: $dark
