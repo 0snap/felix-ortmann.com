@@ -241,8 +241,10 @@ main
 
 
 .biz-icon
-    color: $dark
     font-size: 4rem
+    @include desktop
+        color: $dark
+    color: $primary
 
 .biz-tier
     min-height: 25vh
@@ -263,7 +265,10 @@ main
                 display: block
 
 .biz-tier-hover-info
-    display: none
+    @include desktop
+        display: none
+        color: $dark
+    color: $primary
 // call to action button on profile tab
 .cta
     color: $dark
