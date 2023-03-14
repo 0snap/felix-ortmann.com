@@ -3,7 +3,7 @@ import * as React from 'react';
 import {StaticImage} from 'gatsby-plugin-image';
 
 const Cover = () => (
-  <section className="hero is-fullheight" style={{display: 'grid'}}>
+  <section className="hero is-fullheight">
     <StaticImage
       style={{gridArea: '1/1'}}
       alt="Background image clouds"
