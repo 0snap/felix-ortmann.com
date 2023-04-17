@@ -28,18 +28,16 @@ const ProfileEntry = ({idx, entry}: ProfileEntryProps) => {
 
   const iconCol = (
     <div
-      className={`column is-one-fifths is-hidden-mobile icon ${
+      className={`column is-one-fifths is-hidden-mobile ${
         idx % 2 === 1 && 'has-text-right'
       }`}
     >
-      <span className="icon is-medium">
-        <FontAwesomeIcon
-          size="3x"
-          icon={['fa' as IconPrefix, entry.icon]}
-          transform={{rotate: -20 * (-idx % 2 || 1)}}
-          color={entry.color}
-        />
-      </span>
+      <FontAwesomeIcon
+        size="3x"
+        icon={['fa' as IconPrefix, entry.icon]}
+        transform={{rotate: -20 * (-idx % 2 || 1)}}
+        color={entry.color}
+      />
     </div>
   );
   const emptyCol = <div className="column is-one-fifths is-hidden-mobile" />;
