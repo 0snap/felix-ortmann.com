@@ -123,12 +123,15 @@ main
     @include fullhd
         min-height: 75vh
     &:before
-        background-image: linear-gradient(60deg, rgb(148, 48, 255), #000)
+        background-image: radial-gradient(circle at center, $secondary, #000, $secondary)
     &:not(:last-child)
-        margin-bottom: 15rem
+        margin-bottom: 10rem
 
-.icon
-    opacity: 0.8
+.bg2
+    @extend .bg
+    color: $white
+    &:before
+        background-image:  radial-gradient(circle at center,#000 0, #000 40%, $secondary 100%)
 
 // pulsing down arrow
 .arrow-down

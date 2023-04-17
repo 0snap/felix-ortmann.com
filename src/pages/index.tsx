@@ -18,7 +18,7 @@ const IndexPage = () => (
     <section className="section bg" id="landing">
       <Biz tiers={biz.tiers} opener={biz.opener}/>
     </section>
-    <section className="section bg" id="about_me">
+    <section className="section bg2" id="about_me">
       <AboutMe profile={aboutme.profile} />
     </section>
     <section className="section bg" id="cv">
