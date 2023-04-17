@@ -11,14 +11,14 @@ type ProfileProps = {
 const AboutMe = ({profile}: ProfileProps) => {
   return (
     <div className="container">
-      <p className="is-size-3 has-text-centered has-title-line my-6">
+      <h1 className="title is-1 has-text-centered my-6">
         About me
-      </p>
+      </h1>
       {profile &&
         profile.map((entry, idx) => (
           <ProfileEntry key={idx} idx={idx} entry={entry} />
         ))}
-      <CTA q="Want to work with me?" button="Shoot me an email!" />
+      <CTA q="Want to work with me?" button="Book a call now" />
     </div>
   );
 };
