@@ -2,6 +2,7 @@
 
 // colors
 $dark: hsl(0, 0%, 21%)
+$secondary: rgb(82, 29, 139)
 $primary: #ee4a22
 $light-primary: #ee6745
 $blurred-background: rgba(255, 255, 255, 0.3)
@@ -14,12 +15,14 @@ $footer-color: whitesmoke
 $footer-padding: 3rem 1.5rem
 $link: $primary
 $link-hover: $light-primary
-$icon-background-color: hsl(0deg, 0%, 100%)
 
 $variable-columns: true
 
-// the font is installed from https://github.com/fontsource/fontsource and is imported in page.js
+// the font is installed from https://github.com/fontsource/fontsource and is imported in page.tsx
 $family-sans-serif: "Open Sans"
+h1, h2, h3, h4, h5, h6
+    font-family: "Poppins", sans-serif
+    letter-spacing: 0.1rem
 
 // selective import of bulma modules
 @import '~bulma/sass/utilities/_all.sass'
