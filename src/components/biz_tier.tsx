@@ -27,7 +27,7 @@ type BizTierProps = {
 
 const BizTier = ({idx, tier}: BizTierProps) => {
   return (
-    <div className="column biz-tier" key={idx}>
+    <div className="column is-one-quarter-fullhd biz-tier" key={idx}>
       <div className='box content has-text-centered p-6' style={{height: '100%'}}>
         <IconContext.Provider value={{className: 'biz-icon'}}>
           {lookup.get(tier.icon)}
