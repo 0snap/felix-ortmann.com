@@ -1,14 +1,15 @@
-opener: What do you want to achieve?
+opener: Cloud migrations, coding services and infrastructure reviews at your fingertips.
 tiers:
   - icon: kubernetes
-    catcher: You're frustrated with managing in-house infrastructure?
+    catcher: Are you tired of managing on-premise infrastructure?
     header: On-Premise to Cloud Migrations
-    text: From planning to execution - move your on-premise infrastructure to the cloud today. Cleanup your server rooms and make your admin team happy!
+    text: Let me help you move to the cloud! With my expertise in cloud migration, I can help you scale your services and increase your agility. From planning to execution, I'll guide you every step of the way. Say goodbye to on-premise headaches and hello to cloud-based solutions that are reliable, scalable, and cost-effective. Contact me today to start your cloud journey!
   - icon: rocket
     catcher: You need a fast coder right now?
     header: Fullstack Coding & DevOps
-    text: From node.js and Go to modern React and CI/CD masterance. I'm super productive with many languages and tools and I hit the ground running to burst your productivity from day one!
+    text: From backend to Ops and CI/CD mastery, I bring a wealth of experience and productivity to every project. With expertise in a wide range of languages and tools, I hit the ground running to deliver results from day one. Whether you need a backend engineer or an Ops master, I have the skills and expertise needed to boost your productivity and exceed your expectations. Contact me today to learn how I can help you take your projects to the next level.
   - icon: insights
     catcher: You're done with plain logshipping?
     header: Monitoring & Insights
-    text: When did the app start behaving slow? How many users are affected? Which services misbehave and how? Boost your customer happyness by answering the relevant questions!
+    text: Is your app behaving slow? Are your customers unhappy? Don't wait any longer to get the answers you need! With my expertise in service monitoring, I can help you identify bottlenecks in your infrastructure and improve your customer happiness. Contact me today to learn how I can help you improve your app's stability and increase customer satisfaction.
+    #From instrumentalizing deployments to identifying misbehaving services, I have the tools and expertise needed to boost your app's performance and keep your customers happy.
