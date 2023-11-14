@@ -6,21 +6,18 @@ import Seo from '../components/seo';
 import ContactBlock from '../components/contact_block';
 
 import imprint from '../../content/imprint.yaml';
+import {Paragraph} from '../types';
 
 const ImprintPage = () => {
   return (
     <Page>
-      <section className="section is-medium bg">
+      <section className="section is-medium bg-white">
         <div className="container">
-          <div className="content">
-            <header>
-              <h1 className="title is-2">{imprint.headline}</h1>
-            </header>
-          </div>
+          <h1 className="title">{imprint.headline}</h1>
 
           <ContactBlock title={imprint.contact_headline} />
 
-          {imprint.paragraphs.map((p: Paragraph, idx) => {
+          {imprint.paragraphs.map((p: Paragraph, idx: number) => {
             return (<div key={idx} className="content">
               <h3 className="title">{p.title}</h3>
               <p>{p.text}</p>

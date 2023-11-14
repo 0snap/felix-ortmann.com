@@ -8,12 +8,12 @@ type CvProps = {
 }
 
 const Cv = ({journey}: CvProps) => (
-  <div className="container">
-    <h1 className="title is-1 has-text-centered my-6">
+  <div className="container" style={{overflow: 'hidden'}}>
+    <h1 className="title has-text-centered my-6">
       My journey
     </h1>
     {journey &&
-      journey.map((cvEntry, idx) => <CvEntry key={idx} entry={cvEntry} />)}
+      journey.map((cvEntry: CvEntryData, idx: number) => <CvEntry key={idx} entry={cvEntry} />)}
   </div>
 );
 
