@@ -8,6 +8,7 @@ $light-primary: #ee6745
 $blurred-background: rgba(255, 255, 255, 0.3)
 $circle-size: 1rem
 $title-color: hsl(0, 0%, 96%)
+
 // overwrite bulma variables
 $background: whitesmoke
 $footer-background-color: $dark
@@ -20,69 +21,92 @@ $variable-columns: true
 
 // the font is installed from https://github.com/fontsource/fontsource and is imported in page.tsx
 $family-sans-serif: "Open Sans"
-h1, h2, h3, h4, h5, h6
-    font-family: "Poppins", sans-serif
-    letter-spacing: 0.1rem
+
+// see https://codepen.io/enbee81/pen/yLyrmyg for the diagonal layout
+// $magic-number: 0.1455 is calculated by this formula: abs( tan(6°) / 2 ) (and we use 6° as y-skew)
+$width: 42rem
+$magic-number: 0.1455
+$skew-padding: calc($width * $magic-number)
 
 // selective import of bulma modules
-@import '~bulma/sass/utilities/_all.sass'
 @import '~bulma/sass/base/_all.sass'
 @import '~bulma/sass/elements/box.sass'
 @import '~bulma/sass/elements/button.sass'
 @import '~bulma/sass/elements/container.sass'
-@import '~bulma/sass/elements/content.sass'
 @import '~bulma/sass/elements/title.sass'
+@import '~bulma/sass/elements/content.sass'
+@import '~bulma/sass/helpers/_all.sass'
 @import '~bulma/sass/grid/columns.sass'
 @import '~bulma/sass/layout/_all.sass'
-@import '~bulma/sass/helpers/_all.sass'
+@import '~bulma/sass/utilities/_all.sass'
 
-// see https://codepen.io/enbee81/pen/yLyrmyg for the diagonal layout
-:root
-    --width: 100vw
 
-    @media (min-width: 42em)
-        --width: 42rem
-
-    // --magic-number: 0.1455 is calculated by this formula: abs( tan(6°) / 2 ) (and we use 6° as y-skew)
-    --magic-number: 0.1455
-    --skew-padding: calc(var(--width) * var(--magic-number))
-
-    // pulsing down arrow
-    --arrow-size: 4rem
-    --arrow-border: 0.2rem
 
 html
     scroll-behavior: smooth
     // orange gradient
     //background-image: linear-gradient(90deg, #b61000, #fcaf55)
     background-image: linear-gradient(90deg, #ed5f52, #fcaf55)
+    min-height: 100vh
+
+
+main
+    flex: 1 0 auto
+
+h1, h2, h3, h4, h5, h6
+    font-family: "Poppins", sans-serif
+    line-height: 1.2
+
+.page
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+.title
+    @extend .title
+    @include desktop
+        font-size: 3.5vw
 
 .content ol
     margin-top: 0.5rem
 
-// custom styles
-.footer__link
-    color: whitesmoke
-    &:hover
-        color: $primary
+.opener
+    min-height: 100vh
 
-// blurred background box for the headline
-.header-box
-    background-color: $blurred-background
-    border-radius: 5px
-    backdrop-filter: blur(1px)
-    min-width: 40%
-    margin: 0 auto 30rem
-    padding: 20px 40px
+.opener-content
+    position: relative
+    text-align: center
+    @include desktop
+        right: -8.3vw
+
+
+@keyframes rocket-launch
+    // make it so we get a 45deg. angle moving rocket
+    //-3/10 x + 30
+    0%
+        opacity: 0
+        transform: translate(-35vh, 35vh)
+    85%
+        transform: translate(-8vh, 8vh)
+        opacity: 1
+    97%
+        transform: translate(-1vh, 1vh)
+    100%
+        transform: translate(0, 0)
+
+.opener-rocket
+    animation: rocket-launch 1.5s ease-in-out
+    animation-delay: 1s
 
 // extend Bulma's section class to add horizontal outlines on top and bot
 .section
     @extend .section
     position: relative
-    padding: var(--skew-padding) 1.5rem
-    margin-top: 4rem
-    margin-bottom: 0px
-
+    padding: $skew-padding 1.5rem
+    margin-top: 2rem
+    margin-bottom: 6rem
+    &:last-child
+        margin-bottom: 0px
     // this pseudo element brings the scewed box
     &:before
         content: ""
@@ -106,92 +130,28 @@ html
     @extend .hero
     display: grid
 
-.page
-    min-height: 100vh
-    display: flex
-    flex-direction: column
-main
-    flex: 1 0 auto
 .footer
     @extend .footer
+    margin-top: auto
     flex-shrink: 0
+    a
+        color: $white-ter
+        &:hover
+            color: $primary
 
 .bg
     color: $white
-    @include desktop
-        min-height: 100vh
-    @include fullhd
-        min-height: 75vh
     &:before
         background-image: radial-gradient(circle at center, $secondary, #000, $secondary)
-    &:not(:last-child)
-        margin-bottom: 10rem
 
 .bg2
-    @extend .bg
     color: $white
     &:before
-        background-image:  radial-gradient(circle at center,#000 0, #000 40%, $secondary 100%)
+        background-image: radial-gradient(circle at center,#000 0, #000 40%, $secondary 100%)
 
-// pulsing down arrow
-.arrow-down
-    position: absolute
-    bottom: 27%
-    left: calc(50% - calc(var(--arrow-size) / 2))
-    color: $dark
-    backdrop-filter: blur(1px)
-
-    &:hover
-        opacity: 1
-    //mix-blend-mode: difference
-
-    span
-        // the placeholder element, provides the placing of the round border
-        position: absolute
-        width: var(--arrow-size)
-        height: var(--arrow-size)
-        border: var(--arrow-border) solid $dark
-        border-radius: 100%
-        box-sizing: border-box
-
-        &::before
-            // the downwards arrow shape made of two border rotated by 45 degrees
-            position: absolute
-            top: calc(50% - 0.75rem)
-            left: calc(50% - 0.5rem)
-            width: 1rem
-            height: 1rem
-            margin: 0
-            padding: 0
-            content: ''
-            border-left: var(--arrow-border) solid $dark
-            border-bottom: var(--arrow-border) solid $dark
-            transform: rotate(-45deg)
-            box-sizing: border-box
-
-        &::after
-            // the pulsing shadow that aligns exactly with the border of the span
-            position: absolute
-            top: calc(-1 * var(--arrow-border))
-            left: calc(-1 * var(--arrow-border))
-            z-index: -1
-            content: ''
-            width: var(--arrow-size)
-            height: var(--arrow-size)
-            box-shadow: 0 0 0 0 rgba(255,255,255,.1)
-            border-radius: 100%
-            animation: shadow-pulse 2.5s infinite
-            box-sizing: border-box
-            //box-shadow: 0 0 0 var(--arrow-size) $blurred-background
-
-@keyframes shadow-pulse
-    30%
-        opacity: 1
-    60%
-        box-shadow: 0 0 0 var(--arrow-size) $blurred-background
-        opacity: 0
-    100%
-        opacity: 0
+.bg-white
+    &:before
+        background-color: #f5f5f5
 
 .profile-entry
     transition-delay: 300ms
@@ -199,11 +159,12 @@ main
     opacity: 1
 
 .cv-entry
-    transition: transform 180ms
-    @include desktop
-        &:hover
-            transform: translateX(10px)
-            transition: transform 450ms // go back quicker
+    transition: all 1s ease
+    transform: translateY(70%)
+
+.cv-entry-visible
+    transform: translateY(0%)
+
 
 .cv-icon-column
     @include mobile
@@ -213,10 +174,18 @@ main
         font-size: 0.5rem
 
 .cv-icon-box
+    background-color: transparent
+    overflow: hidden
+    padding: 1.25rem
     text-align: center
     @include mobile
         padding: 0.5rem
+
 .cv-icon-container
+    opacity: 0
+    transition: all 2s ease
+    transform: translateY(100%)
+
     display: inline-block
     margin: 0.4rem 1rem
     @include until-widescreen
@@ -224,13 +193,16 @@ main
     @include mobile
         margin: 0.4rem 0.5rem
 
+.cv-icon-container-visible
+    opacity: 1
+    transform: translateY(0%)
+
 .cv-icon
-    color: $dark
-    font-size: 2rem
+    color: $light-primary
+    font-size: 2.5rem
     transition: all 300ms
     @include desktop
         &:hover
-            color: $light-primary
             transform: scale(1.5)
     @include until-widescreen
         font-size: 1.5rem
@@ -247,7 +219,7 @@ main
     min-height: 25vh
     transition: all 300ms
     @include widescreen
-        transform: scale(1.1)
+        // transform: scale(1.1)
         &:first-child
             transform: scale(1)
         &:last-child

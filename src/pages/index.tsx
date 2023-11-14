@@ -1,20 +1,20 @@
 import * as React from 'react';
 
-import Cover from '../components/cover';
 import Cv from '../components/cv';
 import AboutMe from '../components/profile';
 import Biz from '../components/biz';
+import Opener from '../components/opener';
 import Page from '../components/page';
 import Seo from '../components/seo';
 
 import aboutme from '../../content/about-me.yaml';
 import cv from '../../content/cv.yaml';
 import biz from '../../content/biz.yaml';
+import opener from '../../content/opener.yaml';
 
 const IndexPage = () => (
   <Page>
-    <Cover />
-
+    <Opener opener={opener.opener}/>
     <section className="section bg" id="landing">
       <Biz tiers={biz.tiers} opener={biz.opener}/>
     </section>

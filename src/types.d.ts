@@ -27,3 +27,10 @@ export type BizTierData = {
     header: string;
     text: string;
 }
+
+export type OpenerData = {
+    title: string;
+    subtitle: string;
+    text: string[];
+    lead: string;
+}
