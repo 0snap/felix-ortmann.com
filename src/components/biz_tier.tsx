@@ -21,13 +21,12 @@ const lookup = new Map<string, JSX.Element>([
 ]);
 
 type BizTierProps = {
-  idx: number;
   tier: BizTierData;
 }
 
-const BizTier = ({idx, tier}: BizTierProps) => {
+const BizTier = ({tier}: BizTierProps) => {
   return (
-    <div className="column is-one-quarter-fullhd biz-tier" key={idx}>
+    <div className="column is-one-quarter-fullhd biz-tier">
       <div className='box content has-text-centered p-6' style={{height: '100%'}}>
         <IconContext.Provider value={{className: 'biz-icon'}}>
           {lookup.get(tier.icon)}
