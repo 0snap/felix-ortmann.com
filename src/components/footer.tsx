@@ -6,18 +6,18 @@ const Footer = () => (
     <div className="container">
       <ul style={{listStyle: 'none'}}>
         <li>
-          <Link to="/imprint/" className="footer__link">
+          <Link to="/imprint/">
             Imprint
           </Link>
         </li>
         <li>
-          <Link to="/privacy-policy/" className="footer__link">
+          <Link to="/privacy-policy/">
             Privacy Policy
           </Link>
         </li>
       </ul>
       <p className="has-text-centered mt-5">
-        <Link to="/" className="footer__link">
+        <Link to="/">
           © {new Date().getFullYear()} Felix Ortmann
         </Link>
       </p>
