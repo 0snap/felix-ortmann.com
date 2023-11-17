@@ -3,11 +3,12 @@
 // colors
 $dark: hsl(0, 0%, 21%)
 $secondary: rgb(82, 29, 139)
-$primary: #ee4a22
-$light-primary: #ee6745
+// $primary: #ee4a22
+$primary: #be25ff
+$light-primary: rgba(231,173,255,1)
 $blurred-background: rgba(255, 255, 255, 0.3)
 $circle-size: 1rem
-$title-color: hsl(0, 0%, 96%)
+$title-color: black
 
 // overwrite bulma variables
 $background: whitesmoke
@@ -44,11 +45,7 @@ $skew-padding: calc($width * $magic-number)
 
 html
     scroll-behavior: smooth
-    // orange gradient
-    //background-image: linear-gradient(90deg, #b61000, #fcaf55)
-    background-image: linear-gradient(90deg, #ed5f52, #fcaf55)
     min-height: 100vh
-
 
 main
     flex: 1 0 auto
@@ -70,14 +67,25 @@ h1, h2, h3, h4, h5, h6
 .content ol
     margin-top: 0.5rem
 
-.opener
+.opener-background
     min-height: 100vh
+    background-image: linear-gradient(29deg, $light-primary 0%, rgba(255,255,255,0) 100%)
+    background-size: cover
+    background-position: center
+
+    @include widescreen
+        background-image: url('../../images/landing.svg'), linear-gradient(29deg, $light-primary 0%, rgba(255,255,255,0) 100%)
+        background-repeat: no-repeat, no-repeat
+        background-size: 60%, cover
+        background-position: bottom left 15%, center
+
 
 .opener-content
-    position: relative
     text-align: center
-    @include desktop
-        right: -8.3vw
+    margin-top: 5%
+    @include fullhd
+        margin-left: 50%
+
 
 
 @keyframes rocket-launch
@@ -94,33 +102,11 @@ h1, h2, h3, h4, h5, h6
     100%
         transform: translate(0, 0)
 
-.opener-rocket
+.rocket
     animation: rocket-launch 1.5s ease-in-out
     animation-delay: 1s
 
-// extend Bulma's section class to add horizontal outlines on top and bot
-.section
-    @extend .section
-    position: relative
-    padding: $skew-padding 1.5rem
-    margin-top: 2rem
-    margin-bottom: 6rem
-    &:last-child
-        margin-bottom: 0px
-    // this pseudo element brings the scewed box
-    &:before
-        content: ""
-        position: absolute
-        left: 0
-        top: 0
-        right: 0
-        bottom: 0
-        transform: skewy(-6deg)
-        outline: 1px solid transparent
-        //backface-visibility: hidden
-        z-index: -1
-
-// extend Bulma's container class to add horizontal outlines on top and bot
+// extend Bulma's container class to have a fixed width
 .container
     @extend .container
     position: relative
@@ -138,20 +124,6 @@ h1, h2, h3, h4, h5, h6
         color: $white-ter
         &:hover
             color: $primary
-
-.bg
-    color: $white
-    &:before
-        background-image: radial-gradient(circle at center, $secondary, #000, $secondary)
-
-.bg2
-    color: $white
-    &:before
-        background-image: radial-gradient(circle at center,#000 0, #000 40%, $secondary 100%)
-
-.bg-white
-    &:before
-        background-color: #f5f5f5
 
 .profile-entry
     transition-delay: 300ms
@@ -229,7 +201,6 @@ h1, h2, h3, h4, h5, h6
             z-index: 2
 
 .cta
-    color: $white-ter
     margin-top: 5rem
 
 .cta-button
