@@ -1,6 +1,24 @@
 journey:
+  - company: uni-assist e.V.
+    icons:
+    - argocd
+    - docker
+    - gitlab-ci
+    - kubernetes
+    - scaleway
+    - terraform
+    link: https://www.uni-assist.de/
+    jobTitle: Project Lead Cloud Migration
+    duration: Spring 2023 &mdash; current
+    description:
+      - Project lead 'Cloud Migration' for moving the on-premise production environment to <a href="https://scaleway.com" target="_blank" rel="noopener noreferrer">Scaleway</a>.
+      - Currently managing a 9-headed agile team, doing Kanban.
+      - Created a multi-stage migration plan for moving infrastructure, services, and data.
+      - Architected the GDPR-compliant cloud landscape and deployment setup.
+      - Active engineering to bootstrap the cloud environment with Terraform, GitLab, and ArgoCD.
   - company: Stackstream
     icons:
+    - argocd
     - aws
     - docker
     - kubernetes
@@ -25,6 +43,7 @@ journey:
     - aws
     - github-ci
     - nodejs
+    - typescript
     link: https://www.walnut.io/
     jobTitle: Consultant Infrastructure Improvements
     duration: Spring 2022 &mdash; Spring 2022
@@ -61,6 +80,7 @@ journey:
     - elastic
     - wireguard
     - gcp
+    - react
     link: https://tenzir.com
     jobTitle: Blue Team Engineer
     duration: Fall 2019 &mdash; Summer 2021
@@ -106,7 +126,7 @@ journey:
     jobTitle: Backend & DevOps Engineer
     duration: Winter 2017 &mdash; Fall 2018
     description:
-      - Provided and maintained infrastructure as code on AWS to enable urban mobility services in multiple German cities.
+      - Provided and maintained infrastructure-as-code on AWS to enable urban mobility services in multiple German cities.
       - Helped architecting the AWS cloud landscape.
       - Delivered CI/CD via TeamCity for an entire engineering squad.
       - Conceptualized, implemented and maintained backend microservices.
@@ -126,7 +146,7 @@ journey:
     duration: Summer 2015 &mdash; Summer 2016
     description:
       - Introduced Kubernetes to the team and handled the adoption when it was first released on GCP.
-      - Provided and maintained infrastructure as code on GCP and provided CI/CD via Jenkins.
+      - Provided and maintained infrastructure-as-code on GCP and provided CI/CD via Jenkins.
       - Greately contributed in architecting the GCP cloud landscape.
       - Planned, implemented, and maintained both backend- and frontend-serving microservices.
   - company: SinnerSchrader
@@ -147,7 +167,7 @@ journey:
     - linux
     - php
     link: https://www.catworkx.com/
-    jobTitle: Software Engineer
+    jobTitle: Plugin Engineer
     duration: Winter 2013 &mdash; Spring 2014
     description:
       - Developed plugins for Atlassian Jira and Confluence.
