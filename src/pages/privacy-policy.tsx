@@ -12,11 +12,7 @@ const PrivacyPolicyPage = () => {
     <Page>
       <section className="section is-medium bg-white">
         <div className="container">
-          <div className="content">
-            <header>
-              <h1 className="title is-2">{pp.headline}</h1>
-            </header>
-          </div>
+          <h1 className="title">{pp.headline}</h1>
           <div className="content">
             {pp.disclaimer.map((d: string, idx: number) => {
               return <p key={idx} dangerouslySetInnerHTML={{__html: d}}/>;
