@@ -74,9 +74,9 @@ type IconColProps = {
 
 const CvEntryIconCol = ({icons, inView}: IconColProps) => (
   <div className="cv-icon-column column is-one-fifths">
-    <div className="cv-icon-box">
+    <div className={`cv-icon-box ${inView ? 'cv-icon-box-visible' : ''}`}>
       {icons.map((icon: string, idx: number) => (
-        <div key={idx} className={`cv-icon-container ${inView ? 'cv-icon-container-visible' : ''}`}>
+        <div key={idx} className='cv-icon-container'>
           <IconContext.Provider value={{className: 'cv-icon'}}>
             {lookup.get(icon)}
           </IconContext.Provider>

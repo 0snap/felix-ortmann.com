@@ -46,6 +46,7 @@ $skew-padding: calc($width * $magic-number)
 html
     scroll-behavior: smooth
     min-height: 100vh
+    background-color: $background
 
 main
     flex: 1 0 auto
@@ -146,18 +147,21 @@ h1, h2, h3, h4, h5, h6
         font-size: 0.5rem
 
 .cv-icon-box
-    background-color: transparent
+    background-color: $background
     overflow: hidden
     padding: 1.25rem
     text-align: center
     @include mobile
         padding: 0.5rem
-
-.cv-icon-container
     opacity: 0
     transition: all 2s ease
     transform: translateY(100%)
 
+.cv-icon-box-visible
+    opacity: 1
+    transform: translateY(0%)
+
+.cv-icon-container
     display: inline-block
     margin: 0.4rem 1rem
     @include until-widescreen
@@ -165,12 +169,8 @@ h1, h2, h3, h4, h5, h6
     @include mobile
         margin: 0.4rem 0.5rem
 
-.cv-icon-container-visible
-    opacity: 1
-    transform: translateY(0%)
-
 .cv-icon
-    color: $light-primary
+    color: $primary
     font-size: 2.5rem
     transition: all 300ms
     @include desktop
