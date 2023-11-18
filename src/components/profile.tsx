@@ -11,7 +11,7 @@ type ProfileProps = {
 const AboutMe = ({profile}: ProfileProps) => {
   return (
     <div className="container">
-      <h1 className="title has-text-centered my-6">
+      <h1 className="title has-text-centered">
         About me
       </h1>
       {profile &&

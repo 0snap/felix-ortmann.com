@@ -8,12 +8,12 @@ type OpenerProps = {
 const Opener = ({opener}: OpenerProps) => {
   const {lead, q, cta, cta2} = opener;
   return <>
-    <section className='section opener-background'>
+    <section className='section opener-background mb-6'>
       <div className='opener-content'>
-        <h1 className='title mt-6 pt-6'>
+        <h1 className='title'>
               Hi, I'm <span style={{color: 'red'}}>Felix</span>
         </h1>
-        <div className='content pb-6 is-size-4'>
+        <div className='content pb-6 is-size-5'>
           <p>{lead}</p>
         </div>
         <div className='content mt-6 py-6 is-size-4'>

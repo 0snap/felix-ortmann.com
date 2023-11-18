@@ -41,7 +41,9 @@ $skew-padding: calc($width * $magic-number)
 @import '~bulma/sass/layout/_all.sass'
 @import '~bulma/sass/utilities/_all.sass'
 
-
+// pulsing down arrow
+$arrow-size: 4rem
+$arrow-border: 0.2rem
 
 html
     scroll-behavior: smooth
@@ -62,8 +64,16 @@ h1, h2, h3, h4, h5, h6
 
 .title
     @extend .title
+    // override needed, since bulma has a last-child rule...
+    &:not(:last-child)
+        margin-top: 3rem
+        margin-bottom: 3rem
+
+    margin-top: 3rem
+    margin-bottom: 3rem
+    line-height: 1.5
     @include desktop
-        font-size: 3.5vw
+        font-size: 3vw
 
 .content ol
     margin-top: 0.5rem

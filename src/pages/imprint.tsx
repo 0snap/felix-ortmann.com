@@ -11,7 +11,7 @@ import {Paragraph} from '../types';
 const ImprintPage = () => {
   return (
     <Page>
-      <section className="section is-medium bg-white">
+      <section className="section is-medium">
         <div className="container">
           <h1 className="title">{imprint.headline}</h1>
 

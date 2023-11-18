@@ -13,11 +13,11 @@ type BizProps = {
 const Biz = ({tiers, opener}: BizProps) => {
   return (
     <>
-      <div className="container pt-6">
+      <div className="container">
         <h1 className="title has-text-centered">
           Cloud Engineering like it's <span style={{color: 'red'}}>{new Date().getFullYear()}</span>
         </h1>
-        <div className='content py-6 has-text-centered'>
+        <div className='content has-text-centered'>
           <p className='is-size-4'>{opener}</p>
         </div>
       </div>

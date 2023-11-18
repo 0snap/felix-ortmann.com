@@ -15,13 +15,13 @@ import opener from '../../content/opener.yaml';
 const IndexPage = () => (
   <Page>
     <Opener opener={opener.opener}/>
-    <section className="section bg" id="landing">
+    <section className="section mb-6" id="services">
       <Biz tiers={biz.tiers} opener={biz.opener}/>
     </section>
-    <section className="section bg2" id="about_me">
+    <section className="section mb-6" id="about_me">
       <AboutMe profile={aboutme.profile} />
     </section>
-    <section className="section bg" id="cv">
+    <section className="section" id="cv">
       <Cv journey={cv.journey} />
     </section>
   </Page>
