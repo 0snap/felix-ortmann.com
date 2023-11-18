@@ -18,7 +18,10 @@ const AboutMe = ({profile}: ProfileProps) => {
         profile.map((entry, idx) => (
           <ProfileEntry key={idx} idx={idx} entry={entry} />
         ))}
-      <CTA q="Want to work with me?" button="Let's chat!" />
+      <div className='container mt-6 pt-6 is-size-5 has-text-centered'>
+        <p>Interested in working with me?</p>
+        <CTA button="Let's chat!" />
+      </div>
     </div>
   );
 };

@@ -27,7 +27,10 @@ const Biz = ({tiers, opener}: BizProps) => {
             <BizTier key={idx} tier={tier} />
           ))}
       </div>
-      <CTA q="Ready to turbocharge your business?" button="Let's chat!" />
+      <div className='container mt-6 pt-6 is-size-5 has-text-centered'>
+        <p>Ready to turbocharge your business?</p>
+        <CTA button="Let's chat!" />
+      </div>
     </>
   );
 };

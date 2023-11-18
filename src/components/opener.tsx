@@ -10,15 +10,18 @@ const Opener = ({opener}: OpenerProps) => {
   return <>
     <section className='section opener-background'>
       <div className='opener-content'>
-        <h1 className='title my-6 pt-6'>
+        <h1 className='title mt-6 pt-6'>
               Hi, I'm <span style={{color: 'red'}}>Felix</span>
         </h1>
-        <div className='content py-6'>
-          <p className='is-size-4'>{lead}</p>
+        <div className='content pb-6 is-size-4'>
+          <p>{lead}</p>
         </div>
-        <CTA q={q} button={cta} />
-        <div className='content py-6 mt-6'>
-          <p className='is-size-4'>{cta2}</p>
+        <div className='content mt-6 py-6 is-size-4'>
+          <p>{q}</p>
+          <CTA button={cta} />
+        </div>
+        <div className='content pt-6 mt-6 is-size-5'>
+          <p>{cta2}</p>
         </div>
       </div>
     </section>
