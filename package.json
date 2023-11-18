@@ -1,9 +1,9 @@
 {
-  "name": "felix-ortmann-website",
+  "name": "felix-ortmann-cloud-engineering-website",
   "private": true,
-  "description": "Personal webpage of Felix Ortmann",
-  "version": "2.0.0",
-  "author": "Felix Ortmann <flx.ortmann@gmail.com>",
+  "description": "With over 12 years of coding expertise, I specialize in providing tailored coding services and bespoke cloud architecture solutions on a per-project basis.",
+  "version": "3.0.0",
+  "author": "Felix Ortmann <info@felix-ortmann.com>",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -57,7 +57,8 @@
   "keywords": [
     "gatsby",
     "webpage",
-    "react"
+    "react",
+    "bulma"
   ],
   "repository": {
     "type": "git",
