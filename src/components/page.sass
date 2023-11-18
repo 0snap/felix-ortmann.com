@@ -94,9 +94,69 @@ h1, h2, h3, h4, h5, h6
 .opener-content
     text-align: center
     margin-top: 5%
+    position: relative
     @include fullhd
         margin-left: 50%
 
+
+// pulsing down arrow
+.arrow-down
+    &:hover
+        opacity: 1
+    position: absolute
+    left: calc(50% - calc($arrow-size / 2)) // center
+    color: $dark
+    backdrop-filter: blur(1px)
+    //mix-blend-mode: difference
+
+    span
+        // the placeholder element, provides the placing of the round border
+        position: absolute
+        width: $arrow-size
+        height: $arrow-size
+        border: $arrow-border solid $dark
+        border-radius: 100%
+        box-sizing: border-box
+
+        &::before
+            // the downwards arrow shape made of two border rotated by 45 degrees
+            position: absolute
+            top: calc(50% - 0.75rem)
+            left: calc(50% - 0.5rem)
+            width: 1rem
+            height: 1rem
+            margin: 0
+            padding: 0
+            content: ''
+            border-left: $arrow-border solid $dark
+            border-bottom: $arrow-border solid $dark
+            transform: rotate(-45deg)
+            box-sizing: border-box
+
+
+        &::after
+            // the pulsing shadow that aligns exactly with the border of the span
+            position: absolute
+            top: calc(-1 * $arrow-border)
+            left: calc(-1 * $arrow-border)
+            z-index: -1
+            content: ''
+            width: $arrow-size
+            height: $arrow-size
+            box-shadow: 0 0 0 0 rgba(255,255,255,.1)
+            border-radius: 100%
+            animation: shadow-pulse 2.5s infinite
+            box-sizing: border-box
+            //box-shadow: 0 0 0 $arrow-size $blurred-background
+
+@keyframes shadow-pulse
+    30%
+        opacity: 1
+    60%
+        box-shadow: 0 0 0 $arrow-size $blurred-background
+        opacity: 0
+    100%
+        opacity: 0
 
 
 @keyframes rocket-launch

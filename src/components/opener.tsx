@@ -22,6 +22,11 @@ const Opener = ({opener}: OpenerProps) => {
         </div>
         <div className='content pt-6 mt-6 is-size-5'>
           <p>{cta2}</p>
+          <div className="arrow-down mt-6">
+            <a aria-label="Landing page" href="#services">
+              <span></span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
