@@ -2,16 +2,16 @@
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "ecmaVersion": 12,
-      "sourceType": "module",
+      "sourceType": "module"
     },
     "plugins": ["@typescript-eslint"],
-    "extends": ["google", "react-app"],
+    "extends": ["google"],
 
     "rules": {
       "@typescript-eslint/no-unused-vars": "error",
       // to enforce using type for object type definitions, can be type or interface
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
-      "max-len": ["warn", 140],
+      "max-len": ["warn", 140]
     },
 
     "ignorePatterns": ["public/**", ".eslintrc"],
