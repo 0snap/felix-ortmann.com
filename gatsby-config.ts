@@ -21,6 +21,14 @@ const config: GatsbyConfig = {
         path: `${__dirname}/images`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/,
+        },
+      },
+    },
   ],
 };
 

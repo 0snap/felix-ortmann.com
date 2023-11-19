@@ -3,9 +3,8 @@
 // colors
 $dark: hsl(0, 0%, 21%)
 $secondary: rgb(82, 29, 139)
-// $primary: #ee4a22
 $primary: #be25ff
-$light-primary: rgba(231,173,255,1)
+$light: rgba(231,173,255,1)
 $blurred-background: rgba(255, 255, 255, 0.3)
 $circle-size: 1rem
 $title-color: black
@@ -16,7 +15,7 @@ $footer-background-color: $dark
 $footer-color: whitesmoke
 $footer-padding: 3rem 1.5rem
 $link: $primary
-$link-hover: $light-primary
+$link-hover: $light
 
 $variable-columns: true
 
@@ -78,25 +77,22 @@ h1, h2, h3, h4, h5, h6
 .content ol
     margin-top: 0.5rem
 
-.opener-background
-    min-height: 100vh
-    background-image: linear-gradient(29deg, $light-primary 0%, rgba(255,255,255,0) 100%)
+.opener
+    min-height: 75vh
+    background-image: linear-gradient(29deg, $light 0%, rgba(255,255,255,0) 100%)
     background-size: cover
     background-position: center
 
-    @include widescreen
-        background-image: url('../../images/landing.svg'), linear-gradient(29deg, $light-primary 0%, rgba(255,255,255,0) 100%)
-        background-repeat: no-repeat, no-repeat
-        background-size: 60%, cover
-        background-position: bottom 25% left, center
-
+.opener-image
+    display: flex
+    align-items: center
 
 .opener-content
-    text-align: center
     margin-top: 5%
-    position: relative
-    @include fullhd
-        margin-left: 50%
+    @include tablet
+        padding-left: 5%
+    @include desktop
+        padding-left: 10%
 
 
 // pulsing down arrow

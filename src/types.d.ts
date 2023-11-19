@@ -32,5 +32,9 @@ export type OpenerData = {
     lead: string;
     q: string;
     cta: string;
-    cta2: string;
+}
+
+declare module '*.svg' {
+    const content: any;
+    export default content;
 }
