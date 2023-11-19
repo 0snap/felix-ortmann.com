@@ -15,7 +15,7 @@ const Biz = ({tiers, opener}: BizProps) => {
     <>
       <div className="container">
         <h1 className="title has-text-centered">
-          Cloud Engineering like it's <span style={{color: 'red'}}>{new Date().getFullYear()}</span>
+          Cloud Engineering like it's <span className='has-text-primary'>{new Date().getFullYear()}</span>
         </h1>
         <div className='content has-text-centered'>
           <p className='is-size-4'>{opener}</p>
