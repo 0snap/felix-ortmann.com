@@ -4,7 +4,7 @@
 $dark: hsl(0, 0%, 21%)
 $secondary: rgb(82, 29, 139)
 $primary: #be25ff
-$light: rgba(231,173,255,1)
+$light: #e7adff
 $blurred-background: rgba(255, 255, 255, 0.3)
 $circle-size: 1rem
 $title-color: black
@@ -191,6 +191,20 @@ h1, h2, h3, h4, h5, h6
         color: $white-ter
         &:hover
             color: $primary
+
+.certs
+    background-color: $black
+    color: $white
+    padding-top: 1rem
+    padding-bottom: 1rem
+
+.cert-badge
+    @include tablet
+        max-width: 10rem
+    @include mobile
+        max-width: 6rem
+    display: block
+    margin: auto
 
 .profile-entry
     transition-delay: 300ms

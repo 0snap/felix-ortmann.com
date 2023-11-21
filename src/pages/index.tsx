@@ -4,6 +4,7 @@ import Cv from '../components/cv';
 import AboutMe from '../components/profile';
 import Biz from '../components/biz';
 import Opener from '../components/opener';
+import Certs from '../components/certs';
 import Page from '../components/page';
 import Seo from '../components/seo';
 
@@ -15,6 +16,7 @@ import opener from '../../content/opener.yaml';
 const IndexPage = () => (
   <Page>
     <Opener opener={opener.opener}/>
+    <Certs />
     <section className="section mb-6" id="services">
       <Biz tiers={biz.tiers} opener={biz.opener}/>
     </section>

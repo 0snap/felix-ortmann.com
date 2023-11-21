@@ -9,7 +9,7 @@ type OpenerProps = {
 const Opener = ({opener}: OpenerProps) => {
   const {lead, q, cta} = opener;
   return <>
-    <section className='section opener mb-6'>
+    <section className='section opener'>
       <div className='columns is-desktop opener-content'>
         <div className='column'>
           <h1 className='title'>
