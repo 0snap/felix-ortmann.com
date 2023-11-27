@@ -24,16 +24,16 @@ const Opener = ({opener}: OpenerProps) => {
             </p>
             <CTA button={cta} />
           </div>
-          <div className='content mt-6 is-size-5 is-hidden-mobile'>
-            <div className="arrow-down mt-6">
-              <a aria-label="Landing page" href="#services">
-                <span></span>
-              </a>
-            </div>
-          </div>
         </div>
         <div className='column opener-image'>
           <Landing />
+        </div>
+      </div>
+      <div className='content is-hidden-mobile'>
+        <div className="arrow-down">
+          <a aria-label="Landing page" href="#services">
+            <span></span>
+          </a>
         </div>
       </div>
     </section>
