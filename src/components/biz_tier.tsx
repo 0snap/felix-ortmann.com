@@ -32,7 +32,7 @@ const BizTier = ({tier}: BizTierProps) => {
           {lookup.get(tier.icon)}
         </IconContext.Provider>
         <h2 className='mb-6 is-size-4'>{tier.header}</h2>
-        <p className='mb-5 has-text-primary'>{tier.catcher}</p>
+        <p className='mb-5 is-size-5 has-text-primary'>{tier.catcher}</p>
         <p >{tier.text}</p>
       </div>
     </div>
