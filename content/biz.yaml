@@ -3,7 +3,7 @@ tiers:
   - icon: rocket
     header: Backend & Fullstack Coding
     catcher: You need a bright engineer right now?
-    text: From backend to Ops and CI/CD mastery, I bring a wealth of experience and productivity to every project. With expertise in a wide range of languages and tools, I hit the ground running to deliver results from day one. Whether you need a backend engineer or an Ops master, I have the skills and expertise needed to boost your productivity and exceed your expectations.
+    text: From backend to Ops and CI/CD mastery, I bring a wealth of experience and productivity to every project. With expertise in a wide array of languages and tools, I hit the ground running to deliver results from day one. Whether you need a backend engineer or an Ops master, I have the skills and expertise needed to boost your productivity and exceed your expectations.
   - icon: kubernetes
     header: Cloud- & Distributed Systems Architecture
     catcher: Event-driven or synchronous?
@@ -15,5 +15,4 @@ tiers:
   - icon: insights
     header: DevOps & SRE
     catcher: You're done with plain logshipping?
-    text: Too many incidents but no clue why? Slow responses or unhappy customers? Don't wait any longer to get the performance and insights you need from your infrastructure! With my expertise in service monitoring, I can help you identify bottlenecks in your infrastructure and improve your customer happiness. Let's find out how to improve your app's stability and increase customer satisfaction.
-    #From instrumentalizing deployments to identifying misbehaving services, I have the tools and expertise needed to boost your app's performance and keep your customers happy.
+    text: Too many incidents but no clue why? Slow responses or unhappy customers? Don't wait any longer to get the performance and insights you need from your infrastructure! With my expertise in service monitoring, I can help you identify bottlenecks in your infrastructure and improve your customer happiness.
