@@ -5,10 +5,20 @@ export type Paragraph = {
     text: string;
 }
 
-export type ProfileEntryData = {
+export type AboutMeParagraphData = {
     icon: IconName;
     color: string;
     text: string;
+}
+
+type AboutMeHighlights = {
+    text: string;
+    bullets: string[];
+}
+
+export type AboutMeData = {
+    paragraphs: AboutMeParagraphData[];
+    highlights: AboutMeHighlights;
 }
 
 

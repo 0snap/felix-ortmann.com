@@ -1,20 +1,23 @@
-profile:
-  - icon: gamepad
-    color: "#03989E"
-    text: A turquoise GameBoy Color hooked me into tech when I was little. A few years later, I advocated for an advanced computer science course at high school and graduated best-in-class in mathematics.
+paragraphs:
   - icon: graduation-cap
     color: black
-    text: Working half time and studying full time, I graduated with a summa-cum-laude Master's degree on the subject of "Temporal and Spatial Alert Correlation for the Detection of Advanced Persistent Threats" in 2019. I was part of a special cooperation between the University of Hamburg, the Fraunhofer Institute Singapore, and the Nanyang Technological University Singapore, where I spent my final year. My Master's Thesis has won two prizes since then for innovative excellence in the cybersecurity industry.
-  - icon: business-time
-    color: "#6E2C00"
-    text: By now, I pack more than 10 years of professional experience with dozens of programming languages and tools. I have experience working on my own as well as as working with teams of up to 20 engineers. I have worked on providing mobility services across Germany, researched APT-campaign detection in Singapore, and helped improving incident visibility and detection for multiple fortune-500 companies, among others. Please be invited to browse my <a href="#cv" "rel=noopener norefferrer">resume</a> below for details on my professional journey.
-  - icon: robot
-    color: "#607D8B"
-    text: Currently, my passion lies in distributed systems design and process automation in modern cloud environments. At the moment, I'm most interested in blue-teaming and automation, as well as site reliability engineering.
-  - icon: address-card
-    color: "#EE4A22"
-    text: Check out my <a href="https://github.com/0snap" target="_blank" rel="noopener noreferrer">profile</a> at GitHub. Over there, I was responsible (core maintainer) for the <a href="https://github.com/tenzir/threatbus" target="_blank" rel="noopener noreferrer">Threat Bus</a> project as part of my previous relationship with the awesome folks from <a href="https://tenzir.com" target="_blank" rel="noopener noreferrer">Tenzir</a>. Or find me at <a href="https://www.linkedin.com/in/felix-ortmann/" target="_blank" rel="noopener noreferrer">LinkedIn</a> in case you wish to work with me.
-
-title: Felix Ortmann
-description: Felix Ortmann - Professional Cloud Engineering
-author: github.com/0snap
+    text: My journey began over a decade ago when I entered university, immediately gravitating towards the realm of theoretical computer science (TCS). During those formative years, I was involved with a graphical Petri-Nets engine for modelling concurrent applications. This foundational experience set the stage for my academic endeavors.
+  - icon: concurrency
+    color: '#25a1ff'
+    text: Venturing into the depths of algorithm design and concurrency, I found my passion for languages like Go. In September 2015, I played a pivotal role in bringing to life a Kubernetes-based micro-service deployment, right after K8s came out of Public Beta.
+  - icon: security
+    color: '#1b8b20'
+    text: My fascination extended to communication security and system stability, stemming from my roots in distributed systems. With a focus on Blue Teaming and Site Reliability Engineering (SRE), I've spent roughly five years delving into the realms of Cyber Defense.
+  - icon: cloud
+    color: '#3027ac'
+    text: Yet, my true calling lies at the intersection of security analysis and systems design. Today, I specialize in holistic cloud architecture and reviews, boasting proficiency with many public cloud environments. Armed with extensive coding experience across a spectrum of modern languages, I embody a unique blend of engineer and architect.
+highlights:
+  text: "Key highlights that define my professional journey:"
+  bullets:
+    - Graduated summa cum laude with a Master's degree (1.0 average) in Computer Science at the University of Hamburg, Germany.
+    - Awarded a stipend from the Fraunhofer Institute to spend my final year at the Nanyang University, Singapore.
+    - Recognized for innovative excellence in the Cyber Security industry with two independent prizes for my master's thesis.
+    - Contributed as a Site Reliability Engineer for the German Government.
+    - Accumulated more than a dozen years of professional experience, collaborating with diverse German and international companies.
+    # - Proficient in a myriad of tools and languages commonly employed in production.
+    # - Strong adaptability, thorough mindset and holistic perspective on the big picture.
