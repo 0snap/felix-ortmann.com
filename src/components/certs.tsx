@@ -4,7 +4,7 @@ import ScwBadge from '../../images/scw_cert_badge.svg';
 
 const Certs = () => {
   return <>
-    <section className='section certs mb-6' id='services'>
+    <section className='section teaser mb-6' id='services'>
       <div className='columns is-mobile is-vcentered' style={{maxWidth: '1280px', margin: 'auto'}}>
         <div className='column is-hidden-mobile'>
           <h3 className='is-size-3'>

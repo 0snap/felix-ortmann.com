@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {HiOutlineRocketLaunch} from 'react-icons/hi2';
+import {iconLookup} from './icons';
 
 type RocketProps = {
     size: string;
@@ -15,11 +15,7 @@ const Rocket = ({size}: RocketProps) =>
         <stop stopColor="#591885" offset="100%" />
       </linearGradient>
     </svg>
-    <HiOutlineRocketLaunch
-      size={size}
-      title="rocket"
-      style={{stroke: 'url(#rocket-gradient)'}}
-    />
+    {iconLookup('rocket', undefined, size, {stroke: 'url(#rocket-gradient)'} )}
   </div >);
 
 export default Rocket;

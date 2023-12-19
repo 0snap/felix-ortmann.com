@@ -2,6 +2,7 @@ import * as React from 'react';
 import {CvEntryData} from '../types';
 
 import CvEntry from './cv_entry';
+import CTA from './cta';
 
 type CvProps = {
   journey: CvEntryData[];
@@ -14,6 +15,10 @@ const Cv = ({journey}: CvProps) => (
     </h1>
     {journey &&
       journey.map((cvEntry: CvEntryData, idx: number) => <CvEntry key={idx} entry={cvEntry} />)}
+    <div className='container mt-6 pt-6 is-size-5 has-text-centered'>
+      <p>Want to work with me?</p>
+      <CTA button="Book a time in my calendar!" />
+    </div>
   </div>
 );
 
