@@ -15,7 +15,7 @@ const AboutMe = ({aboutMe}: AboutMeProps) => {
     <section className="section has-text-centered mb-6" id="about_me">
       <div className='container'>
 
-        <h1 className="title">
+        <h1 className="title is-size-1">
           About <span className='has-text-primary'>Me</span>
         </h1>
         <div className='content has-text-justified'>

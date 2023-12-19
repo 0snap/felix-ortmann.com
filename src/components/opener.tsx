@@ -12,7 +12,7 @@ const Opener = ({opener}: OpenerProps) => {
     <section className='section opener'>
       <div className='columns is-desktop opener-content'>
         <div className='column'>
-          <h1 className='title'>
+          <h1 className='title is-size-1'>
               Hi, I'm <span className='has-text-primary'>Felix</span>
           </h1>
           <div className='content is-size-4 is-size-5-touch'>

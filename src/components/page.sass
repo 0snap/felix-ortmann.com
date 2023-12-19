@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6
     margin-bottom: 3rem
     line-height: 1.5
     @include desktop
-        font-size: 3vw
+        font-size: 3vw !important
 
 .content ol
     margin-top: 0.5rem
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6
     @include widescreen
         margin: 6rem auto
     @include mobile
-        margin: 2rem auto
+        margin: 3rem auto
     hr
         color: $primary
         background-color: $primary
@@ -284,6 +284,8 @@ h1, h2, h3, h4, h5, h6
 .biz-tier
     min-height: 25vh
     transition: all 300ms
+    @include desktop
+        min-width: 35rem
     @include widescreen
         // transform: scale(1.1)
         &:first-child

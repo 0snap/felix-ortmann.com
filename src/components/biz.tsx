@@ -13,15 +13,15 @@ type BizProps = {
 const Biz = ({tiers, opener}: BizProps) => {
   return (
     <>
-      <div className="container">
-        <h1 className="title has-text-centered">
+      <div className="container has-text-centered">
+        <h1 className="title is-size-1">
           Cloud Engineering like it's <span className='has-text-primary'>{new Date().getFullYear()}</span>
         </h1>
-        <div className='content has-text-centered'>
+        <div className='content'>
           <p className='is-size-4'>{opener}</p>
         </div>
       </div>
-      <div className='columns is-centered pt-6 is-desktop is-variable is-3-desktop is-8-widescreen'>
+      <div className='columns is-centered pt-6 is-desktop is-variable is-3-desktop is-8-widescreen is-multiline'>
         {tiers &&
           tiers.map((tier: BizTierData, idx: number) => (
             <BizTier key={idx} tier={tier} />
