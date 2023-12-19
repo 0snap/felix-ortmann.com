@@ -7,8 +7,8 @@ type ContentBlockProps = {
 }
 
 const ContentBlock = ({title}: ContentBlockProps) => (
-  <div className="content">
-    <h3 className="title">{title}</h3>
+  <div className="content mb-6">
+    <h3 className="is-size-3">{title}</h3>
     <p>
       {contact.name}
       <br />
