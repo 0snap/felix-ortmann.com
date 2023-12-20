@@ -1,18 +1,18 @@
 opener: Systems architecture, cloud migrations, and coding services at your fingertips.
 tiers:
   - icon: rocket
-    header: Backend & Fullstack Coding
-    catcher: You need a bright engineer right now?
-    text: From backend to Ops and CI/CD mastery, I bring a wealth of experience and productivity to every project. With expertise in a wide array of languages and tools, I hit the ground running to deliver results from day one. Whether you need a backend engineer or an Ops master, I have the skills and expertise needed to boost your productivity and exceed your expectations.
+    header: Cloud Backend & Fullstack Coding Services
+    catcher: Need a Skilled Cloud Engineer Right Now?
+    text: As a seasoned cloud engineer specializing in backend and fullstack coding, I bring extensive expertise in cloud infrastructure, CI/CD, and a diverse set of programming languages. Whether you require a backend engineer or an Ops master, I leverage my skills to deliver results from day one. Let me boost your productivity and exceed your expectations with my proficiency in backend development and operational excellence.
   - icon: kubernetes
-    header: Cloud- & Distributed Systems Architecture
-    catcher: Event-driven or synchronous?
-    text: From infrastructure reviews to holistic systems design - let's create a system that's tailored to your needs and helps your business thrive. We'll start with a very thorough requirements engineering and then move forward with the best option for you!
+    header: Cloud & Distributed Systems Architecture Services
+    catcher: Exploring Event-Driven or Synchronous Solutions?
+    text: From comprehensive infrastructure reviews to tailored systems design, let's craft a solution that meets your unique needs and propels your business forward. Our journey begins with meticulous requirements engineering, ensuring we select the best options for your cloud and distributed systems architecture. Partner with me to create a system that maximizes efficiency and aligns perfectly with your business goals.
   - icon: server
-    header: On-Premises Migration
-    catcher: Are you tired of managing on-premises infrastructure?
-    text: Let me help you move to the cloud! With my expertise in cloud infrastructure, I can help you scale your services and increase your agility. From planning to execution, I'll guide you every step of the way. Say goodbye to on-premise headaches and hello to cloud-based solutions that are reliable, scalable, and cost-effective.
+    header: On-Premises Migration to Cloud Services
+    catcher: Ready to Transition from On-Premises Infrastructure?
+    text: Say goodbye to the challenges of managing on-premises infrastructure. I specialize in guiding businesses through seamless transitions to the cloud. With expertise in cloud infrastructure, I help you scale services, enhance agility, and reduce costs. From planning to execution, let me navigate you through the journey, ensuring reliable, scalable, and cost-effective cloud-based solutions for your business.
   - icon: insights
-    header: DevOps & SRE
-    catcher: You're done with plain logshipping?
-    text: Too many incidents but no clue why? Slow responses or unhappy customers? Don't wait any longer to get the performance and insights you need from your infrastructure! With my expertise in service monitoring, I can help you identify bottlenecks in your infrastructure and improve your customer happiness.
+    header: DevOps & SRE Services for Infrastructure Optimization
+    catcher: Seeking More Than Plain Log Shipping?
+    text: Experience a transformation in infrastructure performance and insights with my DevOps and Site Reliability Engineering (SRE) services. Tackle incidents head-on, enhance response times, and ensure customer satisfaction. With a focus on service monitoring, I identify bottlenecks, providing solutions to improve infrastructure efficiency and elevate customer happiness.
