@@ -25,6 +25,8 @@ const Seo = ({description, title}: SEOProps) => {
 
   return (
     <>
+      <html lang="en" />
+      <body className="page" />
       <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
       <meta name="robots" content="index, follow" />

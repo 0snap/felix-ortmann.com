@@ -35,8 +35,8 @@ const AboutMe = ({aboutMe}: AboutMeProps) => {
 
             {/* using a column, because styling of list-item bullets did not work nicely */}
             {aboutMe.highlights.bullets && aboutMe.highlights.bullets.map((bullet, idx2) => (
-              <div className='columns is-mobile mb-0'>
-                <div key={idx2} className='column is-1 has-text-right'>
+              <div key={idx2} className='columns is-mobile mb-0'>
+                <div className='column is-1 has-text-right'>
                   {iconLookup('checkmark', '#be25ff')}
                 </div>
                 <div className='column is-11'>

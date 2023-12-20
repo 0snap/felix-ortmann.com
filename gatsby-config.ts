@@ -2,9 +2,9 @@ import type {GatsbyConfig} from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: 'Felix Ortmann - Freelance Cloud Engineering',
+    title: 'Felix Ortmann - Freelance Cloud Engineering & Cloud Architecture',
     /* eslint-disable max-len*/
-    description: 'Do you want to scale your business as you grow? Consider moving to the cloud with me! I have strong experience with AWS and GCP, love designing microservice architectures, and provide proficiency with many programming languages.',
+    description: 'Do you want to scale your business as you grow? Consider moving to the cloud with me! I have strong experience with public cloud providers like Scaleway, AWS and GCP. I specialize in designing microservice architectures, and provide proficiency with many programming languages.',
     author: 'github.com/0snap',
   },
   graphqlTypegen: true,
