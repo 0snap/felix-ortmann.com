@@ -5,7 +5,7 @@ import * as React from 'react';
 import {AiFillCode, AiOutlineCloudServer, AiOutlineSecurityScan} from 'react-icons/ai';
 import {CiServer} from 'react-icons/ci';
 import {DiAtlassian, DiGo, DiJava, DiPython} from 'react-icons/di';
-import {FaAws, FaDocker, FaGraduationCap, FaNodeJs, FaPhabricator, FaReact} from 'react-icons/fa6';
+import {FaAws, FaDocker, FaGraduationCap, FaNodeJs, FaPhp, FaReact} from 'react-icons/fa6';
 import {GiProcessor} from 'react-icons/gi';
 import {HiOutlineRocketLaunch} from 'react-icons/hi2';
 import {IoMdCheckmarkCircleOutline} from 'react-icons/io';
@@ -68,7 +68,7 @@ export const iconLookup = (icon: string, color?: string, size?: string, style?: 
     ['aws', <FaAws title="AWS" color={color} size={size} style={style} />],
     ['docker', <FaDocker title="Docker" color={color} size={size} style={style} />],
     ['nodejs', <FaNodeJs title="NodeJS" color={color} size={size} style={style} />],
-    ['php', <FaPhabricator title="Php" color={color} size={size} style={style} />],
+    ['php', <FaPhp title="Php" color={color} size={size} style={style} />],
     ['rabbitmq', <SiRabbitmq title="Rabbit MQ" color={color} size={size} style={style} />],
     ['react', <FaReact title="ReactJS" color={color} size={size} style={style} />],
     ['scaleway', <SiScaleway title="Scaleway" color={color} size={size} style={style} />],
