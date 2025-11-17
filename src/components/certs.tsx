@@ -16,7 +16,7 @@ const Certs = () => {
           </h3>
         </div>
         <div className='column is-two-fifths-mobile'>
-          <a href="https://scaleway.360learning.com/api/certification/5330443733204762" target="_blank" rel="noopener noreferrer">
+          <a href="https://scaleway.360learning.com/api/certification/6683200442465628" target="_blank" rel="noopener noreferrer">
             <ScwBadgeFoundations className='cert-badge' />
           </a>
         </div>
