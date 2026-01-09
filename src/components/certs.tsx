@@ -1,6 +1,7 @@
 import * as React from 'react';
 import ScwBadgeFoundations from '../../images/scw_cert_badge.svg';
 import ScwBadgeNetworkAssociate from '../../images/scw_cert_badge_network.svg';
+import ScwBadgeKubernetesAssociate from '../../images/scw_cert_badge_k8s.svg';
 
 
 const Certs = () => {
@@ -15,14 +16,19 @@ const Certs = () => {
           , Europe's empowering cloud provider
           </h3>
         </div>
-        <div className='column is-two-fifths-mobile'>
+        <div className='column is-two-sixths-mobile'>
           <a href="https://scaleway.360learning.com/api/certification/6683200442465628" target="_blank" rel="noopener noreferrer">
             <ScwBadgeFoundations className='cert-badge' />
           </a>
         </div>
-        <div className='column is-two-fifths-mobile'>
+        <div className='column is-two-sixths-mobile'>
           <a href="https://scaleway.360learning.com/api/certification/3912943105992750" target="_blank" rel="noopener noreferrer">
             <ScwBadgeNetworkAssociate className='cert-badge' />
+          </a>
+        </div>
+        <div className='column is-two-sixths-mobile'>
+          <a href="https://scaleway.360learning.com/api/certification/8235285587002283" target="_blank" rel="noopener noreferrer">
+            <ScwBadgeKubernetesAssociate className='cert-badge' />
           </a>
         </div>
       </div>
