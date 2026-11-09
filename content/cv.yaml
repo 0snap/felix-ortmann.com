@@ -1,4 +1,43 @@
 journey:
+  - company: GUS Group
+    icons:
+    - kubernetes
+    - argocd
+    - helm
+    - terraform
+    - grafana
+    - linux
+    link: https://www.gus-group.com/
+    jobTitle: Cloud Engineer
+    duration: Fall 2026 &mdash; Fall 2026
+    description:
+      - Helped the client kickstart their cloud journey on the sovereign EU <a href="https://stackit.com/en" target="_blank" rel="noopener noreferrer">STACKIT</a> platform.
+      - Bootstrapped IaC & GitOps foundation with OpenTofu and ArgoCD (hub-and-spoke), including CI pipelines.
+      - Provided the Kubernetes platform hosting the client's MCP server for AI agent integration.
+      - "Set up platform fundamentals for a modern, holistic cloud experience: Kubernetes SKE, external secrets, TLS certificate management, gateway API, DNS & routing, observability basics (alloy, k8s-monitoring), dashboards-as-code."
+  - company: Schwarz Digits (Industrial Edge Platform Team)
+    icons:
+    - kubernetes
+    - argocd
+    - helm
+    - docker
+    - gitlab-ci
+    - terraform
+    - grafana
+    - linux
+    - nginx
+    link: https://www.schwarz-digits.de/
+    jobTitle: Cloud Architect
+    duration: Spring 2026 &mdash; Summer 2026
+    description:
+      - "Platform engineering in the Industrial Edge Platform team: federated ArgoCD architecture on <a href=\"https://stackit.com/en\" target=\"_blank\" rel=\"noopener noreferrer\">STACKIT</a>, serving a large internal customer base across the Schwarz ecosystem."
+      - "Designed the FinOps strategy for all internal tenants: Kubernetes-native cost attribution via labels and metadata, Grafana dashboards."
+      - Cut infrastructure costs by nearly 50% within the first month by optimizing resource consumption across the ArgoCD platform without compromising performance.
+      - Kubernetes multi-tenancy with Clastix Capsule and Kyverno policies, without Capsule Proxy, including CLI self-service for tenants.
+      - Deployed to air-gapped production plants as well as classic cloud workloads through the central GitOps platform.
+      - ArgoCD performance engineering; identified critical issues in the nested Helm chart architecture.
+      - ADR-style security and architecture reviews of private cloud and industrial edge Kubernetes environments.
+
   - company: uni-assist e.V.
     icons:
     - argocd
@@ -7,12 +46,19 @@ journey:
     - kubernetes
     - scaleway
     - terraform
+    - java
+    - php
+    - rabbitmq
+    - grafana
+    - linux
+    - nginx
+    - nodejs
     link: https://www.uni-assist.de/
     jobTitle: Project Lead Cloud Migration
-    duration: Spring 2023 &mdash; current
+    duration: Spring 2023 &mdash; Spring 2025
     description:
       - Project lead 'Cloud Migration' for moving the on-premise production environment to <a href="https://scaleway.com" target="_blank" rel="noopener noreferrer">Scaleway</a>.
-      - Currently managing a 9-headed agile team, doing Kanban.
+      - Managed an 11-person agile team, doing Kanban.
       - Created a multi-stage migration plan for moving infrastructure, services, and data.
       - Architected the GDPR-compliant cloud landscape and deployment setup.
       - Active engineering to bootstrap the cloud environment with Terraform, GitLab, and ArgoCD.
@@ -30,6 +76,8 @@ journey:
     - terraform
     - kafka
     - python
+    - grafana
+    - linux
     link: https://stack-stream.com/
     jobTitle: Full Stack Go Developer
     duration: Fall 2022 &mdash; Winter 2022
@@ -44,6 +92,7 @@ journey:
     - github-ci
     - nodejs
     - typescript
+    - kubernetes
     link: https://www.walnut.io/
     jobTitle: Consultant Infrastructure Improvements
     duration: Spring 2022 &mdash; Spring 2022
@@ -100,6 +149,8 @@ journey:
     - docker
     - kubernetes
     - elastic
+    - grafana
+    - github-ci
     link: https://www.fraunhofer.sg/
     jobTitle: Research Engineer
     duration: Fall 2018 &mdash; Fall 2019
@@ -141,6 +192,8 @@ journey:
     - nodejs
     - gcp
     - rabbitmq
+    - linux
+    - grafana
     link: https://joblift.com/
     jobTitle: Fullstack Engineer
     duration: Summer 2015 &mdash; Summer 2016
@@ -153,6 +206,7 @@ journey:
     icons:
     - java
     - nodejs
+    - linux
     - coffeescript
     link: https://sinnerschrader.com/
     jobTitle: Backend Engineer
