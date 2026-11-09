@@ -1,0 +1,32 @@
+---
+import CTA from './CTA.astro';
+import TechIcon from './TechIcon.astro';
+import type {BizTierData} from '../lib/content';
+
+type Props = {opener: string; tiers: BizTierData[]};
+const {tiers, opener} = Astro.props;
+---
+<div class="container has-text-centered">
+  <h1 class="title is-size-1">
+    Cloud Engineering like it's <span class="has-text-primary">{new Date().getFullYear()}</span>
+  </h1>
+  <div class="content">
+    <p class="is-size-4">{opener}</p>
+  </div>
+</div>
+<div class="columns is-centered pt-6 is-desktop is-variable is-3-desktop is-8-widescreen is-multiline">
+  {tiers.map((tier) => (
+    <div class="column is-one-quarter-fullhd biz-tier">
+      <div class="box content has-text-centered p-6" style="height: 100%">
+        <TechIcon name={tier.icon} color="#be25ff" size="4rem" />
+        <h2 class="mb-6 is-size-4">{tier.header}</h2>
+        <p class="mb-5 is-size-5 has-text-primary">{tier.catcher}</p>
+        <p>{tier.text}</p>
+      </div>
+    </div>
+  ))}
+</div>
+<div class="container mt-6 pt-6 is-size-5 has-text-centered">
+  <p>Ready to turbocharge your business?</p>
+  <CTA button="Let's chat!" />
+</div>

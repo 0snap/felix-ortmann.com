@@ -1,0 +1,30 @@
+---
+import '@fontsource/poppins';
+import '@fontsource/open-sans';
+import '../styles/page.sass';
+import Footer from '../components/Footer.astro';
+import {site} from '../lib/site';
+
+type Props = {title?: string; description?: string};
+const metaTitle = Astro.props.title || site.title;
+const metaDescription = Astro.props.description || site.description;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{metaTitle}</title>
+    <meta name="description" content={metaDescription} />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={metaDescription} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content={site.author} />
+    <meta name="twitter:description" content={metaDescription} />
+  </head>
+  <body class="page">
+    <main><slot /></main>
+    <Footer />
+  </body>
+</html>

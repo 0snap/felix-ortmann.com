@@ -1,0 +1,5 @@
+export const site = {
+  title: 'Felix Ortmann - Freelance Cloud Engineering & Cloud Architecture',
+  description: 'Do you want to scale your business as you grow? Consider moving to the cloud with me! I have strong experience with public cloud providers like Scaleway, AWS and GCP. I specialize in designing microservice architectures, and provide proficiency with many programming languages.',
+  author: 'github.com/0snap',
+};

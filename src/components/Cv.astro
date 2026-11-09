@@ -1,0 +1,55 @@
+---
+import CTA from './CTA.astro';
+import TechIcon from './TechIcon.astro';
+import {icons} from '../lib/icons';
+import type {CvEntryData} from '../lib/content';
+
+type Props = {journey: CvEntryData[]};
+const {journey} = Astro.props;
+---
+<div class="container" style="overflow: hidden">
+  <h1 class="title has-text-centered is-size-1 my-6">
+    My <span class="has-text-primary">Journey</span>
+  </h1>
+  {journey.map((entry) => (
+    <div class="columns is-variable is-0-mobile cv-row">
+      <div class="cv-icon-column column is-one-fifths">
+        <div class="cv-icon-box">
+          {[...entry.icons].sort().map((icon) => (
+            <div class="cv-icon-container">
+              <TechIcon name={icon} class="cv-icon" />
+              <p class="is-hidden-tablet is-hidden-mobile">{icons[icon]?.[1]}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="column is-four-fifths">
+        <div class="content box cv-entry">
+          <p class="is-size-4 my-3">
+            <a href={entry.link} target="_blank" rel="noopener noreferrer">{entry.company}</a>
+          </p>
+          <p class="is-size-5">{entry.jobTitle}</p>
+          <p set:html={entry.duration} />
+          <ul class="mb-4">
+            {entry.description.map((paragraph) => <li set:html={paragraph} />)}
+          </ul>
+        </div>
+      </div>
+    </div>
+  ))}
+  <div class="container mt-6 pt-6 is-size-5 has-text-centered">
+    <p>Want to work with me?</p>
+    <CTA button="Book a time in my calendar!" />
+  </div>
+</div>
+
+<script>
+  // slide entries and icon boxes in while they are in the viewport
+  const observer = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      e.target.querySelector('.cv-entry')?.classList.toggle('cv-entry-visible', e.isIntersecting);
+      e.target.querySelector('.cv-icon-box')?.classList.toggle('cv-icon-box-visible', e.isIntersecting);
+    }
+  });
+  document.querySelectorAll('.cv-row').forEach((row) => observer.observe(row));
+</script>

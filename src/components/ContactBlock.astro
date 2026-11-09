@@ -1,0 +1,24 @@
+---
+import {contact} from '../lib/content';
+
+type Props = {title: string};
+const {title} = Astro.props;
+---
+<div class="content mb-6">
+  <h3 class="is-size-3">{title}</h3>
+  <p>
+    {contact.name}
+    <br />
+    {contact.street}
+    <br />
+    {contact.postCode} {contact.city}
+    <br />
+    {contact.country}
+    <br />
+    {contact.phone}
+    <br />
+    <a aria-label="EMail contact" href={'mailto:' + contact.mail}>{contact.mail}</a>
+    <br />
+    {contact.ustid}
+  </p>
+</div>

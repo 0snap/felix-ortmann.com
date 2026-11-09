@@ -2,59 +2,46 @@
   "name": "felix-ortmann-cloud-engineering-website",
   "private": true,
   "description": "With over 12 years of coding expertise, I specialize in providing tailored coding services and bespoke cloud architecture solutions on a per-project basis.",
-  "version": "3.0.0",
+  "version": "4.0.0",
+  "type": "module",
   "author": "Felix Ortmann <info@felix-ortmann.com>",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit",
-    "predeploy": "yarn clean && yarn build",
-    "deploy": "echo felix-ortmann.com > public/CNAME && gh-pages -d public",
-    "lint": "eslint --ext .ts,.tsx .",
-    "lint-fix": "eslint --ext .ts,.tsx --fix ."
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "license": "MIT",
-  "dependencies": {
-    "@fontsource/open-sans": "^5.0.17",
-    "@fontsource/poppins": "^5.0.8",
-    "bulma": "^0.9.4",
-    "font-awesome": "^4.7.0",
-    "gatsby": "^5.3.2",
-    "gatsby-plugin-react-svg": "^3.3.0",
-    "gatsby-plugin-sass": "^6.3.1",
-    "gatsby-source-filesystem": "^5.3.1",
-    "gatsby-transformer-yaml": "^5.3.0",
-    "gh-pages": "^6.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0",
-    "react-intersection-observer": "^9.4.3"
-  },
-  "devDependencies": {
-    "@types/node": "^20.9.1",
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.9",
-    "@types/react-helmet": "^6.1.6",
-    "@typescript-eslint/eslint-plugin": "^6.11.0",
-    "@typescript-eslint/parser": "^6.11.0",
-    "eslint": "^8.30.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-react-app": "^7.0.1",
-    "prettier": "^3.1.0",
-    "sass": "^1.57.0",
-    "typescript": "^5.2.2"
-  },
-  "keywords": [
-    "gatsby",
-    "webpage",
-    "react",
-    "bulma"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/0snap/felix-ortmann.com"
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "^5.3.0",
+    "@fontsource/poppins": "^5.3.0",
+    "astro": "^7.4.7",
+    "astro-icon": "^1.2.0",
+    "bulma": "^0.9.4",
+    "js-yaml": "^5.5.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@iconify-json/ant-design": "^1.2.9",
+    "@iconify-json/circum": "^1.2.2",
+    "@iconify-json/codicon": "^1.2.77",
+    "@iconify-json/devicon-plain": "^1.2.69",
+    "@iconify-json/fa6-brands": "^1.2.6",
+    "@iconify-json/fa6-solid": "^1.2.4",
+    "@iconify-json/game-icons": "^1.2.4",
+    "@iconify-json/heroicons": "^1.2.3",
+    "@iconify-json/ic": "^1.2.4",
+    "@iconify-json/ion": "^1.2.7",
+    "@iconify-json/simple-icons": "^1.2.101",
+    "@iconify-json/tabler": "^1.2.43",
+    "@types/js-yaml": "^4.0.9",
+    "gh-pages": "^6.3.0",
+    "sass": "^1.108.1",
+    "typescript": "^6.0.3"
   }
 }

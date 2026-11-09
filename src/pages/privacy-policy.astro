@@ -1,0 +1,22 @@
+---
+import Page from '../layouts/Page.astro';
+import ContactBlock from '../components/ContactBlock.astro';
+import {privacyPolicy as pp} from '../lib/content';
+---
+<Page title={pp.headline}>
+  <section class="section is-medium">
+    <div class="container">
+      <h1 class="title is-size-1">{pp.headline}</h1>
+      <div class="content mb-6">
+        {pp.disclaimer.map((d) => <p set:html={d} />)}
+      </div>
+      <ContactBlock title="Website Operator" />
+      {pp.paragraphs.map((p) => (
+        <div class="content mb-6">
+          <h3 class="is-size-3">{p.title}</h3>
+          <p set:html={p.text} />
+        </div>
+      ))}
+    </div>
+  </section>
+</Page>

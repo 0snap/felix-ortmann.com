@@ -1,0 +1,12 @@
+---
+import {Icon} from 'astro-icon/components';
+import {icons} from '../lib/icons';
+
+type Props = {name: string; color?: string; size?: string; style?: string; class?: string};
+const {name, color, size = '1em', style = '', class: className} = Astro.props;
+const icon = icons[name];
+---
+{icon && (
+  <Icon name={icon[0]} title={icon[1]} width={size} height={size} class={className}
+    style={`${color ? `color:${color};` : ''}${style}`} />
+)}
