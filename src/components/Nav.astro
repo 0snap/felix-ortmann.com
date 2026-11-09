@@ -1,0 +1,37 @@
+---
+const links = [
+  ['Services', '/#services'],
+  ['Work', '/#work'],
+  ['Stack', '/#stack'],
+  ['Journey', '/#journey'],
+];
+---
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">felix ortmann</a>
+    <nav>
+      {links.map(([label, href]) => <a class="link" href={href}>{label}</a>)}
+      <a class="contact" href="/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 4rem; }
+  .brand { font-family: var(--font-mono); font-size: 0.95rem; color: var(--text); text-decoration: none; }
+  nav { display: flex; align-items: center; gap: 1.75rem; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  nav a:hover { color: var(--text); }
+  .contact { color: var(--accent); font-weight: 600; }
+  @media (max-width: 720px) {
+    .link { display: none; }
+  }
+</style>

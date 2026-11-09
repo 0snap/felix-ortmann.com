@@ -1,0 +1,19 @@
+---
+// The address is never in the HTML as plain text; a small script assembles it in the browser.
+// Without JavaScript the link points to the contact section and shows "info [at] felix-ortmann.com".
+import {site} from '../lib/site';
+
+type Props = {label?: string; class?: string};
+const {label, class: className} = Astro.props;
+---
+<a class:list={['js-mail', className]} href="/#contact" data-u={site.mailUser} data-d={site.mailDomain} data-label={label ? '' : 'address'}>
+  <slot />{label ?? `${site.mailUser} [at] ${site.mailDomain}`}
+</a>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('a.js-mail').forEach((a) => {
+    const address = `${a.dataset.u}@${a.dataset.d}`;
+    a.href = `mailto:${address}`;
+    if (a.dataset.label === 'address') a.lastChild!.textContent = address;
+  });
+</script>

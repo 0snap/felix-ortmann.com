@@ -1,5 +1,12 @@
 export const site = {
-  title: 'Felix Ortmann - Freelance Cloud Engineering & Cloud Architecture',
-  description: 'Do you want to scale your business as you grow? Consider moving to the cloud with me! I have strong experience with public cloud providers like Scaleway, AWS and GCP. I specialize in designing microservice architectures, and provide proficiency with many programming languages.',
-  author: 'github.com/0snap',
+  url: 'https://felix-ortmann.com',
+  title: 'Felix Ortmann - Sovereign Cloud & Kubernetes Platforms on STACKIT and Scaleway',
+  description: 'Freelance senior DevOps & platform engineer from Hamburg, remote across the EU. Kubernetes platforms on STACKIT and Scaleway: GitOps, multi-tenancy, FinOps, migrations and architecture reviews.',
+  // assembled client-side, see EmailLink.astro
+  mailUser: 'info',
+  mailDomain: 'felix-ortmann.com',
+  linkedin: 'https://www.linkedin.com/in/felix-ortmann/',
+  malt: 'https://www.malt.de/profile/felixortmann',
+  freelancermap: 'https://www.freelancermap.de/profil/cloud-architect-und-devops-spezialist-mit-fokus-auf-cybersecurity',
+  github: 'https://github.com/0snap',
 };

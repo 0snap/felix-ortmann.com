@@ -4,16 +4,16 @@ import ContactBlock from '../components/ContactBlock.astro';
 import {privacyPolicy as pp} from '../lib/content';
 ---
 <Page title={pp.headline}>
-  <section class="section is-medium">
-    <div class="container">
-      <h1 class="title is-size-1">{pp.headline}</h1>
-      <div class="content mb-6">
+  <section class="legal">
+    <div class="wrap">
+      <h1>{pp.headline}</h1>
+      <div class="block">
         {pp.disclaimer.map((d) => <p set:html={d} />)}
       </div>
-      <ContactBlock title="Website Operator" />
+      <ContactBlock title={pp.controller_headline} />
       {pp.paragraphs.map((p) => (
-        <div class="content mb-6">
-          <h3 class="is-size-3">{p.title}</h3>
+        <div class="block">
+          <h3>{p.title}</h3>
           <p set:html={p.text} />
         </div>
       ))}

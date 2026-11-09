@@ -4,12 +4,14 @@ journey:
     - kubernetes
     - argocd
     - helm
-    - terraform
+    - opentofu
     - grafana
+    - docker
+    - rabbitmq
     - linux
     link: https://www.gus-group.com/
     jobTitle: Cloud Engineer
-    duration: Fall 2026 &mdash; Fall 2026
+    duration: Fall 2026 &mdash; Winter 2026
     description:
       - Helped the client kickstart their cloud journey on the sovereign EU <a href="https://stackit.com/en" target="_blank" rel="noopener noreferrer">STACKIT</a> platform.
       - Bootstrapped IaC & GitOps foundation with OpenTofu and ArgoCD (hub-and-spoke), including CI pipelines.

@@ -1,0 +1,44 @@
+---
+import {Icon} from 'astro-icon/components';
+import {hero} from '../lib/content';
+import {site} from '../lib/site';
+import EmailLink from './EmailLink.astro';
+
+const profiles = [
+  {label: 'LinkedIn', href: site.linkedin, icon: 'simple-icons:linkedin'},
+  {label: 'Malt', href: site.malt, icon: 'tabler:briefcase'},
+  {label: 'freelancermap', href: site.freelancermap, icon: 'tabler:id-badge-2'},
+  {label: 'GitHub', href: site.github, icon: 'simple-icons:github'},
+];
+---
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Have a project or a role in mind?</h2>
+    <p class="availability"><span class="dot"></span>{hero.availability}</p>
+    <div class="actions">
+      <EmailLink class="btn" label={hero.cta}><Icon name="tabler:mail" width="1.1em" height="1.1em" /></EmailLink>
+      <EmailLink class="mail" />
+    </div>
+    <ul class="profiles">
+      {profiles.map((p) => (
+        <li><a href={p.href} target="_blank" rel="noopener noreferrer"><Icon name={p.icon} width="1.1em" height="1.1em" />{p.label}</a></li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .contact { background: var(--accent-soft); }
+  h2 { font-size: clamp(2rem, 4.5vw, 3.25rem); max-width: 20ch; }
+  .availability { margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 600; }
+  .dot {
+    width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--ok);
+    box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--ok) 25%, transparent);
+  }
+  .actions { margin-top: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 1.75rem; }
+  .actions :global(.mail) { color: var(--text); font-weight: 500; }
+  .profiles { list-style: none; margin: 2.5rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 1.5rem; }
+  .profiles a { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--muted); text-decoration: none; font-weight: 500; }
+  .profiles a:hover { color: var(--text); }
+</style>

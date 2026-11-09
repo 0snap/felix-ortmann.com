@@ -1,0 +1,62 @@
+# current: tools in active use; icon = key from src/lib/icons.ts, omitted where no logo exists
+current:
+  - name: Kubernetes
+    items:
+      - {name: Kubernetes, icon: kubernetes}
+      - {name: Helm, icon: helm}
+      - {name: Kustomize}
+      - {name: Kyverno}
+      - {name: cert-manager}
+      - {name: External Secrets}
+      - {name: external-dns}
+      - {name: Gateway API}
+  - name: Multi-Tenancy & FinOps
+    items:
+      - {name: Clastix Capsule}
+      - {name: Kyverno policies}
+      - {name: FinOps cost attribution}
+      - {name: Air-gapped edge}
+  - name: Cloud
+    items:
+      - {name: STACKIT}
+      - {name: Scaleway, icon: scaleway}
+  - name: IaC & GitOps
+    items:
+      - {name: OpenTofu, icon: opentofu}
+      - {name: Terraform, icon: terraform}
+      - {name: ArgoCD, icon: argocd}
+  - name: CI/CD
+    items:
+      - {name: GitLab CI, icon: gitlab-ci}
+      - {name: GitHub Actions, icon: github-ci}
+      - {name: Azure DevOps, icon: azure-devops}
+  - name: Observability
+    items:
+      - {name: Grafana, icon: grafana}
+      - {name: Loki, icon: loki}
+      - {name: Mimir}
+      - {name: Tempo}
+      - {name: Alloy}
+      - {name: Prometheus, icon: prometheus}
+      - {name: Thanos, icon: thanos}
+      - {name: VictoriaMetrics, icon: victoriametrics}
+  - name: Identity & Networking
+    items:
+      - {name: Keycloak, icon: keycloak}
+      - {name: OIDC / OAuth}
+      - {name: mTLS & PKI}
+      - {name: ingress-nginx, icon: nginx}
+  - name: Linux & Scripting
+    items:
+      - {name: Linux, icon: linux}
+      - {name: Arch Linux, icon: archlinux}
+      - {name: Bash, icon: bash}
+      - {name: Go, icon: go}
+      - {name: Python, icon: python}
+      - {name: Docker, icon: docker}
+  - name: AI & Agentic Engineering
+    items:
+      - {name: Claude Code, icon: claude}
+      - {name: MCP, icon: mcp}
+also: [Managed PostgreSQL & MySQL, RabbitMQ]
+earlier: [AWS, GCP, OpenShift, Pulumi, Jenkins, TeamCity, ELK stack, WireGuard]

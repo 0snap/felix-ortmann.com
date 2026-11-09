@@ -33,7 +33,7 @@ export const icons: Record<string, [string, string]> = {
   'keycloak': ['simple-icons:keycloak', 'Keycloak'],
   'kotlin': ['tabler:brand-kotlin', 'Kotlin'],
   'kubernetes': ['simple-icons:kubernetes', 'Kubernetes'],
-  'linux': ['codicon:terminal-linux', 'Linux & Shell'],
+  'linux': ['codicon:terminal-linux', 'Linux & Bash'],
   'loki': ['devicon-plain:grafanaloki', 'Loki'],
   'mcp': ['simple-icons:modelcontextprotocol', 'MCP'],
   'mysql': ['simple-icons:mysql', 'MySQL'],

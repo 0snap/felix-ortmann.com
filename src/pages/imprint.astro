@@ -4,13 +4,13 @@ import ContactBlock from '../components/ContactBlock.astro';
 import {imprint} from '../lib/content';
 ---
 <Page title={imprint.headline}>
-  <section class="section is-medium">
-    <div class="container">
-      <h1 class="title is-size-1">{imprint.headline}</h1>
+  <section class="legal">
+    <div class="wrap">
+      <h1>{imprint.headline}</h1>
       <ContactBlock title={imprint.contact_headline} />
       {imprint.paragraphs.map((p) => (
-        <div class="content mb-6">
-          <h3 class="is-size-3">{p.title}</h3>
+        <div class="block">
+          <h3>{p.title}</h3>
           <p>{p.text}</p>
         </div>
       ))}

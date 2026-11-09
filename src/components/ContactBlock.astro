@@ -4,21 +4,17 @@ import {contact} from '../lib/content';
 type Props = {title: string};
 const {title} = Astro.props;
 ---
-<div class="content mb-6">
-  <h3 class="is-size-3">{title}</h3>
+<div class="block">
+  <h3>{title}</h3>
   <p>
-    {contact.name}
-    <br />
-    {contact.street}
-    <br />
-    {contact.postCode} {contact.city}
-    <br />
+    {contact.name}<br />
+    {contact.street}<br />
+    {contact.postCode} {contact.city}<br />
     {contact.country}
-    <br />
-    {contact.phone}
-    <br />
-    <a aria-label="EMail contact" href={'mailto:' + contact.mail}>{contact.mail}</a>
-    <br />
-    {contact.ustid}
   </p>
+  <p>
+    Phone: {contact.phone}<br />
+    Email: <a href={'mailto:' + contact.mail}>{contact.mail}</a>
+  </p>
+  <p>VAT ID pursuant to § 27a UStG: {contact.ustid}</p>
 </div>

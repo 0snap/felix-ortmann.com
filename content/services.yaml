@@ -1,0 +1,7 @@
+services:
+  - title: Platform engineering & GitOps
+    text: "Kubernetes platforms built to be operated: ArgoCD hub-and-spoke, OpenTofu, Helm and Kustomize, Kyverno, observability, secrets and certificates – from first cluster to handover."
+  - title: Migration to European clouds
+    text: "From on-premise or hyperscaler to STACKIT or Scaleway: provider evaluation, migration plan, hands-on execution, with GDPR in mind."
+  - title: Architecture reviews
+    text: "ADR-style reviews of Kubernetes and cloud platforms: architecture, operability, tenant isolation, cost and delivery pipelines. Clear findings, prioritized recommendations."

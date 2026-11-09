@@ -1,0 +1,16 @@
+cases:
+  - client: Schwarz Digits
+    title: Industrial Edge Platform
+    year: "2026"
+    text: Federated ArgoCD platform on STACKIT serving many internal tenants, including air-gapped production plants. I designed the FinOps strategy and implemented multi-tenancy with Capsule and Kyverno without Capsule Proxy, including CLI self-service.
+    result: Infrastructure costs cut by nearly 50% within the first month.
+  - client: uni-assist
+    title: Migration to Scaleway
+    year: 2023 – 2025
+    text: Legacy Docker Swarm on-premise, moved to a GDPR-compliant Kubernetes landscape aligned with CIS Controls v8. Led an 11-person team, bootstrapped Terraform, ArgoCD and GitLab CI, replaced the legacy VPN with mTLS PKI and AD integration.
+    result: Full production migration – infrastructure, services, data – completed.
+  - client: GUS Group
+    title: Cloud kickoff on STACKIT
+    year: "2026"
+    text: "Starting from zero: OpenTofu and ArgoCD hub-and-spoke foundation, SKE, Gateway API, External Secrets, cert-manager, observability and dashboards-as-code. The platform hosts the client's MCP server for AI agent integration."
+    result: Platform foundation in place within three months.
