@@ -1,0 +1,20 @@
+---
+import {contact} from '../lib/content';
+
+type Props = {title: string};
+const {title} = Astro.props;
+---
+<div class="block">
+  <h3>{title}</h3>
+  <p>
+    {contact.name}<br />
+    {contact.street}<br />
+    {contact.postCode} {contact.city}<br />
+    {contact.country}
+  </p>
+  <p>
+    Phone: {contact.phone}<br />
+    Email: <a href={'mailto:' + contact.mail}>{contact.mail}</a>
+  </p>
+  <p>VAT ID pursuant to § 27a UStG: {contact.ustid}</p>
+</div>

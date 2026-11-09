@@ -1,0 +1,24 @@
+---
+// schema.org Person data for search engines, built from the same content as the page
+import {getImage} from 'astro:assets';
+import profile from '../../images/profile.png';
+import {hero, stack} from '../lib/content';
+import {site} from '../lib/site';
+
+const photo = await getImage({src: profile, width: 720, format: 'webp'});
+
+const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  'name': 'Felix Ortmann',
+  'url': site.url,
+  'image': new URL(photo.src, site.url).href,
+  'jobTitle': 'Senior DevOps & Kubernetes Platform Engineer',
+  'description': hero.lead,
+  'address': {'@type': 'PostalAddress', 'addressLocality': 'Hamburg', 'addressCountry': 'DE'},
+  'alumniOf': {'@type': 'CollegeOrUniversity', 'name': 'University of Hamburg'},
+  'knowsAbout': stack.current.flatMap((g) => g.items.map((i) => i.name)),
+  'sameAs': [site.linkedin, site.malt, site.freelancermap, site.github],
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(person)} />

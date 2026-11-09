@@ -1,0 +1,26 @@
+---
+import {services} from '../lib/content';
+---
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Services</p>
+      <h2>What I do</h2>
+    </div>
+    <div class="grid">
+      {services.map((s, i) => (
+        <article class="card">
+          <p class="num">0{i + 1}</p>
+          <h3>{s.title}</h3>
+          <p class="muted">{s.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+  .num { font-family: var(--font-mono); color: var(--accent); font-size: 0.85rem; margin-bottom: 1.25rem; }
+  h3 { font-size: 1.3rem; margin-bottom: 0.75rem; }
+</style>

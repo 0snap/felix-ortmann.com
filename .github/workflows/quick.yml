@@ -1,0 +1,20 @@
+name: Quick check
+
+on:
+  push:
+    branches-ignore: [gh-pages]
+
+jobs:
+  quick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Type and template check
+        run: npm run check
+      - name: Build
+        run: npm run build

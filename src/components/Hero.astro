@@ -1,0 +1,87 @@
+---
+import {Icon} from 'astro-icon/components';
+import {Image} from 'astro:assets';
+import profile from '../../images/profile.png';
+import {hero} from '../lib/content';
+import EmailLink from './EmailLink.astro';
+import ScwBadgeFoundations from '../../images/scw_cert_badge.svg?url';
+import ScwBadgeNetwork from '../../images/scw_cert_badge_network.svg?url';
+import ScwBadgeKubernetes from '../../images/scw_cert_badge_k8s.svg?url';
+
+const certs = [
+  {badge: ScwBadgeFoundations, label: 'Scaleway Cloud Certified – Foundations', href: 'https://scaleway.360learning.com/api/certification/6683200442465628'},
+  {badge: ScwBadgeNetwork, label: 'Scaleway Cloud Certified – Network', href: 'https://scaleway.360learning.com/api/certification/3912943105992750'},
+  {badge: ScwBadgeKubernetes, label: 'Scaleway Cloud Certified – Kubernetes', href: 'https://scaleway.360learning.com/api/certification/8235285587002283'},
+];
+---
+<section class="hero">
+  <div class="wrap">
+    <div class="intro">
+    <div>
+    <p class="eyebrow">{hero.eyebrow}</p>
+    <h1>{hero.headline}</h1>
+    <p class="lead">{hero.lead}</p>
+    <p class="availability"><span class="dot"></span>{hero.availability}</p>
+    <div class="actions">
+      <EmailLink class="btn" label={hero.cta}><Icon name="tabler:mail" width="1.1em" height="1.1em" /></EmailLink>
+      <EmailLink class="mail" />
+    </div>
+    </div>
+    <Image class="photo" src={profile} alt="Felix Ortmann" widths={[240, 480, 720]} sizes="(max-width: 760px) 9rem, 20rem" loading="eager" />
+    </div>
+
+    <div class="proof">
+      <div>
+        <p class="proof-label">Worked with</p>
+        <p class="clients">
+          {hero.clients.map((c, i) => <><span>{c}</span>{i < hero.clients.length - 1 && <span class="sep">·</span>}</>)}
+        </p>
+      </div>
+      <div class="certs">
+        <p class="proof-label">Scaleway certified</p>
+        <div class="badges">
+          {certs.map(({badge, label, href}) => (
+            <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label} title={label}>
+              <img class="badge" src={badge} alt="" width="64" height="64" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero { padding-block: clamp(4rem, 12vw, 8rem) clamp(3rem, 8vw, 5rem); }
+  .intro { display: grid; grid-template-columns: 1fr 20rem; gap: 3rem; align-items: center; }
+  .photo { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; border-radius: var(--radius); border: 1px solid var(--border); }
+  @media (max-width: 760px) {
+    .intro { grid-template-columns: 1fr; gap: 2rem; }
+    .photo { order: -1; width: 9rem; aspect-ratio: 1; border-radius: 50%; }
+  }
+  h1 { font-size: clamp(2.4rem, 6vw, 4.25rem); max-width: 18ch; letter-spacing: -0.03em; }
+  .lead { margin-top: 1.5rem; font-size: clamp(1.1rem, 2vw, 1.3rem); color: var(--muted); max-width: 42rem; }
+  .availability { margin-top: 2rem; display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 600; }
+  .dot {
+    width: 0.6rem; height: 0.6rem; border-radius: 50%;
+    background: var(--ok);
+    box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--ok) 25%, transparent);
+  }
+  .actions { margin-top: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 1.75rem; }
+  .actions :global(.mail) { color: var(--text); font-weight: 500; }
+  .proof {
+    margin-top: clamp(3rem, 8vw, 5rem);
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 2rem;
+  }
+  .proof-label {
+    font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--muted); margin-bottom: 0.75rem;
+  }
+  .clients { display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; font-weight: 600; font-size: 1.05rem; }
+  .sep { color: var(--muted); font-weight: 400; }
+  .badges { display: flex; gap: 0.75rem; }
+  .badge { width: 4rem; height: 4rem; display: block; transition: transform 150ms; }
+  .badges a:hover .badge { transform: scale(1.08); }
+</style>

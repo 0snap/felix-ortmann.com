@@ -1,0 +1,17 @@
+<footer>
+  <div class="wrap inner">
+    <a href="/">© {new Date().getFullYear()} Felix Ortmann</a>
+    <nav aria-label="Legal">
+      <a href="/imprint/">Imprint</a>
+      <a href="/privacy-policy/">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  footer { border-top: 1px solid var(--border); padding-block: 2rem; font-size: 0.9rem; }
+  .inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+  nav { display: flex; gap: 1.5rem; }
+  a { color: var(--muted); text-decoration: none; }
+  a:hover { color: var(--text); }
+</style>

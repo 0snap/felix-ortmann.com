@@ -1,0 +1,15 @@
+# link check config, see https://lychee.cli.rs
+accept = [200, 206, 429]
+max_retries = 2
+timeout = 20
+exclude = [
+  # block automated requests regardless of link validity
+  '^https://www\.linkedin\.com',
+  '^https://www\.malt\.de',
+  '^https://joblift\.com',
+  '^https://scaleway\.com',
+  # own domain: new pages only exist after deploy
+  '^https://felix-ortmann\.com',
+  # 360learning (Scaleway certificates) outage since Nov 2026, remove once the platform works again
+  '^https://scaleway\.360learning\.com',
+]

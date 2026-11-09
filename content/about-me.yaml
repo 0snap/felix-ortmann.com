@@ -1,23 +1,15 @@
-paragraphs:
-  - icon: graduation-cap
-    color: black
-    text: My journey began over a decade ago when I entered university, immediately gravitating towards the realm of theoretical computer science (TCS). During those formative years, I was involved with a graphical Petri-Nets engine for modelling concurrent applications. This foundational experience set the stage for my academic endeavors.
-  - icon: concurrency
-    color: '#25a1ff'
-    text: Venturing into the depths of algorithm design and concurrency, I found my passion for languages like Go. In September 2015, I played a pivotal role in bringing to life a Kubernetes-based micro-service deployment, right after K8s came out of Public Beta.
-  - icon: security
-    color: '#1b8b20'
-    text: My fascination extended to communication security and system stability, stemming from my roots in distributed systems. With a focus on Blue Teaming and Site Reliability Engineering (SRE), I've spent roughly five years delving into the realms of Cyber Defense.
-  - icon: cloud
-    color: '#3027ac'
-    text: Yet, my true calling lies at the intersection of security analysis and systems design. Today, I specialize in holistic cloud architecture and reviews, boasting proficiency with many public cloud environments. Armed with extensive coding experience across a spectrum of modern languages, I embody a unique blend of engineer and architect.
+intro:
+  - I'm Felix, a cloud and platform engineer based in Hamburg.
+  - I started my journey in theoretical computer science and distributed systems, then spent many years writing software – backend services, APIs and tooling in Go, Python, Java and TypeScript. Kubernetes has been part of that work since 2015, shortly after its first release.
+  - Security came along the way – a master's thesis on detecting advanced persistent threats at Fraunhofer Singapore, then blue teaming and threat hunting at Tenzir, while building <a href="https://github.com/tenzir/threatbus" target="_blank" rel="noopener noreferrer">Threat Bus</a>, an open-source layer for sharing threat intelligence between security tools. After that, I worked as SRE for German government infrastructure.
+key: "That path shapes how I build platforms today: operability, isolation and cost are part of my designs from day one – and the team should be able to run what I hand over without me."
+outro:
+  - Since 2022 I have been working independently, as architect and hands-on engineer in one – I've led a full production migration to Scaleway, built platform foundations on STACKIT and reviewed large Kubernetes environments. My work is AI-accelerated; the decisions behind it rest on fifteen years of building and running systems.
 highlights:
-  text: "Key highlights that define my professional journey:"
+  text: Highlights
   bullets:
-    - Graduated summa cum laude and best-in-class with a Master's degree in Computer Science at the University of Hamburg, Germany.
-    - Awarded a stipend from the Fraunhofer Institute to spend my final year at the Nanyang University, Singapore.
-    - Recognized for innovative excellence in the Cyber Security industry with two independent prizes for my master's thesis.
-    - Contributed as a Site Reliability Engineer for the German Government.
-    - Accumulated more than a dozen years of professional experience, collaborating with diverse German and international companies.
-    # - Proficient in a myriad of tools and languages commonly employed in production.
-    # - Strong adaptability, thorough mindset and holistic perspective on the big picture.
+    - M.Sc. Computer Science, University of Hamburg – 1.0, best of year
+    - Fraunhofer stipend for the final year at NTU Singapore
+    - Two awards for APT-detection research (BfV MINT Award, 1st place; CAST, 3rd place)
+    - Arch Linux as daily driver for 15+ years
+    - German (native), English (business fluent)

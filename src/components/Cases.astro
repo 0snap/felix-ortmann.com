@@ -1,0 +1,46 @@
+---
+import {cases} from '../lib/content';
+---
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Selected work</p>
+      <h2>Recent projects</h2>
+    </div>
+    <div class="list">
+      {cases.map((c) => (
+        <article class="case">
+          <div class="meta">
+            <p class="client">{c.client}</p>
+            <p class="year">{c.year}</p>
+          </div>
+          <div>
+            <h3>{c.title}</h3>
+            <p class="muted">{c.text}</p>
+            <p class="result">{c.result}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .list { display: grid; gap: 1rem; }
+  .case {
+    display: grid; gap: 1rem 3rem; grid-template-columns: 14rem 1fr;
+    padding: 2rem 0; border-top: 1px solid var(--border);
+  }
+  .case:first-child { border-top: 0; padding-top: 0; }
+  .client { font-weight: 650; font-size: 1.1rem; }
+  .year { font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted); }
+  h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+  .result {
+    margin-top: 1.25rem; padding: 0.9rem 1.1rem; border-radius: 0.5rem;
+    background: var(--accent-soft); color: var(--text); font-weight: 600;
+    border-left: 3px solid var(--accent);
+  }
+  @media (max-width: 760px) {
+    .case { grid-template-columns: 1fr; }
+  }
+</style>

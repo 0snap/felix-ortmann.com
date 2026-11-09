@@ -1,0 +1,84 @@
+---
+import {Icon} from 'astro-icon/components';
+import TechIcon from './TechIcon.astro';
+import {cv, type CvEntryData} from '../lib/content';
+
+const startYear = (e: CvEntryData) => Number(e.duration.match(/\d{4}/)?.[0] ?? 0);
+const recent = cv.journey.filter((e) => startYear(e) >= 2017);
+const earlier = cv.journey.filter((e) => startYear(e) < 2017);
+const openByDefault = 3;
+// content may contain HTML (links); encode bare ampersands so the output stays valid
+const html = (s: string) => s.replace(/&(?![a-zA-Z]+;|#\d+;)/g, '&amp;');
+---
+<section class="section" id="journey">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Journey</p>
+      <h2>Where I've worked</h2>
+    </div>
+
+    {[{entries: recent, label: null}, {entries: earlier, label: 'Earlier'}].map(({entries, label}) => {
+      const list = (
+        <ol>
+          {entries.map((e, i) => (
+            <li>
+              <details open={!label && i < openByDefault}>
+                <summary>
+                  <span class="duration" set:html={e.duration} />
+                  <span class="who">
+                    <span class="company">{e.company}</span>
+                    <span class="role">{e.jobTitle}</span>
+                  </span>
+                  <Icon name="tabler:chevron-down" class="chevron" width="1.25em" height="1.25em" />
+                </summary>
+                <div class="body">
+                  <ul class="bullets">
+                    {e.description.map((d) => <li set:html={html(d)} />)}
+                  </ul>
+                  <p class="tags">
+                    {[...e.icons].sort().map((icon) => <TechIcon name={icon} size="1.25rem" />)}
+                    <a href={e.link} target="_blank" rel="noopener noreferrer">{new URL(e.link).hostname.replace('www.', '')}</a>
+                  </p>
+                </div>
+              </details>
+            </li>
+          ))}
+        </ol>
+      );
+      return label
+        ? <details class="earlier"><summary class="earlier-summary">{label} ({entries.length})<Icon name="tabler:chevron-down" class="chevron" width="1.25em" height="1.25em" /></summary>{list}</details>
+        : list;
+    })}
+  </div>
+</section>
+
+<style>
+  ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
+  ol > li { border-bottom: 1px solid var(--border); }
+  summary {
+    list-style: none; cursor: pointer;
+    display: grid; grid-template-columns: 13rem 1fr auto; gap: 0.25rem 2rem; align-items: baseline;
+    padding: 1.1rem 0;
+  }
+  summary::-webkit-details-marker { display: none; }
+  .duration { font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted); }
+  .who { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; align-items: baseline; }
+  .company { font-weight: 650; font-size: 1.1rem; }
+  .role { color: var(--muted); }
+  :global(.chevron) { color: var(--muted); transition: transform 150ms; align-self: center; }
+  details[open] > summary :global(.chevron) { transform: rotate(180deg); }
+  .body { padding: 0 0 1.5rem 15rem; }
+  .bullets { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.35rem; }
+  .bullets :global(ol) { border: 0; padding-left: 1.2rem; list-style: decimal; }
+  .bullets :global(ol li) { border: 0; }
+  .tags { margin-top: 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; color: var(--accent); }
+  .tags a { margin-left: 0.5rem; font-size: 0.9rem; }
+  .earlier { margin-top: 1.5rem; }
+  .earlier-summary { display: flex; gap: 0.5rem; font-weight: 600; color: var(--muted); padding: 0.5rem 0; }
+  .earlier[open] > .earlier-summary :global(.chevron) { transform: rotate(180deg); }
+  @media (max-width: 760px) {
+    summary { grid-template-columns: 1fr auto; }
+    .duration { grid-column: 1 / -1; }
+    .body { padding-left: 0; }
+  }
+</style>
