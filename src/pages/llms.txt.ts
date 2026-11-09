@@ -2,7 +2,8 @@
 import {cases, cv, hero, services, stack} from '../lib/content';
 import {site} from '../lib/site';
 
-const plain = (html: string) => html.replace(/<[^>]+>/g, '').replace(/&mdash;/g, '–').replace(/\s+/g, ' ').trim();
+// durations are written with the HTML entity &mdash; in cv.yaml
+const duration = (d: string) => d.replaceAll('&mdash;', '–');
 
 export const GET = () => {
   const text = [
@@ -24,7 +25,7 @@ export const GET = () => {
     `- Earlier (not in active use): ${stack.earlier.join(', ')}`,
     '',
     '## Journey',
-    ...cv.journey.map((e) => `- ${plain(e.duration)}: ${e.company} – ${e.jobTitle}`),
+    ...cv.journey.map((e) => `- ${duration(e.duration)}: ${e.company} – ${e.jobTitle}`),
     '',
     '## Contact',
     `- [Website contact section](${site.url}/#contact)`,
