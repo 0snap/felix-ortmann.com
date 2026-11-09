@@ -21,8 +21,8 @@ jobs:
         run: npm run build
       - name: Build output complete
         run: |
-          for f in index.html imprint/index.html privacy-policy/index.html 404.html llms.txt og.png robots.txt CNAME; do
-            test -s "dist/$f" || { echo "::error::missing dist/$f"; exit 1; }
+          for f in index.html imprint/index.html privacy-policy/index.html 404.html llms.txt og.png robots.txt CNAME .nojekyll; do
+            test -e "dist/$f" || { echo "::error::missing dist/$f"; exit 1; }
           done
       - name: HTML validation
         run: npm run validate

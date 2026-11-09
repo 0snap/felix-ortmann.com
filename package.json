@@ -10,7 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "deploy": "npm run build && gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist --dotfiles",
     "validate": "html-validate \"dist/**/*.html\"",
     "a11y": "node scripts/a11y.mjs"
   },
