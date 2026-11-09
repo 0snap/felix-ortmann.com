@@ -4,14 +4,14 @@ import {Image} from 'astro:assets';
 import profile from '../../images/profile.png';
 import {hero} from '../lib/content';
 import EmailLink from './EmailLink.astro';
-import ScwBadgeFoundations from '../../images/scw_cert_badge.svg';
-import ScwBadgeNetwork from '../../images/scw_cert_badge_network.svg';
-import ScwBadgeKubernetes from '../../images/scw_cert_badge_k8s.svg';
+import ScwBadgeFoundations from '../../images/scw_cert_badge.svg?url';
+import ScwBadgeNetwork from '../../images/scw_cert_badge_network.svg?url';
+import ScwBadgeKubernetes from '../../images/scw_cert_badge_k8s.svg?url';
 
 const certs = [
-  {Badge: ScwBadgeFoundations, label: 'Scaleway Cloud Certified – Foundations', href: 'https://scaleway.360learning.com/api/certification/6683200442465628'},
-  {Badge: ScwBadgeNetwork, label: 'Scaleway Cloud Certified – Network', href: 'https://scaleway.360learning.com/api/certification/3912943105992750'},
-  {Badge: ScwBadgeKubernetes, label: 'Scaleway Cloud Certified – Kubernetes', href: 'https://scaleway.360learning.com/api/certification/8235285587002283'},
+  {badge: ScwBadgeFoundations, label: 'Scaleway Cloud Certified – Foundations', href: 'https://scaleway.360learning.com/api/certification/6683200442465628'},
+  {badge: ScwBadgeNetwork, label: 'Scaleway Cloud Certified – Network', href: 'https://scaleway.360learning.com/api/certification/3912943105992750'},
+  {badge: ScwBadgeKubernetes, label: 'Scaleway Cloud Certified – Kubernetes', href: 'https://scaleway.360learning.com/api/certification/8235285587002283'},
 ];
 ---
 <section class="hero">
@@ -40,9 +40,9 @@ const certs = [
       <div class="certs">
         <p class="proof-label">Scaleway certified</p>
         <div class="badges">
-          {certs.map(({Badge, label, href}) => (
+          {certs.map(({badge, label, href}) => (
             <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label} title={label}>
-              <Badge class="badge" />
+              <img class="badge" src={badge} alt="" width="64" height="64" />
             </a>
           ))}
         </div>

@@ -9,7 +9,7 @@ const links = [
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="/">felix ortmann</a>
-    <nav>
+    <nav aria-label="Main">
       {links.map(([label, href]) => <a class="link" href={href}>{label}</a>)}
       <a class="contact" href="/#contact">Contact</a>
     </nav>

@@ -7,6 +7,8 @@ const startYear = (e: CvEntryData) => Number(e.duration.match(/\d{4}/)?.[0] ?? 0
 const recent = cv.journey.filter((e) => startYear(e) >= 2017);
 const earlier = cv.journey.filter((e) => startYear(e) < 2017);
 const openByDefault = 3;
+// content may contain HTML (links); encode bare ampersands so the output stays valid
+const html = (s: string) => s.replace(/&(?![a-zA-Z]+;|#\d+;)/g, '&amp;');
 ---
 <section class="section" id="journey">
   <div class="wrap">
@@ -31,7 +33,7 @@ const openByDefault = 3;
                 </summary>
                 <div class="body">
                   <ul class="bullets">
-                    {e.description.map((d) => <li set:html={d} />)}
+                    {e.description.map((d) => <li set:html={html(d)} />)}
                   </ul>
                   <p class="tags">
                     {[...e.icons].sort().map((icon) => <TechIcon name={icon} size="1.25rem" />)}

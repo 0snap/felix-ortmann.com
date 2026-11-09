@@ -1,0 +1,42 @@
+name: Full check
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  full:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Type and template check
+        run: npm run check
+      - name: Build
+        run: npm run build
+      - name: Build output complete
+        run: |
+          for f in index.html imprint/index.html privacy-policy/index.html 404.html llms.txt og.png robots.txt CNAME; do
+            test -s "dist/$f" || { echo "::error::missing dist/$f"; exit 1; }
+          done
+      - name: HTML validation
+        run: npm run validate
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config lychee.toml --root-dir ${{ github.workspace }}/dist --no-progress 'dist/**/*.html' dist/llms.txt
+          fail: true
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Accessibility (WCAG 2.1 AA, light and dark)
+        run: |
+          npx astro preview --port 4321
+          for i in $(seq 30); do curl -sf -o /dev/null http://localhost:4321/ && break; sleep 1; done
+          npm run a11y
+      - name: Stop preview server
+        if: always()
+        run: npx astro preview stop || true
