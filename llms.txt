@@ -1,0 +1,48 @@
+# Felix Ortmann
+
+> Sovereign cloud & Kubernetes platforms on STACKIT and Scaleway. Senior DevOps & platform engineer with 15+ years in distributed systems. I design, build and review Kubernetes platforms on European clouds – GitOps, multi-tenancy and cost transparency included.
+
+Freelance · Hamburg · Remote across the EU. Available from December 2026.
+
+## Services
+- **Platform engineering & GitOps**: Kubernetes platforms built to be operated: ArgoCD hub-and-spoke, OpenTofu, Helm and Kustomize, Kyverno, observability, secrets and certificates – from first cluster to handover.
+- **Migration to European clouds**: From on-premise or hyperscaler to STACKIT or Scaleway: provider evaluation, migration plan, hands-on execution, with GDPR in mind.
+- **Architecture reviews**: ADR-style reviews of Kubernetes and cloud platforms: architecture, operability, tenant isolation, cost and delivery pipelines. Clear findings, prioritized recommendations.
+
+## Selected work
+- **Schwarz Digits – Industrial Edge Platform** (2026): Federated ArgoCD platform on STACKIT serving many internal tenants, including air-gapped production plants. I designed the FinOps strategy and implemented multi-tenancy with Capsule and Kyverno without Capsule Proxy, including CLI self-service. Result: Infrastructure costs cut by nearly 50% within the first month.
+- **uni-assist – Migration to Scaleway** (2023 – 2025): Legacy Docker Swarm on-premise, moved to a GDPR-compliant Kubernetes landscape aligned with CIS Controls v8. Led an 11-person team, bootstrapped Terraform, ArgoCD and GitLab CI, replaced the legacy VPN with mTLS PKI and AD integration. Result: Full production migration – infrastructure, services, data – completed.
+- **GUS Group – Cloud kickoff on STACKIT** (2026): Starting from zero: OpenTofu and ArgoCD hub-and-spoke foundation, SKE, Gateway API, External Secrets, cert-manager, observability and dashboards-as-code. The platform hosts the client's MCP server for AI agent integration. Result: Platform foundation in place within three months.
+
+## Current stack
+- Kubernetes: Kubernetes, Helm, Kustomize, Kyverno, cert-manager, External Secrets, external-dns, Gateway API
+- Multi-Tenancy & FinOps: Clastix Capsule, Kyverno policies, FinOps cost attribution, Air-gapped edge
+- Cloud: STACKIT, Scaleway
+- IaC & GitOps: OpenTofu, Terraform, ArgoCD
+- CI/CD: GitLab CI, GitHub Actions, Azure DevOps
+- Observability: Grafana, Loki, Mimir, Tempo, Alloy, Prometheus, Thanos, VictoriaMetrics
+- Identity & Networking: Keycloak, OIDC / OAuth, mTLS & PKI, ingress-nginx
+- Linux & Scripting: Linux, Arch Linux, Bash, Go, Python, Docker
+- AI & Agentic Engineering: Claude Code, MCP
+- Also: Managed PostgreSQL & MySQL, RabbitMQ
+- Earlier (not in active use): AWS, GCP, OpenShift, Pulumi, Jenkins, TeamCity, ELK stack, WireGuard
+
+## Journey
+- Fall 2026 – Winter 2026: GUS Group – Cloud Engineer
+- Spring 2026 – Summer 2026: Schwarz Digits (Industrial Edge Platform Team) – Cloud Architect
+- Spring 2023 – Spring 2025: uni-assist e.V. – Project Lead Cloud Migration
+- Fall 2022 – Winter 2022: Stackstream – Full Stack Go Developer
+- Spring 2022 – Spring 2022: Walnut.io – Consultant Infrastructure Improvements
+- Fall 2021 – Summer 2022: Bundesdruckerei – Site Reliability Engineer
+- Fall 2019 – Summer 2021: Tenzir – Blue Team Engineer
+- Fall 2018 – Fall 2019: Fraunhofer Institute Singapore – Research Engineer
+- Winter 2017 – Fall 2018: Moovel Group – Backend & DevOps Engineer
+- Summer 2015 – Summer 2016: Joblift – Fullstack Engineer
+- Spring 2014 – Spring 2015: SinnerSchrader – Backend Engineer
+- Winter 2013 – Spring 2014: catworkx – Plugin Engineer
+
+## Contact
+- [Website contact section](https://felix-ortmann.com/#contact)
+- [LinkedIn](https://www.linkedin.com/in/felix-ortmann/)
+- [Malt](https://www.malt.de/profile/felixortmann)
+- [freelancermap](https://www.freelancermap.de/profil/cloud-architect-und-devops-spezialist-mit-fokus-auf-cybersecurity)
