@@ -43,6 +43,7 @@ current:
   - name: Identity & Networking
     items:
       - {name: Keycloak, icon: keycloak}
+      - {name: Vault, icon: vault}
       - {name: OIDC / OAuth}
       - {name: mTLS & PKI}
       - {name: ingress-nginx, icon: nginx}

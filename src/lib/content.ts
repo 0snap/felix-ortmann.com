@@ -13,7 +13,7 @@ export type AboutMeData = {
 export type CvEntryData = {
   company: string;
   icons: string[];
-  link: string;
+  link?: string;
   jobTitle: string;
   duration: string;
   description: string[];

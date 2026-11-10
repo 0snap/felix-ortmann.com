@@ -4,7 +4,16 @@ journey:
     - kubernetes
     - argocd
     - helm
+    - bitbucket-ci
     - opentofu
+    - kustomize
+    - gateway-api
+    - external-secrets
+    - vault
+    - cert-manager
+    - external-dns
+    - alloy
+    - stackit
     - grafana
     - docker
     - rabbitmq
@@ -24,7 +33,20 @@ journey:
     - helm
     - docker
     - gitlab-ci
+    - azure-devops
     - terraform
+    - opentofu
+    - crossplane
+    - capsule
+    - kyverno
+    - gateway-api
+    - external-secrets
+    - vault
+    - cert-manager
+    - external-dns
+    - dex
+    - alloy
+    - stackit
     - grafana
     - linux
     - nginx
@@ -39,6 +61,14 @@ journey:
       - Deployed to air-gapped production plants as well as classic cloud workloads through the central GitOps platform.
       - ArgoCD performance engineering; identified critical issues in the nested Helm chart architecture.
       - ADR-style security and architecture reviews of private cloud and industrial edge Kubernetes environments.
+
+  - company: Sabbatical
+    icons:
+    - scaleway
+    jobTitle: Time off
+    duration: Spring 2025 &mdash; Spring 2026
+    description:
+      - Time off; Scaleway Cloud Certified – Foundations & Kubernetes.
 
   - company: uni-assist e.V.
     icons:
@@ -60,7 +90,7 @@ journey:
     duration: Spring 2023 &mdash; Spring 2025
     description:
       - Project lead 'Cloud Migration' for moving the on-premise production environment to <a href="https://scaleway.com" target="_blank" rel="noopener noreferrer">Scaleway</a>.
-      - Managed an 11-person agile team, doing Kanban.
+      - Managed an 11-person agile team using Kanban.
       - Created a multi-stage migration plan for moving infrastructure, services, and data.
       - Architected the GDPR-compliant cloud landscape and deployment setup.
       - Active engineering to bootstrap the cloud environment with Terraform, GitLab, and ArgoCD.
@@ -137,7 +167,7 @@ journey:
     duration: Fall 2019 &mdash; Summer 2021
     description:
       - Ideated, authored, and maintained <a href="https://github.com/tenzir/threatbus" target="_blank" rel="noopener noreferrer">Threat Bus</a>, an open-source threat intelligence dissemination layer.
-      - Accomplished a joint project with a partner company to enable multiple fortune-500 companies to use our products for retrospective intelligence matching.
+      - Accomplished a joint project with a partner company to enable multiple Fortune 500 companies to use our products for retrospective intelligence matching.
       - Architected and implemented the network setup for an appliance remote access strategy.
       - Managed the operation and security monitoring of all computer infrastructures both in-house and on-site (Kubernetes, VPN).
       - Acted as threat hunter in customer networks and filed bi-weekly security reports.
@@ -180,7 +210,7 @@ journey:
     duration: Winter 2017 &mdash; Fall 2018
     description:
       - Provided and maintained infrastructure-as-code on AWS to enable urban mobility services in multiple German cities.
-      - Helped architecting the AWS cloud landscape.
+      - Helped architect the AWS cloud landscape.
       - Delivered CI/CD via TeamCity for an entire engineering squad.
       - Conceptualized, implemented and maintained backend microservices.
       - Built an auto-suggest search for geo-coordinates and location data.
@@ -202,7 +232,7 @@ journey:
     description:
       - Introduced Kubernetes to the team and handled the adoption when it was first released on GCP.
       - Provided and maintained infrastructure-as-code on GCP and provided CI/CD via Jenkins.
-      - Greately contributed in architecting the GCP cloud landscape.
+      - Contributed significantly to architecting the GCP cloud landscape.
       - Planned, implemented, and maintained both backend- and frontend-serving microservices.
   - company: SinnerSchrader
     icons:

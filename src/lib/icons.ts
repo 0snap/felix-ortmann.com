@@ -1,5 +1,5 @@
-// icon keys used in content/*.yaml -> [iconify name, title]
-export const icons: Record<string, [string, string]> = {
+// icon keys used in content/*.yaml -> [iconify name, title]; null = no published logo, shown as text
+export const icons: Record<string, [string | null, string]> = {
   'no-insights': ['tabler:zoom-question', 'No insights'],
   'code': ['ant-design:code-filled', 'Code'],
   'insights': ['ic:outline-insights', 'Insights'],
@@ -24,6 +24,7 @@ export const icons: Record<string, [string, string]> = {
   'gcp': ['simple-icons:googlecloud', 'GCP'],
   'github-ci': ['simple-icons:githubactions', 'GitHub Actions'],
   'gitlab-ci': ['simple-icons:gitlab', 'Gitlab Pipelines'],
+  'bitbucket-ci': ['simple-icons:bitbucket', 'Bitbucket Pipelines'],
   'go': ['devicon-plain:go', 'Go'],
   'grafana': ['simple-icons:grafana', 'Grafana'],
   'helm': ['simple-icons:helm', 'Helm'],
@@ -55,4 +56,16 @@ export const icons: Record<string, [string, string]> = {
   'typescript': ['simple-icons:typescript', 'Typescript'],
   'victoriametrics': ['simple-icons:victoriametrics', 'VictoriaMetrics'],
   'wireguard': ['simple-icons:wireguard', 'Wireguard'],
+  'vault': ['simple-icons:vault', 'Vault'],
+  'alloy': [null, 'Alloy'],
+  'capsule': [null, 'Capsule'],
+  'cert-manager': [null, 'cert-manager'],
+  'crossplane': [null, 'Crossplane'],
+  'dex': [null, 'Dex'],
+  'external-dns': [null, 'external-dns'],
+  'external-secrets': [null, 'External Secrets'],
+  'gateway-api': [null, 'Gateway API'],
+  'kustomize': [null, 'Kustomize'],
+  'kyverno': [null, 'Kyverno'],
+  'stackit': ['stackit', 'STACKIT'],
 };
