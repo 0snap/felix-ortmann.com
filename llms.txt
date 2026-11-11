@@ -2,7 +2,7 @@
 
 > Sovereign cloud & Kubernetes platforms on STACKIT and Scaleway. Senior DevOps & platform engineer with 15+ years in distributed systems. I design, build and review Kubernetes platforms on European clouds – GitOps, multi-tenancy and cost transparency included.
 
-Freelance · Hamburg · Remote across the EU. Available from December 2026.
+Freelance · Hamburg · Remote across the EU. Available from January 2027.
 
 ## Services
 - **Platform engineering & GitOps**: Kubernetes platforms built to be operated: ArgoCD hub-and-spoke, OpenTofu, Helm and Kustomize, Kyverno, observability, secrets and certificates – from first cluster to handover.
@@ -21,7 +21,7 @@ Freelance · Hamburg · Remote across the EU. Available from December 2026.
 - IaC & GitOps: OpenTofu, Terraform, ArgoCD
 - CI/CD: GitLab CI, GitHub Actions, Azure DevOps
 - Observability: Grafana, Loki, Mimir, Tempo, Alloy, Prometheus, Thanos, VictoriaMetrics
-- Identity & Networking: Keycloak, OIDC / OAuth, mTLS & PKI, ingress-nginx
+- Identity & Networking: Keycloak, Vault, OIDC / OAuth, mTLS & PKI, ingress-nginx
 - Linux & Scripting: Linux, Arch Linux, Bash, Go, Python, Docker
 - AI & Agentic Engineering: Claude Code, MCP
 - Also: Managed PostgreSQL & MySQL, RabbitMQ
@@ -30,6 +30,7 @@ Freelance · Hamburg · Remote across the EU. Available from December 2026.
 ## Journey
 - Fall 2026 – Winter 2026: GUS Group – Cloud Engineer
 - Spring 2026 – Summer 2026: Schwarz Digits (Industrial Edge Platform Team) – Cloud Architect
+- Spring 2025 – Spring 2026: Sabbatical – Time off
 - Spring 2023 – Spring 2025: uni-assist e.V. – Project Lead Cloud Migration
 - Fall 2022 – Winter 2022: Stackstream – Full Stack Go Developer
 - Spring 2022 – Spring 2022: Walnut.io – Consultant Infrastructure Improvements
