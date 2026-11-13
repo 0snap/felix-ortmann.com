@@ -57,6 +57,7 @@ export const icons: Record<string, [string | null, string]> = {
   'victoriametrics': ['simple-icons:victoriametrics', 'VictoriaMetrics'],
   'wireguard': ['simple-icons:wireguard', 'Wireguard'],
   'vault': ['simple-icons:vault', 'Vault'],
+  'trivy': ['simple-icons:trivy', 'Trivy'],
   'alloy': [null, 'Alloy'],
   'capsule': [null, 'Capsule'],
   'cert-manager': [null, 'cert-manager'],

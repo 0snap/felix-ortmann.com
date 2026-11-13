@@ -18,7 +18,7 @@ current:
       - {name: Air-gapped edge}
   - name: Cloud
     items:
-      - {name: STACKIT}
+      - {name: STACKIT, icon: stackit}
       - {name: Scaleway, icon: scaleway}
   - name: IaC & GitOps
     items:
@@ -44,6 +44,7 @@ current:
     items:
       - {name: Keycloak, icon: keycloak}
       - {name: Vault, icon: vault}
+      - {name: Trivy, icon: trivy}
       - {name: OIDC / OAuth}
       - {name: mTLS & PKI}
       - {name: ingress-nginx, icon: nginx}
