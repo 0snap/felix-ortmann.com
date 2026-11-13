@@ -46,7 +46,12 @@ const links = [
   nav { display: flex; align-items: center; gap: 1.75rem; }
   nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
   nav a:hover { color: var(--text); }
-  .contact { color: var(--accent); font-weight: 600; }
+  nav .contact {
+    color: var(--accent); font-weight: 600;
+    padding: 0.35rem 0.85rem; border-radius: 0.5rem;
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  }
+  nav .contact:hover { color: var(--accent-hover); border-color: var(--accent); background: var(--accent-soft); }
   @media (max-width: 720px) {
     .link { display: none; }
   }
