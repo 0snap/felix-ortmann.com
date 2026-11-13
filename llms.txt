@@ -21,7 +21,7 @@ Freelance · Hamburg · Remote across the EU. Available from January 2027.
 - IaC & GitOps: OpenTofu, Terraform, ArgoCD
 - CI/CD: GitLab CI, GitHub Actions, Azure DevOps
 - Observability: Grafana, Loki, Mimir, Tempo, Alloy, Prometheus, Thanos, VictoriaMetrics
-- Identity & Networking: Keycloak, Vault, OIDC / OAuth, mTLS & PKI, ingress-nginx
+- Identity & Networking: Keycloak, Vault, Trivy, OIDC / OAuth, mTLS & PKI, ingress-nginx
 - Linux & Scripting: Linux, Arch Linux, Bash, Go, Python, Docker
 - AI & Agentic Engineering: Claude Code, MCP
 - Also: Managed PostgreSQL & MySQL, RabbitMQ
@@ -33,13 +33,13 @@ Freelance · Hamburg · Remote across the EU. Available from January 2027.
 - Spring 2025 – Spring 2026: Sabbatical – Time off
 - Spring 2023 – Spring 2025: uni-assist e.V. – Project Lead Cloud Migration
 - Fall 2022 – Winter 2022: Stackstream – Full Stack Go Developer
-- Spring 2022 – Spring 2022: Walnut.io – Consultant Infrastructure Improvements
+- Spring 2022: Walnut.io – Consultant Infrastructure Improvements
 - Fall 2021 – Summer 2022: Bundesdruckerei – Site Reliability Engineer
 - Fall 2019 – Summer 2021: Tenzir – Blue Team Engineer
 - Fall 2018 – Fall 2019: Fraunhofer Institute Singapore – Research Engineer
-- Winter 2017 – Fall 2018: Moovel Group – Backend & DevOps Engineer
+- Winter 2017 – Fall 2018: Moovel Group (later REACH NOW, Daimler & BMW) – Backend & DevOps Engineer
 - Summer 2015 – Summer 2016: Joblift – Fullstack Engineer
-- Spring 2014 – Spring 2015: SinnerSchrader – Backend Engineer
+- Spring 2014 – Spring 2015: SinnerSchrader (today Accenture Song) – Backend Engineer
 - Winter 2013 – Spring 2014: catworkx – Plugin Engineer
 
 ## Contact
