@@ -30,6 +30,7 @@ const html = (s: string) => s.replace(/&(?![a-zA-Z]+;|#\d+;)/g, '&amp;');
                   <span class="duration" set:html={e.duration} />
                   <span class="who">
                     <span class="company">{e.company}</span>
+                    {e.note && <span class="note">({e.note})</span>}
                     <span class="role">{e.jobTitle}</span>
                   </span>
                   <Icon name="tabler:chevron-down" class="chevron" width="1.25em" height="1.25em" />
@@ -68,6 +69,7 @@ const html = (s: string) => s.replace(/&(?![a-zA-Z]+;|#\d+;)/g, '&amp;');
   .duration { font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted); }
   .who { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; align-items: baseline; }
   .company { font-weight: 650; font-size: 1.1rem; }
+  .note { color: var(--muted); font-size: 0.85rem; }
   .role { color: var(--muted); }
   :global(.chevron) { color: var(--muted); transition: transform 150ms; align-self: center; }
   details[open] > summary :global(.chevron) { transform: rotate(180deg); }

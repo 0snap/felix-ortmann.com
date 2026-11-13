@@ -14,6 +14,7 @@ export type CvEntryData = {
   company: string;
   icons: string[];
   link?: string;
+  note?: string;
   jobTitle: string;
   duration: string;
   description: string[];

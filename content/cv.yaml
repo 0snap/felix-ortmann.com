@@ -44,13 +44,12 @@ journey:
     - vault
     - cert-manager
     - external-dns
-    - dex
     - alloy
     - stackit
     - grafana
     - linux
     - nginx
-    link: https://www.schwarz-digits.de/
+    link: https://schwarz-digits.de/
     jobTitle: Cloud Architect
     duration: Spring 2026 &mdash; Summer 2026
     description:
@@ -64,6 +63,8 @@ journey:
 
   - company: Sabbatical
     icons:
+    - linux
+    - kubernetes
     - scaleway
     jobTitle: Time off
     duration: Spring 2025 &mdash; Spring 2026
@@ -85,6 +86,7 @@ journey:
     - linux
     - nginx
     - nodejs
+    - trivy
     link: https://www.uni-assist.de/
     jobTitle: Project Lead Cloud Migration
     duration: Spring 2023 &mdash; Spring 2025
@@ -110,7 +112,8 @@ journey:
     - python
     - grafana
     - linux
-    link: https://stack-stream.com/
+    - trivy
+    link: https://www.stack-stream.com/
     jobTitle: Full Stack Go Developer
     duration: Fall 2022 &mdash; Winter 2022
     description:
@@ -127,7 +130,7 @@ journey:
     - kubernetes
     link: https://www.walnut.io/
     jobTitle: Consultant Infrastructure Improvements
-    duration: Spring 2022 &mdash; Spring 2022
+    duration: Spring 2022
     description:
       - Conducted AWS infrastructure reviews and filed reports for potential improvements.
       - Re-worked GitHub CI/CD for a 50% speed up shipping an Elixir code base.
@@ -162,6 +165,7 @@ journey:
     - wireguard
     - gcp
     - react
+    - trivy
     link: https://tenzir.com
     jobTitle: Blue Team Engineer
     duration: Fall 2019 &mdash; Summer 2021
@@ -205,7 +209,8 @@ journey:
     - typescript
     - elastic
     - teamcity
-    link: https://moovel.com/
+    link: https://moovelus.com/
+    note: later REACH NOW, Daimler & BMW
     jobTitle: Backend & DevOps Engineer
     duration: Winter 2017 &mdash; Fall 2018
     description:
@@ -240,7 +245,8 @@ journey:
     - nodejs
     - linux
     - coffeescript
-    link: https://sinnerschrader.com/
+    link: https://www.accenture.com/de/about/accenture-song-index
+    note: today Accenture Song
     jobTitle: Backend Engineer
     duration: Spring 2014 &mdash; Spring 2015
     description:

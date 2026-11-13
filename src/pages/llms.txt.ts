@@ -25,7 +25,7 @@ export const GET = () => {
     `- Earlier (not in active use): ${stack.earlier.join(', ')}`,
     '',
     '## Journey',
-    ...cv.journey.map((e) => `- ${duration(e.duration)}: ${e.company} – ${e.jobTitle}`),
+    ...cv.journey.map((e) => `- ${duration(e.duration)}: ${e.company}${e.note ? ` (${e.note})` : ''} – ${e.jobTitle}`),
     '',
     '## Contact',
     `- [Website contact section](${site.url}/#contact)`,
