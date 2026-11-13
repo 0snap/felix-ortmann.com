@@ -1,38 +1,25 @@
 :root {
-  --bg: #f8fafc;
-  --surface: #ffffff;
-  --text: #0f172a;
-  --muted: #475569;
-  --border: #e2e8f0;
-  --accent: #1d4ed8;
-  --accent-hover: #1e40af;
-  --accent-soft: #eaf0ff;
-  --on-accent: #ffffff;
-  --ok: #16a34a;
+  /* light-dark(light, dark): follows the OS, or data-theme set by the nav toggle */
+  --bg: light-dark(#f8fafc, #0b1120);
+  --surface: light-dark(#ffffff, #111a2e);
+  --text: light-dark(#0f172a, #e2e8f0);
+  --muted: light-dark(#475569, #94a3b8);
+  --border: light-dark(#e2e8f0, #1e293b);
+  --accent: light-dark(#1d4ed8, #6ea8ff);
+  --accent-hover: light-dark(#1e40af, #93c0ff);
+  --accent-soft: light-dark(#eaf0ff, #15233f);
+  --on-accent: light-dark(#ffffff, #0b1120);
+  --ok: light-dark(#16a34a, #4ade80);
 
   --font-sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
   --width: 72rem;
   --gutter: clamp(1rem, 4vw, 2rem);
   --radius: 0.75rem;
-  color-scheme: light;
+  color-scheme: light dark;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0b1120;
-    --surface: #111a2e;
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-    --border: #1e293b;
-    --accent: #6ea8ff;
-    --accent-hover: #93c0ff;
-    --accent-soft: #15233f;
-    --on-accent: #0b1120;
-    --ok: #4ade80;
-    color-scheme: dark;
-  }
-}
+:root[data-theme='light'] { color-scheme: light; }
+:root[data-theme='dark'] { color-scheme: dark; }
 
 *, *::before, *::after { box-sizing: border-box; }
 

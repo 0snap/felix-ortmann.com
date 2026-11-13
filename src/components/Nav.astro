@@ -1,4 +1,7 @@
 ---
+import {Icon} from 'astro-icon/components';
+import Logo from './Logo.astro';
+
 const links = [
   ['Services', '/#services'],
   ['Work', '/#work'],
@@ -8,8 +11,12 @@ const links = [
 ---
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/">felix ortmann</a>
+    <a class="brand" href="/"><Logo />felix ortmann</a>
     <nav aria-label="Main">
+      <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden>
+        <Icon name="tabler:moon" class="moon" width="1.2em" height="1.2em" />
+        <Icon name="tabler:sun" class="sun" width="1.2em" height="1.2em" />
+      </button>
       {links.map(([label, href]) => <a class="link" href={href}>{label}</a>)}
       <a class="contact" href="/#contact">Contact</a>
     </nav>
@@ -26,7 +33,16 @@ const links = [
     border-bottom: 1px solid var(--border);
   }
   .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 4rem; }
-  .brand { font-family: var(--font-mono); font-size: 0.95rem; color: var(--text); text-decoration: none; }
+  .brand { display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--font-mono); font-size: 0.95rem; color: var(--text); text-decoration: none; }
+  .theme-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 2.25rem; height: 2.25rem; padding: 0; border: 0; border-radius: 50%;
+    background: transparent; color: var(--muted); cursor: pointer;
+  }
+  .theme-toggle[hidden] { display: none; }
+  .theme-toggle:hover { color: var(--text); background: var(--accent-soft); }
+  .theme-toggle :global(.sun), .theme-toggle[aria-pressed='true'] :global(.moon) { display: none; }
+  .theme-toggle[aria-pressed='true'] :global(.sun) { display: block; }
   nav { display: flex; align-items: center; gap: 1.75rem; }
   nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
   nav a:hover { color: var(--text); }
@@ -35,3 +51,20 @@ const links = [
     .link { display: none; }
   }
 </style>
+
+<script>
+  // explicit choice is stored; without one the OS setting applies (see the inline script in Page.astro)
+  const button = document.querySelector<HTMLButtonElement>('.theme-toggle')!;
+  const root = document.documentElement;
+  const isDark = () => (root.dataset.theme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
+  const sync = () => button.setAttribute('aria-pressed', String(isDark()));
+  button.addEventListener('click', () => {
+    const theme = isDark() ? 'light' : 'dark';
+    root.dataset.theme = theme;
+    try { localStorage.setItem('theme', theme); } catch {}
+    sync();
+  });
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', sync);
+  sync();
+  button.hidden = false;
+</script>

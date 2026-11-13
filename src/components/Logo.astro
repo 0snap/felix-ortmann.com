@@ -1,0 +1,9 @@
+---
+// {fo} mark: braces in accent, letters in text color (JetBrains Mono 500 outlines)
+interface Props { size?: string; class?: string }
+const {size = '2rem', class: className} = Astro.props;
+---
+<svg class:list={['logo', className]} viewBox="0 0 64 64" width={size} height={size} aria-hidden="true">
+  <path d="M14 12H9V27L4 32L9 37V52H14M50 12H55V27L60 32L55 37V52H50" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M23.46 40V30.54H19.72V28.19H23.46V26.06Q23.46 24.4 24.52 23.44Q25.58 22.48 27.4 22.48H31.26V24.78H27.45Q26.78 24.78 26.4 25.12Q26.03 25.46 26.03 26.08V28.19H31.26V30.54H26.03V40ZM38.95 40.22Q37.32 40.22 36.12 39.59Q34.92 38.97 34.27 37.82Q33.62 36.66 33.62 35.1V31.7Q33.62 30.11 34.27 28.97Q34.92 27.83 36.12 27.21Q37.32 26.58 38.95 26.58Q40.58 26.58 41.78 27.21Q42.98 27.83 43.63 28.97Q44.28 30.11 44.28 31.7V35.1Q44.28 36.66 43.63 37.82Q42.98 38.97 41.78 39.59Q40.58 40.22 38.95 40.22ZM38.95 37.94Q40.27 37.94 40.99 37.2Q41.71 36.47 41.71 35.1V31.7Q41.71 30.3 40.99 29.58Q40.27 28.86 38.95 28.86Q37.66 28.86 36.92 29.58Q36.19 30.3 36.19 31.7V35.1Q36.19 36.47 36.92 37.2Q37.66 37.94 38.95 37.94Z" fill="var(--text)" />
+</svg>
